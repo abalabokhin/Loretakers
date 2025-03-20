@@ -49,4 +49,4 @@ This mod and all its contents may not be copied, modified, distributed, or used 
 
 ## Feedback & Support  
 If you encounter issues or have suggestions, please report them on the **Gibberlings3 Forum**.  
-[**G3 Forums**](https://www.gibberlings3.net/forums/)
+[**G3 Forums - Loretakers**](https://www.gibberlings3.net/forums/topic/38310-mod-loretakers-a-quest-mod-for-bg1ee/)
