@@ -1,0 +1,86 @@
+IF
+	AreaCheck("AC#FP1")
+	See([PC])
+	Global("AC#LoreQuestMain","GLOBAL",7)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("AC#PrepareMyself","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#PrepareMyself","LOCALS",1)
+END
+
+IF
+	Global("AC#PrepareMyself","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#PrepareMyself","LOCALS",2)
+		ForceSpell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (True Sight)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_STRENGTH_OF_ONE)  // SPPR312.SPL (Strength of One)
+	See(NearestMyGroupOfType)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_STRENGTH_OF_ONE)  // SPPR312.SPL (Strength of One)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (Defensive Harmony)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (Defensive Harmony)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_BLESS)  // SPPR101.SPL (Bless)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_BLESS)  // SPPR101.SPL (Bless)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See([PC])
+	HaveSpell(CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (Silence, 15' Radius)
+	OR(4)
+		Class(LastSeenBy(Myself),MAGE_ALL)
+		Class(LastSeenBy(Myself),SORCERER)
+		Class(LastSeenBy(Myself),CLERIC_ALL)
+		Class(LastSeenBy(Myself),DRUID_ALL)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (Silence, 15' Radius)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

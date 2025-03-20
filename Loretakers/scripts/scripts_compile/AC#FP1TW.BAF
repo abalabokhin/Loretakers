@@ -1,0 +1,21 @@
+IF
+	Entered([ANYONE])
+	Global("WaterWeird","AC#FP1",0)
+	DifficultyLT(NORMAL)
+THEN
+	RESPONSE #100
+		SetGlobal("WaterWeird","AC#FP1",1)
+		CreateCreatureImpassableEffect("AC#FPWWR","ICRMPARI",[621.1471],S)  // Water weird
+END
+
+IF
+	Entered([ANYONE])
+	Global("WaterWeird","AC#FP1",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WaterWeird","AC#FP1",1)
+		CreateCreatureImpassableEffect("AC#FPWWR","ICRMPARI",[621.1471],S)  // Water weird
+		CreateCreatureImpassableEffect("AC#FPWWR","ICRMPARI",[530.1410],SW)  // Water weird
+		CreateCreatureImpassableEffect("AC#FPWWR","ICRMPARI",[717.1426],S)  // Water weird
+END
+

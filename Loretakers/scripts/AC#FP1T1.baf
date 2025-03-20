@@ -1,0 +1,7 @@
+IF
+	Opened([ANYONE])
+THEN
+	RESPONSE #100
+		ForceSpellRES("AC#FPCP",LastTrigger)  // No such index
+END
+

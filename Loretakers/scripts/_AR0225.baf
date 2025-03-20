@@ -1,0 +1,18 @@
+IF
+	InMyArea(Player1)
+	Global("AC#FPCreateWorker","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreature("AC#FPSEW",[3645.715],0)
+		SetGlobal("AC#FPCreateWorker","GLOBAL",1)
+END
+
+IF
+	InMyArea(Player1)
+	Global("AC#FPMapNote","%CentralSewers%",0)
+	Global("AC#LoreQuestMain","GLOBAL",7)
+THEN
+	RESPONSE #100
+		AddMapNote([610.1801],@2225) 
+		SetGlobal("AC#FPMapNote","%CentralSewers%",1)
+END

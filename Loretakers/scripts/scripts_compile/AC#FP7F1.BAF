@@ -1,0 +1,16 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+THEN
+	RESPONSE #100
+		ActionOverride("AC#FP7S1",StartDialogNoSet([PC]))
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@4001)  
+END
+

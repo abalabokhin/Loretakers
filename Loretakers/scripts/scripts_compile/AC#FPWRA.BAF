@@ -1,0 +1,43 @@
+IF
+	See([ANYONE])
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(CITY)
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("SPFLESHS",Myself)
+		Kill(Myself)
+END
+
+IF
+	See([PC])
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	!See([PC])
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,GOODBUTRED)
+END
+
+IF
+	See([ANYONE])
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		AttackReevaluate([ANYONE],15)
+END
+
+IF
+	Delay(5)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		RandomWalk()
+END
+

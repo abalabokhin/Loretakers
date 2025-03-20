@@ -1,0 +1,27 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+	CutSceneId(Player1)
+	//CreateVisualEffectObject("SPFLESHS",Myself)
+	//PlaySound("EFF_M63")
+	//DisplayString("Transceiver_trigger",@1283)  // Das Illithidenhalsband gibt Euch eine Art Kontrolle über das Gerät. Ihr nehmt im Inneren des Gegenstandes platzt und schließt die Augen.
+	//Wait(3)
+	//DisplayString("Transceiver_trigger",@1281)  // Ihr spürt einen Zug, der auf Euren Geist einwirkt. Wenngleich Euer Körper noch immer am selben Ort verbleibt, bewegt sich Euer Verstand meilenweit weg, getragen durch die psychische Energie der Illithidenmaschine...
+	//Wait(3)
+	//PlaySound("EFF_M63")
+	FadeToColor([30.0],0)
+	Wait(2)
+	LeaveAreaLUAPanic("AC#FP3","",[746.753],NW)
+	LeaveAreaLUA("AC#FP3","",[746.753],NW)
+	Wait(2)
+	MultiPlayerSync()
+	FadeFromColor([30.0],0)
+	Explore()
+	Wait(1)
+	MoveViewPoint([591.480],FAST)
+	//MoveToPoint([746.753])
+	Wait(4)
+	SetGlobal("AC#Braintransceiver","GLOBAL",1)
+	ActionOverride("AC#FP3EB",StartDialogNoSet(Myself))
+END

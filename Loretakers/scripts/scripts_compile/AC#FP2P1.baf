@@ -1,0 +1,67 @@
+IF
+	Clicked([ANYONE])
+	GlobalGT("AC#FP_AC#FP4_Solved","GLOBAL",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1271)  // ~The water is calm again. There is nothing more to see in this pool.~
+END
+
+IF
+	Clicked([ANYONE])
+	Global("AC#FP_AC#FP4_Entered","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1277)  // ~Only one person at a time can immerse into the water.~
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Mindpool01","AC#FP2",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1269)  // Dieses Wasserbecken sieht tiefer aus, als es sein kann. Fast sieht es aus, als würde sich auf der Wasseroberfläche eine weit entfernte, Euch irgendwie bekannt vorkommende Landschaft spiegeln. Auf dem grund des Beckens liegt ein alter, verrosteter Schlüssel. Wenn Ihr wünscht, könnt Ihr genauer in das Becken sehen und versuchen, den Schlüssel zu greifen.
+		SetGlobal("Mindpool01","AC#FP2",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Mindpool01","AC#FP2",1)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		SetGlobal("AC#FP_AC#FP4_Entered","GLOBAL",1)
+		ActionOverride(Player1,MakeUnselectable(99999999))
+		ActionOverride(Player2,MakeUnselectable(99999999))
+		ActionOverride(Player3,MakeUnselectable(99999999))
+		ActionOverride(Player4,MakeUnselectable(99999999))
+		ActionOverride(Player5,MakeUnselectable(99999999))
+		ActionOverride(Player6,MakeUnselectable(99999999))
+		ActionOverride(LastTrigger,MakeUnselectable(0))
+		MoveViewObject(LastTrigger,INSTANT)
+		ActionOverride(LastTrigger,FaceObject("Mindpool01"))
+		DisplayStringNoName(Myself,@1270)  // Ihr beugt Euch hinunter, um tiefer in das Wasser zu sehen und den Schlüssel zu greifen.
+		Wait(2)
+		//DisplayStringNoName(Myself,@1272) 
+		DisplayStringNoName(Myself,@1273) // ~With a wave of your hand you try to grab the key. Just as you are about to take it, a your face is pulled beneath the water of the pool!~ 
+		FadeToColor([40.0],0)
+		Wait(4)
+		PlaySound("EFF_M63")
+		ActionOverride(LastTrigger,LeaveAreaLUAPanic("AC#FP4","",[514.916],NE))
+		ActionOverride(LastTrigger,LeaveAreaLUA("AC#FP4","",[514.916],NE))
+		MultiPlayerSync()
+		MoveViewObject(LastTrigger,INSTANT)
+		FadeFromColor([15.0],0)
+		EndCutSceneMode()
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1276)  
+END
+

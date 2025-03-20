@@ -1,0 +1,206 @@
+// Creatures for Loretakers
+
+COPY ~%MOD_FOLDER%/cre/copy~         ~override~
+
+COPY ~%MOD_FOLDER%/cre/AC#FPSWM.cre~ ~override~ // Sewerm
+  SAY NAME1 @120  SAY NAME2 @120
+
+COPY ~%MOD_FOLDER%/cre/AC#FPMMY.cre~ ~override~ // Bog mummy
+  SAY NAME1 @122  SAY NAME2 @122
+
+COPY ~%MOD_FOLDER%/cre/AC#FPDT2.cre~ ~override~ // Death Tyrant 02 (dead)
+  SAY NAME1 @119  SAY NAME2 @119
+
+COPY ~%MOD_FOLDER%/cre/AC#FPDTY.cre~ ~override~ // Death Tyrant 01
+  SAY NAME1 @119  SAY NAME2 @119
+
+COPY ~%MOD_FOLDER%/cre/AC#FPGND.cre~ ~override~ // Master Durnan, Gond high priest
+  SAY NAME1 @117
+  SAY NAME2 @117
+
+COPY ~%MOD_FOLDER%/cre/AC#FP2OT.cre~ ~override~ // Thrall
+  SAY NAME1 @115
+  SAY NAME2 @115
+
+COPY ~%MOD_FOLDER%/cre/AC#FP2ST.cre~ ~override~ // Moander's statue
+  SAY NAME1 @114
+  SAY NAME2 @114
+
+COPY ~%MOD_FOLDER%/cre/AC#FPGHO.cre~ ~override~ // Aimil, ghost in love
+  SAY NAME1 @106
+  SAY NAME2 @106
+
+COPY ~%MOD_FOLDER%/cre/AC#FP3EB.cre~ ~override~ // The Encephalithid, Oryndoll elder brain
+  SAY NAME1 @105
+  SAY NAME2 @105
+
+COPY ~%MOD_FOLDER%/cre/AC#FPCOG.cre~ ~override~ // imprisoned monk, free
+  SAY NAME1 @104
+  SAY NAME2 @104
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPCO2.cre~ ~override~ // imprisoned monk, free in shrine of Oghma
+  SAY NAME1 @104
+  SAY NAME2 @104
+
+COPY ~%MOD_FOLDER%/cre/AC#FPCO9.cre~ ~override~ // imprisoned monk
+  SAY NAME1 @103
+  SAY NAME2 @103
+
+COPY ~%MOD_FOLDER%/cre/AC#FPPR1.cre~ ~override~ // Prisoner of the wererats
+  SAY NAME1 @102
+  SAY NAME2 @102
+
+COPY ~%MOD_FOLDER%/cre/AC#FPWRC.cre~ ~override~ // Scronch, Wererat pack leader
+  SAY NAME1 @101
+  SAY NAME2 @101
+/*
+ ADD_MEMORIZED_SPELL ~SPWI101~ #0 ~wizard~ ( 2 ) // grease
+ ADD_MEMORIZED_SPELL ~SPWI205~ #1 ~wizard~ ( 1 ) // horror
+ ADD_MEMORIZED_SPELL ~SPWI311~ #2 ~wizard~ ( 1 ) // Protection normal missiles
+*/
+COPY ~%MOD_FOLDER%/cre/AC#FPSLT.cre~ ~override~ // Slithering tracker, MM p. 280; german version p.35 Flora&Fauna)
+  SAY NAME1 @100
+  SAY NAME2 @100
+
+COPY ~%MOD_FOLDER%/cre/AC#FPWRW.cre~ ~override~ // Ralx, Wererat wizard
+  SAY NAME1 @99
+  SAY NAME2 @99
+// already added
+/*
+  ADD_MEMORIZED_SPELL ~SPWI210~ #1 ~wizard~ ( 1 ) // resist fear
+  ADD_MEMORIZED_SPELL ~SPWI106~ #0 ~wizard~ ( 2 ) // blindness
+  ADD_MEMORIZED_SPELL ~SPWI221~ #1 ~wizard~ ( 1 ) // ray of enfeeblement
+  ADD_MEMORIZED_SPELL ~SPWI223~ #1 ~wizard~ ( 1 ) // deafness
+*/
+
+COPY ~%MOD_FOLDER%/cre/AC#FPWPU.cre~ ~override~
+  SAY NAME1 @98
+  SAY NAME2 @98
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPWP2.cre~ ~override~
+  SAY NAME1 @98
+  SAY NAME2 @98
+
+COPY ~%MOD_FOLDER%/cre/AC#FPOX1.cre~ ~override~
+  SAY NAME1 @121
+  SAY NAME2 @121
+   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~ACIFER_OBLIVIAX~))
+
+COPY ~%MOD_FOLDER%/cre/AC#WRIM1.cre~ ~override~
+  SAY NAME1 @77 SAY NAME2 @77
+  
+COPY ~%MOD_FOLDER%/cre/AC#WERA1.cre~ ~override~
+  SAY NAME1 @63 SAY NAME2 @63
+  
+COPY ~%MOD_FOLDER%/cre/AC#WERA2.cre~ ~override~
+  SAY NAME1 @118 SAY NAME2 @118
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP1W1.cre~ ~override~
+  SAY NAME1 @63 SAY NAME2 @63
+
+COPY ~%MOD_FOLDER%/cre/AC#FP1W2.cre~ ~override~
+  SAY NAME1 @63 SAY NAME2 @63
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP1W3.cre~ ~override~
+  SAY NAME1 @63 SAY NAME2 @63
+  
+COPY ~%MOD_FOLDER%/cre/AC#MUGG1.cre~ ~override~
+  SAY NAME1 @88 SAY NAME2 @88
+
+COPY ~%MOD_FOLDER%/cre/AC#MUGG2.cre~ ~override~
+  SAY NAME1 @89 SAY NAME2 @89
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPFEY.cre~ ~override~
+  SAY NAME1 @90 SAY NAME2 @90
+  
+COPY ~%MOD_FOLDER%/cre/AC#ULIT1.cre~ ~override~
+  SAY NAME1 @91 SAY NAME2 @91
+// ADD_MEMORIZED_SPELL ~SPWI609~ #5 ~wizard~ ( 1 ) // True Sight
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPOG4.cre~ ~override~
+  SAY NAME1 @92 SAY NAME2 @92
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPSUN.cre~ ~override~
+  SAY NAME1 @93 SAY NAME2 @93
+
+COPY ~%MOD_FOLDER%/cre/AC#MOAN1.cre~ ~override~
+  SAY NAME1 @94 SAY NAME2 @94
+// added
+/*
+ADD_MEMORIZED_SPELL ~SPPR102~ #0 ~priest~ ( 2 ) // Command
+ADD_MEMORIZED_SPELL ~SPPR109~ #0 ~priest~ ( 2 ) // Sanctuary
+ADD_MEMORIZED_SPELL ~SPPR105~ #0 ~priest~ ( 1 ) // Entangle
+ADD_MEMORIZED_SPELL ~SPPR314~ #2 ~priest~ ( 1 ) // Unholy Blight
+ADD_MEMORIZED_SPELL ~SPPR301~ #2 ~priest~ ( 1 ) // Animate Dead
+ADD_MEMORIZED_SPELL ~SPPR416~ #3 ~priest~ ( 1 ) // Cloak of Fear
+ADD_MEMORIZED_SPELL ~SPPR517~ #4 ~priest~ ( 1 ) // Insect Plague
+ADD_MEMORIZED_SPELL ~SPPR511~ #4 ~priest~ ( 1 ) // Slay Living
+*/
+COPY ~%MOD_FOLDER%/cre/AC#FPWWR.cre~ ~override~
+  SAY NAME1 @95 SAY NAME2 @95
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPOTY.cre~ ~override~
+  SAY NAME1 @96 SAY NAME2 @96
+
+// voidspeakers - area 1 (AC#FP4)  
+COPY ~%MOD_FOLDER%/cre/AC#FP4S1.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP4S2.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP4S3.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+
+// voidspeakers - area 2 (AC#FP6)    
+COPY ~%MOD_FOLDER%/cre/AC#FP6S1.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP6S2.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP6S3.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+// voidspeakers - area 3 (AC#FP5)
+COPY ~%MOD_FOLDER%/cre/AC#FP5S1.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP5S2.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP5S3.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+// voidspeakers - area 4 (AC#FP7) - final area
+COPY ~%MOD_FOLDER%/cre/AC#FP7S1.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+
+COPY ~%MOD_FOLDER%/cre/AC#FP7S2.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+COPY ~%MOD_FOLDER%/cre/AC#FP7S3.cre~ ~override~
+  SAY NAME1 @107 SAY NAME2 @107
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPOBL.cre~ ~override~ // Oblex
+  SAY NAME1 @108 SAY NAME2 @108
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPMDS.cre~ ~override~ // Mindshadow
+  SAY NAME1 @109 SAY NAME2 @109
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPCLY.cre~ ~override~ // Lesser Clay Golem (summoned)
+   SAY NAME1 @116 SAY NAME2 @116
+
+COPY ~%MOD_FOLDER%/cre/AC#FPST1.cre~ ~override~
+  SAY NAME1 @110 SAY NAME2 @110
+
+COPY ~%MOD_FOLDER%/cre/AC#FPST2.cre~ ~override~
+  SAY NAME1 @111 SAY NAME2 @111
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPSEW.cre~ ~override~
+  SAY NAME1 @112 SAY NAME2 @112
+  
+COPY ~%MOD_FOLDER%/cre/AC#FPLAD.cre~ ~override~
+  SAY NAME1 @113 SAY NAME2 @113
+     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#DUSTMAN_FEMALE~))
+ADD_MEMORIZED_SPELL ~SPPR312~ #2 ~priest~ ( 1 ) // Strength of One

@@ -1,0 +1,173 @@
+IF
+	NumberOfTimesTalkedTo(0)
+	See([PC])
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+
+IF
+	See([PC])
+	Allegiance(Myself,ENEMY)
+	Global("MoanderFight","AC#FP2",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MoanderFight","AC#FP2",1)
+		CreateVisualEffect("ICMAGICH",[3068.525])
+		CreateCreature("ZOMBIE",[3068.525],S)  // Zombie
+		CreateCreature("JELLGR",[3300.497],S)  // Gray Ooze
+		CreateCreature("JELLGR",[3215.801],S)  // Gray Ooze
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Puffball","AC#FP2",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Puffball","AC#FP2",1)
+		ReallyForceSpellRES("AC#FPPB",LastSeenBy(Myself))  // Puffball
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("MoanderFight","AC#FP2",1)
+	Global("MoanderDebug","AC#FP2",1)
+THEN
+	RESPONSE #100
+		SetGlobal("MoanderFight","AC#FP2",2)
+		ReallyForceSpellRES("AC#FPMO",LastSeenBy(Myself))  // Roots of the Assassin
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("BD_Cast","LOCALS")
+	HaveSpell(CLERIC_SANCTUARY)  // SPPR109.SPL (Sanctuary)
+	!CheckStat(Myself,1,SANCTUARY)
+	HPPercentLT(Myself,51)
+	!StateCheck(Myself,STATE_SILENCED)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_SANCTUARY)  // SPPR109.SPL (Sanctuary)
+		SetInterrupt(TRUE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("BD_Cast","LOCALS")
+	HaveSpell(CLERIC_SANCTUARY)  // SPPR109.SPL (Sanctuary)
+	!CheckStat(Myself,1,SANCTUARY)
+	OR(2)
+		HitBy([PC],CRUSHING)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+	!StateCheck(Myself,STATE_SILENCED)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+		Spell(Myself,CLERIC_SANCTUARY)  // SPPR109.SPL (Sanctuary)
+		SetInterrupt(TRUE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("bd_cast","locals")
+	HaveSpell(CLERIC_COMMAND)  // SPPR102.SPL (Command)
+	AttackedBy([PC],DEFAULT)
+	Range(LastAttackerOf(Myself),8)
+	!StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy,STATE_DISABLED)
+	!StateCheck(Myself,STATE_SILENCED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("bd_cast","locals",ONE_ROUND)
+		Spell(LastSeenBy,CLERIC_COMMAND)  // SPPR102.SPL (Command)
+		RunAwayFromNoLeaveArea(LastAttackerOf(Myself),4)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_UNHOLY_BLIGHT)  // SPPR314.SPL (Unholy Blight)
+	OR(3)
+		Alignment(LastSeenBy(Myself),CHAOTIC_GOOD)
+		Alignment(LastSeenBy(Myself),NEUTRAL_GOOD)
+		Alignment(LastSeenBy(Myself),LAWFUL_GOOD)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_UNHOLY_BLIGHT)  // SPPR314.SPL (Unholy Blight)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_ENTANGLE)  // SPPR105.SPL (Entangle)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_ENTANGLE)  // SPPR105.SPL (Entangle)
+END
+
+IF
+	HaveSpell(CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (Silence, 15' Radius)
+	!Range(LastSeenBy(Myself),15)
+	OR(4)
+		See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+		See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+		See(NearestEnemyOfType([0.0.0.BARD_ALL]))
+		See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (Silence, 15' Radius)
+END
+
+IF
+	Delay(15)
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (Hold Person)
+	!StateCheck(NearestEnemyOf(Myself),STATE_SLEEPING)
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)  // SPPR208.SPL (Hold Person)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (Cloak of Fear)
+	!StateCheck(LastSeenBy(Myself),STATE_PANIC)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (Cloak of Fear)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_POISON)  // SPPR411.SPL (Poison)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_POISON)  // SPPR411.SPL (Poison)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_ANIMATE_DEAD)  // SPPR301.SPL (Animate Dead)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_ANIMATE_DEAD)  // SPPR301.SPL (Animate Dead)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_SLAY_LIVING)  // SPPR511.SPL (Slay Living)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_SLAY_LIVING)  // SPPR511.SPL (Slay Living)
+		AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

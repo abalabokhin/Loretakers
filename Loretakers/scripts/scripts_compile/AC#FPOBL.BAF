@@ -1,0 +1,27 @@
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("SpellCastTimer","LOCALS")
+THEN
+	RESPONSE #50
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CHARM_PERSON)  // SPWI104.SPL (Charm Person)
+		SetGlobalTimer("SpellCastTimer","LOCALS",ONE_ROUND)
+	RESPONSE #50
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+		SetGlobalTimer("SpellCastTimer","LOCALS",ONE_ROUND)
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(LastSeenBy(Myself),12)
+	!GlobalTimerNotExpired("SpellCastTimer","LOCALS")
+	Delay(15)
+THEN
+	RESPONSE #30
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_COLOR_SPRAY)  // SPWI105.SPL (Color Spray)
+		SetGlobalTimer("SpellCastTimer","LOCALS",ONE_ROUND)
+END
+

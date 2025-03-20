@@ -1,0 +1,23 @@
+IF
+	Global("MoanderAmbush","AC#FP2",0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+	Global("MoanderAmbush","AC#FP2",1)
+THEN
+	RESPONSE #100
+		SetGlobal("MoanderAmbush","AC#FP2",2)
+		SetInterrupt(FALSE)
+		ReallyForceSpellPointRES("AC#FP2E",[2936.1842])  // Entangle
+		ReallyForceSpellPointRES("AC#FP2E",[3476.1538])  // Entangle
+		ReallyForceSpellPoint([3252.1752],WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinking Cloud)
+		CreateCreatureEffect("JELLMU","AC#FPTRG",[3046.1791],S)  // Mustard Jelly
+		CreateCreatureEffect("JELLMU","AC#FPTRG",[3582.1905],S)  // Mustard Jelly
+		CreateCreatureEffect("JELLMU","AC#FPTRG",[3444.1557],S)  // Mustard Jelly
+		SetInterrupt(TRUE)
+		DestroySelf()
+END
+

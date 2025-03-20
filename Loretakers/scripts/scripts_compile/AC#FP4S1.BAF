@@ -1,0 +1,19 @@
+IF
+	Global("FirstRiddleRight","AC#FP4",1)
+	Global("SecondRiddleRight","AC#FP4",1)
+	Global("ThirdRiddleRight","AC#FP4",1)
+	Global("AC#FP_AC#FP4_Solved","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FP_AC#FP4_Solved","GLOBAL",1)
+		StartDialogNoSet([PC])
+END
+
+IF
+	Global("AC#FP4_wrong","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FP4_wrong","GLOBAL",2)
+		StartDialogNoSet([PC])
+END
+

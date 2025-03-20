@@ -1,0 +1,203 @@
+// Loretakers Item Files
+
+COPY ~%MOD_FOLDER%/itm/copy~         ~override~
+
+// patching the undead ring95 to make them immune to mindflayer's Int drain
+ COPY_EXISTING ~ring95.itm~ ~override~
+ LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 101 target = 1 parameter2 = 19 timing = 2 END // immunity to intelligence drain
+
+COPY ~%MOD_FOLDER%/itm/ac#fpmfl.itm~         ~override~  // Mind flayer weapon
+  SAY 0x10e @1063
+
+COPY ~%MOD_FOLDER%/itm/AC#FPNMP.itm~         ~override~  // note of the Moander's priest
+  SAY NAME2 @1103
+  SAY DESC @1104
+
+COPY ~%MOD_FOLDER%/itm/AC#FPAMS.itm~         ~override~  // amulet of the spectator
+  SAY NAME2 @1101
+  SAY DESC @1102
+
+COPY ~%MOD_FOLDER%/itm/AC#FPDB1.itm~         ~override~  // Destroyed book: History book
+  SAY NAME2 @1098
+  SAY DESC @1100
+
+COPY ~%MOD_FOLDER%/itm/AC#FPBAP.itm~         ~override~  // Destroyed book: Alaundo's prophecies
+  SAY NAME2 @1098
+  SAY DESC @1099
+
+COPY ~%MOD_FOLDER%/itm/AC#FPPSW.itm~         ~override~  // Poison of the Strong Will
+  SAY NAME2 @1096
+  SAY DESC @1097
+
+COPY ~%MOD_FOLDER%/itm/AC#FPOGA.itm~         ~override~  // Apple sacrifice
+  SAY NAME2 @1090
+  SAY DESC @1091
+  
+COPY ~%MOD_FOLDER%/itm/AC#FPOGB.itm~         ~override~  // Leaf sacrifice
+  SAY NAME2 @1092
+  SAY DESC @1093
+  
+COPY ~%MOD_FOLDER%/itm/AC#FPOGH.itm~         ~override~  // heart sacrifice
+  SAY NAME2 @1094
+  SAY DESC @1095
+
+COPY ~%MOD_FOLDER%/itm/AC#FPCUD.itm~         ~override~  // cure disease scroll
+
+COPY ~%MOD_FOLDER%/itm/AC#FPREP.itm~         ~override~  // remove paralysis scroll
+
+COPY ~%MOD_FOLDER%/itm/AC#FPSIS.itm~         ~override~  // Sapphire Ioun stone
+  SAY NAME1 @1079
+  SAY NAME2 @1080
+  SAY UNIDENTIFIED_DESC @1081
+  SAY DESC @1082
+
+COPY ~%MOD_FOLDER%/itm/AC#FPBOM.itm~         ~override~  // Boots of Moander
+  SAY NAME2 @1085
+  SAY DESC @1086
+
+COPY ~%MOD_FOLDER%/itm/AC#FPRMC.itm~         ~override~  // Rashemi mother's cookbook
+  SAY NAME2 @1057
+  SAY DESC @1058
+
+COPY ~%MOD_FOLDER%/itm/AC#FPCLY.itm~         ~override~  // miniature clay golem
+  SAY NAME1 @1059
+  SAY NAME2 @1060
+  SAY UNIDENTIFIED_DESC @1061
+  SAY DESC @1062
+
+COPY ~%MOD_FOLDER%/itm/AC#FPPUD.itm~         ~override~  // bottle of undead
+  SAY NAME1 @1041
+  SAY NAME2 @1042
+  SAY UNIDENTIFIED_DESC @1043
+  SAY DESC @1044
+
+COPY ~%MOD_FOLDER%/itm/AC#FPPIP.itm~         ~override~  // pipes of the sewers
+  SAY NAME1 @1037
+  SAY NAME2 @1038
+  SAY UNIDENTIFIED_DESC @1039
+  SAY DESC @1040
+
+COPY ~%MOD_FOLDER%/itm/AC#FPQUL.itm~         ~override~  // Qualith rune stone
+  SAY NAME1 @1053
+  SAY NAME2 @1054
+  SAY UNIDENTIFIED_DESC @1055
+  SAY DESC @1056
+
+COPY ~%MOD_FOLDER%/itm/AC#FPSKH.itm~         ~override~  // Open Skull
+  SAY NAME2 @1051
+  SAY DESC @1052
+
+COPY ~%MOD_FOLDER%/itm/AC#FPMBK.itm~         ~override~  // Journal of the Moander priest
+  SAY NAME2 @1047
+  SAY DESC @1048
+  
+COPY ~%MOD_FOLDER%/itm/AC#FPMB2.itm~         ~override~  // spore and mold book of the Moander priest
+  SAY NAME2 @1049
+  SAY DESC @1050
+
+COPY ~%MOD_FOLDER%/itm/AC#FPROS.itm~         ~override~  // Rose of the Sunite priest
+  SAY NAME2 @1035
+  SAY DESC @1036
+
+COPY ~%MOD_FOLDER%/itm/AC#FP1SW.itm~         ~override~  // switch for the travel trigger activation ac#fp1 -> ar0600
+  SAY NAME2 @1033
+  SAY DESC @1034
+
+COPY ~%MOD_FOLDER%/itm/AC#FPHKC.itm~         ~override~  // ghost's handkerchief
+  SAY NAME2 @1031
+  SAY DESC @1032
+
+COPY ~%MOD_FOLDER%/itm/AC#FPBRM.itm~         ~override~  // Brainmate item
+  SAY NAME1 @1027
+  SAY NAME2 @1028
+  SAY UNIDENTIFIED_DESC @1029
+  SAY DESC @1030
+
+COPY ~%MOD_FOLDER%/itm/AC#FPOX2.itm~         ~override~  // Obliviax moss
+  SAY NAME1 @1024
+  SAY NAME2 @1022
+  SAY UNIDENTIFIED_DESC @1025
+  SAY DESC @1023
+  SAY 0x13e @1026
+
+COPY ~%MOD_FOLDER%/itm/AC#MASK3.itm~         ~override~  // Jymahnas Mask
+  SAY NAME1 @1000
+  SAY NAME2 @1001
+  SAY UNIDENTIFIED_DESC @1002
+  SAY DESC @1003
+
+COPY ~%MOD_FOLDER%/itm/ac#fp2ka.itm~         ~override~  // Key for Moander's temple; carried by shambling mound
+  SAY NAME2 @1004
+  SAY DESC @1021
+
+COPY ~%MOD_FOLDER%/itm/ac#fp2k1.itm~         ~override/ac#fp2k1.itm~  // Key for resonance stone door
+  SAY NAME2 @1004
+  SAY DESC @1005
+
+COPY ~%MOD_FOLDER%/itm/AC#FP1K0.itm~         ~override~  //Key for quest start: key to old sewers
+  SAY NAME2 @1045
+  SAY DESC @1046
+
+COPY ~%MOD_FOLDER%/itm/AC#FP2K3.itm~         ~override/AC#FP2K3.itm~  //Key main door
+  SAY NAME2 @1006
+  SAY DESC @1007
+  
+COPY ~%MOD_FOLDER%/itm/AC#FP2K4.itm~         ~override/AC#FP2K4.itm~  // Key for pool of memories
+  SAY NAME2 @1008
+  SAY DESC @1009
+  
+COPY ~%MOD_FOLDER%/itm/AC#FP2K6.itm~         ~override/AC#FP2K6.itm~  // Candlekeeppool
+  SAY NAME2 @1010
+  SAY DESC @1011
+  
+COPY ~%MOD_FOLDER%/itm/AC#FP2K7.itm~         ~override/AC#FP2K7.itm~  // Candlekeeppool key 02
+  SAY NAME2 @1010
+  SAY DESC @1012
+  
+COPY ~%MOD_FOLDER%/itm/AC#FP2K8.itm~         ~override/AC#FP2K8.itm~  // Skyships glade key
+  SAY NAME2 @1010
+  SAY DESC @1013
+  
+COPY ~%MOD_FOLDER%/itm/AC#FP2K9.itm~         ~override/AC#FP2K9.itm~  // Alaundo key
+  SAY NAME2 @1010
+  SAY DESC @1014
+
+COPY ~%MOD_FOLDER%/itm/AC#FPSH1.itm~         ~override/AC#FPSH1.itm~  // Shield of the dawn
+  SAY NAME2 @1019
+  SAY DESC @1020
+  
+//OUTER_SET omconverse_icon = RESOLVE_STR_REF (@1068) //(~Converse~)
+OUTER_SET strref = RESOLVE_STR_REF (@1068)
+APPEND ~ItemDial.2da~ ~AC#FPORB %strref% AC#FPORB~
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/itm/AC#FPORB.itm~         ~override/AC#FPORB.itm~  // Cryptosphere
+  WRITE_LONG 0x18 (THIS | BIT11)
+  SAY NAME1 @1064
+  SAY NAME2 @1065
+  SAY UNIDENTIFIED_DESC @1066
+  SAY DESC @1067  
+
+COPY ~%MOD_FOLDER%/itm/AC#FPQST.itm~         ~override/AC#FPQST.itm~  // Dirty Robert
+  SAY NAME2 @1071
+  SAY DESC @1072
+
+COPY ~%MOD_FOLDER%/itm/AC#FPBL1.itm~         ~override/AC#FPBL1.itm~  // Lasting Omen +2
+  SAY NAME2 @1069
+  SAY DESC @1070
+
+COPY ~%MOD_FOLDER%/itm/AC#FPBW1.itm~         ~override/AC#FPBW1.itm~  // Vlanakka +2
+  SAY NAME2 @1073
+  SAY DESC  @1074
+
+COPY ~%MOD_FOLDER%/itm/AC#FPCR1.itm~         ~override/AC#FPCR1.itm~  // Triple Thoughts +3
+  SAY NAME2 @1075
+  SAY DESC @1076
+
+COPY ~%MOD_FOLDER%/itm/AC#FPRIN.itm~         ~override/AC#FPRIN.itm~  // Aeon of Lore
+  SAY NAME2 @1077
+  SAY DESC @1078
+  
+COPY ~%MOD_FOLDER%/itm/AC#FPXB1.itm~         ~override/AC#FPXB1.itm~  // Rat's Army of Teeth
+  SAY NAME2 @1105
+  SAY DESC @1106

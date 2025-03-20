@@ -1,0 +1,454 @@
+// creator: Shai Hulud
+// game: Loretakers
+// date: 2024-07-14, 19:47
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@56 = ~Formianer Riese~
+@63 = ~Werratte~
+@64 = ~Dieser Stein sieht genauso aus wie der Stein auf der anderen Seite. Auch hier könntet Ihr versuchen, die Linien auf der Oberfläche zu entfernen.~
+@65 = ~Der Stein pulsiert in einem sanften Licht. Ihr bemerkt feine Zeichnungen, die über seine Oberfläche verstreut sind. Ihr könntet versuchen, diese zu entfernen.~
+@66 = ~Ihr berührt die Oberfläche und die Linien verschwinden. Plötzlich überschwemmt eine heftige Welle völliger Hoffnungslosigkeit Euren Verstand.~
+@67 = ~Als Ihr den Raum betretet, überkommt Euch eine Welle bösartiger, hasserfüllter Gefühle. Gegenüber strahlen zwei pulsierende Steine ein unheilvolles Licht aus und versuchen scheinbar, Eure Gedanken zu beeinflussen.~
+@68 = ~Die Magie des Steins ist erloschen. Er fühlt sich nur noch kalt und kraftlos an.~
+@77 = ~Wrimbog~
+@86 = ~Belster Drehstein~
+@87 = ~Cellarer~
+@88 = ~Viceak~
+@89 = ~Rickul~
+@90 = ~Fihyr~
+@91 = ~Vuardsungulu~
+@92 = ~Bagut~
+@93 = ~Petian~
+@94 = ~Urthadar~
+@95 = ~Wassergeist~
+@96 = ~Otyugh~
+@97 = ~Erinnerungsmoos~
+@98 = ~Weißer Blob~
+@99 = ~Ralx~
+@100 = ~Gleitender Verfolger~
+@101 = ~Scronch~
+@102 = ~Rennack~
+@103 = ~Gefangene Kreatur~
+@104 = ~Hoher Wissenshüter Eyvind~
+@105 = ~Der Enzephalithid~
+@106 = ~Aimil~
+@107 = ~Nichtigsprecher~
+@108 = ~Oblex~
+@109 = ~Geistesschatten~
+@110 = ~Wissenshüter Namonder~
+@111 = ~Suchender Tuck~
+@112 = ~Kanalreiniger~
+@113 = ~Etate~
+@114 = ~Unheilige Statue~
+@115 = ~Thrall~
+@116 = ~Niederer Lehmgolem~
+@117 = ~Meister Durnan~
+@118 = ~Kranke Werratte~
+@119 = ~Todestyrann~
+@120 = ~Kanalschlange~
+@121 = ~Obliviax~
+@122 = ~Moormumie~
+@1000 = ~Jymahnas Maske~
+@1001 = ~Jymahnas Maske~
+@1002 = ~Jymahnas Maske~
+@1003 = ~Jymahnas Maske~
+@1004 = ~Türschlüssel~
+@1005 = ~Ihr habt diesen Schlüssel im Basiliskenraum in den Abwasserkanälen gefunden. Er scheint zu einer wichtigen Tür zu gehören.~
+@1006 = ~Illithiden-Schlüssel~
+@1007 = ~Ihr habt diesen Schlüssel bei der Leiche des Ulithariden Vuardsungulu gefunden.~
+@1008 = ~Statuenschlüssel~
+@1009 = ~Ihr habt diesen Schlüssel im Schädel einer Statue im alten Tempel von Moander gefunden.~
+@1010 = ~Schlüssel des Beckens~
+@1011 = ~Ihr habt diesen Schlüssel aus einem Becken in den Abwasserkanälen gefischt.~
+@1012 = ~Ihr habt diesen Schlüssel aus dem zweiten Becken in den Abwasserkanälen gefischt. Er kann die dritte verschlossene Tür öffnen.~
+@1013 = ~Dieser Schlüssel fühlt sich kalt an. Er stammt aus dem Raum, in dem sich das kalte Becken befand. Ihr habt ihn von einem Weißen Blob genommen. Er könnte die vierte verschlossene Tür öffnen.~
+@1014 = ~Ihr habt diesen Schlüssel von einer missgebildeten Kreatur namens Wrimbog in der Abwasserkanälen erhalten. Er könnte die letzte verschlossene Tür öffnen.~
+@1019 = ~Schild der Morgendämmerung~
+@1020 = ~Dieses Schild ist aus massiver Bronze gefertigt. Obwohl das Metall etwas Patina angesetzt hat, glänzt es immer noch in einem warmen, goldgelben Farbton. Der Schildbuckel ist mit einer aufgehenden Sonne, dem Symbol Lathanders, verziert. Untote scheinen dieses Symbol und die Wärme, die von ihm ausgeht, zu fürchten. Der Schild kann nicht von Klerikern mit böser Ausrichtung getragen werden.
+
+EIGENSCHAFTEN:
+
+Der Schild erhöht die Stufe von „Untote bannen“ beim Trägers um 1. 
+
+RK-Bonus:
+  –2
+  kein Schutz vor Geschosswaffen
+Mindeststärke: 4
+
+Gewicht: 3~
+@1021 = ~Dieser Schlüssel riecht muffig und nach verfaulten Pflanzen. Ihr habt ihn von einem Watschelnden Komposthaufen genommen.~
+@1022 = ~Erinnerungsmoos~
+@1023 = ~Dieses Moos ist der Überrest einer Pflanze namens Obliviax, die dafür berüchtigt ist, dass sie Erinnerungen stehlen kann. Vor allem Magier sollten einen großen Bogen um diese Art machen, wenn sie nicht Gefahr laufen wollen, ihre eingeprägten Zaubersprüche zu verlieren. Glücklicherweise hat der Verzehr dieses Moosstücks den gegenteiligen Effekt. Es ermöglicht dem Magier, sich an einige seiner bereits ausgesprochenen Zauber zu erinnern. Allerdings besteht die Gefahr, dass der Verzehr der fleischigen Rhizoide zu Magenverstimmungen führt.
+
+EIGENSCHAFTEN:
+
+Stellt einen Stufe-1-Zauber wieder her. Falls dem Anwender ein Rettungswurf gegen Tod misslingt, wird er von einer Krankheit befallen, die 5 Trefferpunkte pro Runde für 3 Runden verursacht.
+
+Gewicht: 1~
+@1024 = ~Stück Moos~
+@1025 = ~Ein grünlich schimmerndes Stück Moos, das nach Erde und modrigen Pflanzen riecht.~
+@1026 = ~Zauber wiederhergestellt~
+@1027 = ~Illithiden-Halsband~
+@1028 = ~Hirngetreuer~
+@1029 = ~Ihr habt dieses Halsband von dem Illithidenführer Vuardsungulu erhalten. Es enthält ein kleines Fläschchen mit organischer Materie.~
+@1030 = ~Wenn Illithiden sich weit von ihrer Gemeinschaft entfernen, verlieren sie den Kontakt zu ihrem Ältestenhirn. Für Wesen, die an eine ständige Trennung von den Gedanken, dem Wissen und der Wahrnehmung des Ältestenhirns gewöhnt sind, kann der Verlust des Kontakts mit dem Ältestenhirn ziemlich beunruhigend sein.
+
+Gruppen, die für längere Zeit außerhalb der Reichweite eines Ältestenhirns reisen, sind möglicherweise auf einen Vermittler angewiesen. Illithiden, die an weniger ehrgeizigen Streifzügen teilnehmen, sind oft gezwungen, ihre Tentakel zu versteifen und den Verlust des Kontakts zu ertragen – es sei denn, sie gehören zu den wenigen Glücklichen, die einen Gehirngefährten besitzen.
+Der Hirngetreuer ist eine Kugel aus durchsichtigem Material mit einem Durchmesser von 10 Zentimetern, in der ein abgetrenntes Miniaturgehirn in einer trägen, schweren Flüssigkeit schwimmt. Illithiden tragen diesen Gegenstand oft an einer Kette um den Hals, wenn sie ihn benutzen, oder sie bewahren ihn sicher in einer gut gepolsterten Truhe auf.
+
+Der Gegenstand hat keine magischen Eigenschaften und ist nur für Illithiden nützlich.~
+@1031 = ~Taschentuch~
+@1032 = ~Dies ist das Taschentuch, das dem weiblichen Geist am Brunnen neben Tymoras Tempel gehörte.~
+@1033 = ~Zahnrad~
+@1034 = ~Ein kleines Zahnrad, das wahrscheinlich aus einem größeren Mechanismus entnommen wurde, um ihn unbrauchbar zu machen~
+@1035 = ~Rose~
+@1036 = ~Eine duftende, rote Rose.~
+@1037 = ~Rohrleitung~
+@1038 = ~Kanalpfeife~
+@1039 = ~Dieses Instrument ist eine Art Panflöte, die aus schmutzigen, leicht rostigen Röhren besteht.~
+@1040 = ~Die Kanalpfeife ist eine verzauberte Panflöte, die das Verhalten bestimmter Nagetiere beeinflussen können. Diese mystischen Instrumente können, wenn sie gespielt werden, Ratten aus einer Entfernung von bis zu 300 Metern herbeirufen, die dem Ruf des Pfeifenspielers folgen. Die Magie, die den Pfeifen innewohnt, erneuert sich jeden Tag im Morgengrauen, sodass ihre Kraft immer verfügbar ist.
+
+EIGENSCHAFTEN:
+
+Rattenschwarm beschwören (1x täglich)
+  Dauer: 10 Runden
+
+Gewicht: 1~
+@1041 = ~Stimmungsflasche~
+@1042 = ~Flasche des zornigen Geistes~
+@1043 = ~Diese Flasche ist mit einer seltsamen, wirbelnden schwarzen Substanz gefüllt, die sich unaufhörlich zu bewegen scheint – auch ohne das Glas in eine bestimmte Richtung zu kippen. Das Glas ist unnatürlich kalt, und es ist unangenehm, es für längere Zeit in der Hand zu halten.~
+@1044 = ~Ein ruheloser, untoter Geist ist in dieser Flasche gefangen und wartet darauf, freigelassen zu werden und jeden in der Nähe mit seiner lebensfeindlichen Berührung zu vernichten.
+
+EIGENSCHAFTEN:
+
+Wenn der Verschluss geöffnet wird, entweicht ein Gespenst und greift jedes Ziel in seiner Sichtlinie an.~
+@1045 = ~Schlüssel zu den Abwasserkanälen~
+@1046 = ~Dies ist der Schlüssel zu den Abwasserkanälen unterhalb von Baldurs Tor.~
+@1047 = ~Urthadars Tagebuch~
+@1048 = ~Dies ist das Tagebuch von Urthadar, dem Priester von Moander, der in der alten Kanalisation unter Baldurs Tor einen Tempel zu Ehren seines toten Gottes errichtet hat. Der Text ist verworren, aber einige Passagen stechen einem ins Auge:
+
+„Tag der Sporengeburt
+Visionen haben mich wieder in meinen Träumen geplagt, lebhaft und befehlend. Der Große Moander spricht aus dem Jenseits zu mir, seine Stimme ist ein Flüstern inmitten der Schatten und führt meine Hände zu einem großen Ziel. Er befiehlt mir, die Erde zu erwecken, den schlafenden Sporen, die in der Dunkelheit schlummern, Leben einzuhauchen. ‚Verbreite die Pilze‘, flüstert er, ‚lass sie das Wissen der Welt verschlingen‘. So bin ich von Torsch in Chondalwald aufgebrochen und habe mich auf die lange Reise nach Norden aufgemacht, denn meine Visionen schicken mich in die Stadt Baldurs Tor an der Schwertküste.
+
+Tag der Hyphenerweiterung
+Die Kultivierung schreitet voran. Meine Kinder, die Pilze, gedeihen in der Dunkelheit meines Heiligtums. Jede Art ist ein Schlüssel zum Lösen der Ketten, die meinen Herrn fesseln. Heute erblühte eine neue Art, deren Sporen wie Sterne in der Leere glitzern. Sie hungern nach dem geschriebenen Wort, ein Appetit, der sogar meinen eigenen Eifer übertrifft. Mit jedem Buch, das sie verschlingen, spüre ich, wie Moanders Präsenz zunimmt und seine Auferstehung unmittelbar bevorsteht.
+
+Tag der wachsenden Konvergenz
+Ein Durchbruch in meiner Arbeit. Die Sporen können nun Tinte und Pergament mit beängstigender Effizienz auflösen. Meine Träume sind jetzt lebendiger, Moanders Stimme wird deutlicher. Er zeigt mir eine Welt, die frei von der Last des vergangenen Wissens ist, eine Welt, die reif für seine Herrschaft ist. Ich soll sein Herold sein, derjenige, der den Weg für seine Rückkehr ebnet. Das Alte muss ausgerottet werden, damit das Neue erblühen kann.
+
+Tag des fruchtbaren Aufbruchs
+Heute schleichen sich Zweifel in mein Herz. Vielleicht eine momentane Schwäche. Die Zerstörung, die ich anrichte, fühlt sich überwältigend an und löscht Jahrhunderte von Weisheit und Geschichte aus. Doch dann erinnere ich mich an meine Aufgabe, an den göttlichen Befehl. Moanders Wille ist absolut; seine Vision für die Zukunft ist unfehlbar. Ich bin nur ein Diener, auserwählt, seinen großen Plan auszuführen. Der Verlust von Wissen ist ein notwendiges Opfer für die Wiedergeburt.
+
+Tag der Sporenausbreitung
+Heute Nacht waren meine Träume anders. Es war keine Vision, sondern eine Heimsuchung. Die Nichtigsprecher, Geschöpfe von großer Intelligenz und Macht, streckten ihre Hand nach mir aus. Sie sprachen von einer Partnerschaft, von gemeinsamen Zielen und gegenseitigem Nutzen. Moanders Stimme war heute Abend leise, aber die Botschaft war klar. Diese Wesen mit ihrem unergründlichen Verstand sind der Schlüssel zur Wiederauferstehung meines Herrn. Sie leiten mich, nicht als falsche Propheten, sondern als Verbündete im großen Erwachen. Sie erlaubten mir, in das Becken zu blicken und einen Blick auf das zu werfen, was Moander verwandeln will.
+
+Tag der Schimmelpilzbesiedlung
+Ich habe es geschafft, den rostigen Kessel im alten Tempel wieder zum Laufen zu bringen. Es ist ein ‚Kessel des Verderbens‘, ein sagenumwobener Gegenstand, mit dem ich Zombies erschaffen kann, wenn ich eine Leiche in den Kessel werfe! Meinen Verbündeten, den Nichtigsprechern, scheint es nicht zu gefallen, dass ich Untote beschwöre … Aber warum?
+
+Tag der abnehmenden Verwesung
+Ich sehe jetzt den großen Wandteppich von Moanders Plan, der mit Fäden der Täuschung und der Wahrheit gleichermaßen gewebt ist. Die Nichtigsprecher sind nur Instrumente seiner Wiederauferstehung, ihre Ziele stimmen mit seinem göttlichen Willen überein. Ich soll meine Arbeit fortsetzen und den Verfall verbreiten, bis der Tag kommt, an dem Moander wieder in diesem Reich wandelt. Mein Glaube ist unerschüttert, mein Ziel klar. Das Ende des Wissens ist der Anfang der Erleuchtung.“~
+@1049 = ~Codex Sporogenese~
+@1050 = ~Codex Sporogenese: Entschlüsselung der Geheimnisse des Verfalls
+
+Die folgenden seltenen Sporen und Schimmelpilze sind ideal für die Ausrottung von Wissen:
+
+Leerhaube
+Die Leerhaube, die in den tiefsten Schatten gedeiht, ähnelt einer Leere im Gewebe der Realität. Ihr Hut absorbiert das Licht, sodass sie wie eine dunkle, bodenlose Grube erscheint. Wenn die Sporen aufgenommen werden, rufen sie Visionen des endlosen Nichts hervor, einen Blick in den Abgrund, der darauf wartet, das Wissen der Welt zu verschlingen. Leerhaubenpilze sind Boten der Stille und verschlingen die Worte und Erinnerungen, die es wagen, sich dem kommenden Vergessen zu widersetzen.
+
+Schattensporenschimmel
+Dieser schleichende Schimmelpilz wächst wie ein unheimlicher Schatten über allem, was das Zeichen des Stolzes der Zivilisation trägt – Bücher, Schriftrollen und Wälzer. Der Schattensporenschimmel ernährt sich von Tinte und hinterlässt nichts als leere Seiten, so als hätte das Wissen nie existiert. In seiner Gegenwart kann man ein leises Flüstern hören, den sterbenden Atem des verlorenen Wissens, ein Zeugnis für Moanders Willen, die Strukturen des Bekannten zurückzuerobern und auszulöschen.
+
+Verstandfäule
+Die Verstandfäule ist eine seltene und gefährliche Art, die sich von den psychischen Energien fühlender Wesen ernährt. Ihre Sporen vernebeln den Geist, lösen langsam Erinnerungen und Wissen auf und lassen nur eine hohle Schale zurück. Sie ist nicht nur die physische Manifestation des Verfalls, sondern die Essenz des Vergessens, ein Vertreter von Moanders Wunsch, die Sünden der Vergangenheit auszulöschen und die Welt neu zu gestalten.
+
+Flüstermyzel
+Das Flüstermyzel ist ein Netz aus feinen, fast unsichtbaren Fäden, das sich unter der Erde alter Bibliotheken und heiliger Stätten des Lernens ausbreitet. Es kommuniziert in gedämpften Tönen und verbreitet Geheimnisse und Lügen, die Zweifel und Zwietracht säen. Wer zu genau hinhört, stellt fest, dass seine Gedanken nicht die eigenen sind, denn das Myzel webt neue Wahrheiten aus dem Gewebe der vergessenen Lügen. Es ist die Stimme von Moander, der sein Evangelium des Verfalls bis zu den Wurzeln der Zivilisation verbreitet.~
+@1051 = ~Offener Schädel~
+@1052 = ~Aus einem unbekannten Grund wurde die Schädeldecke geöffnet – vielleicht um das Gehirn zu entfernen.~
+@1053 = ~Metalltafel~
+@1054 = ~Qualith-Runentafel~
+@1055 = ~Diese Metalltafel ist mit seltsamen Linien durchzogen.~
+@1056 = ~Diese Runentafel ist in der Schrift der Gedankenschinder geschrieben, die „Qualith“ genannt wird. Darauf steht geschrieben:
+
+Missionsrichtlinie: Operation Gedankenschleier
+
+An die geschätzten Agenten des Wissenshüter-Glaubens,
+im Auftrag der Enzephalithiden sind wir mit der heiligen Aufgabe betraut, die Reste des Wissens, die sich an den schwachen Geist der Oberflächenbewohner klammern, zu vernichten. Unser Ziel: die angesehenen Bibliotheken von Baldurs Tor und die heilige Lagerstätte von Kerzenburg.
+
+Unsere Mission besteht aus zwei Teilen:
+– Infiltration und Infestation: Wir setzen unsere Agenten getarnt unter den humanoiden Massen ein, um die Bibliotheken von Baldurs Tor zu infiltrieren. Im Schutze der Dunkelheit setzen wir Lakaien ein, um Wälzer, Schriftrollen und Manuskripte mit dem Schattensporenpilz zu infizieren und sicherzustellen, dass jedes Wort, jedes Symbol von der schleichenden Dunkelheit des Vergessens verschlungen wird. Lasst keinen Band in unserem Bestreben, die Welt von den Fesseln des Wissens zu befreien, verschont.
+– Ausbreitung des Verfalls: Sobald die Infektion im Herzen von Baldurs Tor Wurzeln geschlagen hat, transportieren wir die verdorbenen Texte in die heiligen Hallen von Kerzenburg. Unter dem Deckmantel des Handels oder des diplomatischen Austauschs bringst du die verdorbenen Bände in die Sammlung der heiligen Bibliothek ein. Lasst die Sporen des Verfalls sich unkontrolliert ausbreiten und die Fäden der Geschichte und Weisheit entwirren, die den Geist der Oberflächenbewohner verbinden.
+
+Haltet Kontakt zu den anderen unserer Art, besonders zu den Verborgenen weiter südlich.
+
+Erinnert Euch an das Glaubensbekenntnis unserer Sippe: „In Abwesenheit von Wissen gibt es nur Erleuchtung.“ In der Auslöschung der Vergangenheit liegt die Verheißung einer neuen Morgenröte, in der die Vorherrschaft der Illithiden unangefochten herrschen wird.
+
+Installiert den Übermittler des Ältestenhirns an einem abgelegenen Ort, um mit den Enzephalithiden in Kontakt zu bleiben. Aktiviert den Übermittler mit Eurem Hirngetreuen.
+Mögen die Enzephalithiden Eure Gedanken leiten, und möge das Geflüster der Nichtigsprecher Euren Sieg ankündigen.
+
+Gezeichnet,
+Das Wissenshüter-Glaubensbekenntnis~
+@1057 = ~Rashemisches Muttis Kochbuch~
+@1058 = ~Das Buch ist aus Leder gefertigt und mit verrosteten Löffel und Gabel auf dem Einband verziert. Leider ist es über und über mit grünem Schimmel bedeckt, der den Einband zerfrisst und die Seiten zersetzt. Ihr schlagt willkürlich eine Seite auf, könnt aber nur einzelne Fragmente entziffern:
+
+„… Z tat n für d n rashe i chen  in opf: Flei  h, Zwi be n, Kno l uch, v  sc ied ne Gewü ze.
+Die Mi ch ng aus Fle  ch,  wieb ln, Kn blau h un  ei er G würzmis hu g ne men und auf  lein r Flam e köch ln la sen, bi  die H tze na h ässt. In dün e S heiben gesc ni tene To at n hin uf gen u d vors c tig umrühr n. D s Geh im  s li gt in de  e nfa hen Ha dhabun  der Gewürze und  räu er. Das Geri ht sol te l ngsam ge ocht w  den,  amit sic  die Arom n v r inden.  ie Ess nz die  s her haf en un  reich al igen Eintopfs ser  eren. Mi  fr sc en Krä tern g rnie en und he ß servi  en.
+
+Für das  r ditionel e rashemische Borzh beginnen  it:
+3 Ta sen Me l
+1/2 Te  öff l  alz
+4 Ei r
+1  eelö fel Th m an  us Ti verton
+So viel Zw ebel a ser, dass  in kleb iger  eig en t ht.
+Anwe  unge :  unä hst Meh , Salz, Ei r, Tilverton-Thymi n und Zwie el asser  u e nem kl  rigen T ig misc en. E ne gu seis rne P an e über  it lerer Glut  rhit en und g t ei ölen. We n  ie  eiß ist, di  Mi chun  hi eingi ßen  nd gleichmä  g ve te len. B ate , bi  die Ränder  nusp ig und gol g lb sind, dan  v r ic tig um rehen. M t f ischer  lfenmin e und ein elegte  H ppche  serv  ren.“~
+@1059 = ~Statuette~
+@1060 = ~Miniatur-Tongolem~
+@1061 = ~Eine kleine Figur, die wahrscheinlich aus Ton besteht.~
+@1062 = ~Dies ist eine kleine geschnitzte Figur eines Lehmgolems. Sie kann sich in einen Niederen Lehmgolem verwandeln, wenn der Gegenstand auf den Boden gelegt und das Befehlswort gesprochen wird. Wenn die Dauer des Zaubers abläuft, zerbröckelt der erschaffene Lehmgolem und kann nicht mehr verwendet werden.
+
+EIGENSCHAFTEN:
+
+Lehmgolem erschaffen (1 Ladung)
+  Reichweite: 12 m
+  Dauer: 1 Runde
+
+Gewicht: 6~
+@1063 = ~Gehirn verschlingen~
+@1064 = ~Seltsame Sphäre~
+@1065 = ~Kryptosphäre~
+@1066 = ~Diese Sphäre besteht aus drei Segmenten, von denen jedes kunstvoll mit alten Runen und geheimnisvollen Mechanismen verziert ist.~
+@1067 = ~Die Kryptosphäre ist ein rätselhaftes Objekt, das aus drei verschiedenen, drehbaren Segmenten besteht. Jedes Segment ist mit einem eigenen Satz altertümlicher Runen und taktiler Ziffernblätter verziert, die als Schlüsselmechanismen für den Betrieb des Geräts dienen. Um das Objekt zu entsperren, muss jedes Segment in einer bestimmten Konfiguration ausgerichtet werden, die durch die logische Abfolge der Runen vorgegeben ist. Sobald diese Konfiguration erreicht ist, wird eine Reihe von internen Zahnrädern und Hebeln aktiviert, die die verborgene Kammer der Sphäre sorgfältig entriegeln.
+
+Im Inneren der Kammer finden die Benutzer in der Regel Gegenstände von großer arkaner Macht oder uralte Schriftrollen, die durch den komplizierten Aufbau der Sphäre in einem nahezu perfekten Zustand erhalten sind. Die Kryptosphäre fordert nicht nur den Intellekt ihres Benutzers heraus, sondern dient auch als Wächter für Wissen und Macht, die für Uneingeweihte als zu tiefgründig oder gefährlich gelten.
+
+Gewicht: 8~
+@1068 = ~Betätigen~
+@1069 = ~Bleibendes Omen +2~
+@1070 = ~Dieser magische Flegel wurde durch einige interessante göttliche Energien verzaubert. Wenn man den Gerüchten Glauben schenken darf, kann er einer gläubigen Person dabei helfen, ihre Zaubersprüche zu verstärken und länger aufrechtzuerhalten, und das ist manchmal genau das, was man zum Überleben und Gewinnen von Schlachten braucht.
+
+EIGENSCHAFTEN:
+
+Die Dauer von Priesterzaubern erhöht sich um 10 %.
+
+ETW0-Bonus: –2
+Schaden: 1W6 +3 (Wucht)
+Initiativefaktor: 5
+Fertigkeit: Flegel/Morgenstern
+Typ: 1-händig
+Mindeststärke: 13
+
+Gewicht: 12~
+@1071 = ~Schmutziger Ragbarth +2~
+@1072 = ~Dieser Stab ist als „Schmutziger Ragbarth“ bekannt, und viele glauben, dass das ein passender Name ist. Es ist ein einfacher Stab, aber er sondert einen grünen Schleim ab. Seine Magie ist mit seiner schmutzigen und ruhigen Natur verwoben … was für die meisten Menschen ziemlich abstoßend sein mag.
+
+EIGENSCHAFTEN:
+
+Bei 75 % der Treffer erleidet das Ziel 1W2 Schadenspunkte durch Säure.
+
+ETW0-Bonus: –2
+Schaden: 1W6 +2 (Wucht)
+Schadensbonus: +10 % (Säure)
+Initiativefaktor: 2
+Fertigkeit: Kampfstab
+Typ: 2-händig
+Mindeststärke: 5
+
+Gewicht: 3~
+@1073 = ~Vlanakka +2~
+@1074 = ~Dieser Bogen ist als Vlanakka bekannt. Er wurde von einer Gruppe von Elfenpriestern geschaffen, die den Auftrag hatten, eine wunderbare Waffe für einen elfischen Bogenschützen zu schaffen – einen Helden, der die Familie eines örtlichen Schmieds gerettet hatte. Der Bogen wurde gesegnet, was ihn zu einer perfekten Waffe im Kampf gegen die Untoten macht.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: –2 gg. Untote
+RW-Bonus: –2 gg. Untote
+
+ETW0-Bonus: –3
+Schadensbonus: +2
+Initiativefaktor: 5
+Fertigkeit: Langbogen
+Typ: 2-händig
+Mindeststärke: 6
+
+Gewicht: 2~
+@1075 = ~Dreifachgedanke +3~
+@1076 = ~Dieser ungewöhnliche Kristall kann als Waffe verwendet werden: sowohl als dolchartige Waffe als auch als magisches Gerät, das magische Geschosse erzeugen kann. Im Gegensatz dem Zauberspruch „Magisches Geschoss“ können diese Geschosse jedoch fehlschlagen, wenn sich der Anwender nicht richtig konzentriert.
+
+EIGENSCHAFTEN:
+
+Als Fernkampfwaffe benutzt, kann man 3 Geschosse erstellen. Jedes Geschoss fügt dem Ziel 1 Schadenspunkt durch Magie zu. Die Geschosse gelten als Angriff und können das Ziel verfehlen.
+
+Intelligenz: +1
+Magiewiderstand: +10 %
+
+ETW0-Bonus: –3
+Schaden: 1W4 +3 (Stich)
+Initiativefaktor: 1
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindestintelligenz: 13
+
+Gewicht: 1~
+@1077 = ~Äon der Weisheit~
+@1078 = ~Dieser exquisite Ring, der als „Äon der Weisheit“ bekannt ist, wurde von der Geehrten Wissenshüterin Halantra, einer beeindruckenden Priesterin von Oghma, geschmiedet. Er ist mit komplizierten Gravuren verziert, die das Streben nach Weisheit symbolisieren. Es heißt, dass diejenigen, die diesen Ring tragen, den göttlichen Schutz von Oghma selbst genießen. Darüber hinaus sind seine Träger mit tiefem Wissen durchdrungen und ihr Geist ist erleuchtet von einem nicht enden wollenden Strom von Einsicht und Verständnis.
+
+EIGENSCHAFTEN:
+
+Magierzauber: +1 (Grad 1)
+Priesterzauber: +1 (Grad 1)
+Sagenkunde: x2
+
+Gewicht: 0~
+@1079 = ~Ionenstein~
+@1080 = ~Himmelblauer Schutz~
+@1081 = ~Dies ist ein kleiner blauer Stein, der in einer Umlaufbahn um den Kopf des Besitzers schwebt. Rüstet den Stein einfach aus, um ihn in seine Umlaufbahn zu bringen. Diese offensichtlich magischen Steine haben je nach Farbe unterschiedliche Eigenschaften.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@1082 = ~In der Dämmerung von Nesseril, als die Magie so frei floss wie das Wasser der Engen See, schufen die Erzmagier Wunder, die die Welt noch nie gesehen hatte. Eine dieser Kreationen war ein einzigartiger Saphir-Ionenstein, der als „Himmelblauer Schutz“ bekannt ist.
+
+Der „Himmelblaue Schutz“ wurde von Arthindol dem Terraseer erschaffen, einem Magier, dessen Fähigkeiten in Bezug auf Verzauberungen und Schutzzauber unvergleichlich waren. Seine Absicht war es, einen Schutzschild gegen die zunehmende Bedrohung durch psychische Angriffe und Manipulationen zu entwickeln, die das Imperium plagten. Arthindol benutzte einen seltenen Saphir, der in den Tiefen der Wüste von Anauroch abgebaut wurde – einer Region, die einst üppig und grün war, bevor die Wüste sie einnahm –, und versah den Edelstein mit starken Schutzzaubern. Es hieß, er stärke die Entschlossenheit des Trägers und schütze ihn vor weltlichen und magischen Ängsten. Darüber hinaus bot er eine undurchdringliche Verteidigung gegen alle Formen von Bezauberung und Zwang und machte den Träger immun gegen die Machenschaften von feenhaften Verzauberern und teuflischen Manipulatoren.
+
+Nach Nesserils Fall haben viele nach dem „Himmelblauen Schutz“ gesucht, aber wie so viele Schätze der alten Welt blieb er verloren und wartete auf jemanden, der klug genug war, sein Erbe zu beanspruchen.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Bezauberung, Furcht und Panik.
+
+Gewicht: 0~
+@1083 = ~Wurzeln des Meuchlers~
+@1084 = ~Bovist~
+@1085 = ~Stiefel von Moander~
+@1086 = ~Diese mit grünem Schimmel überzogenen Stiefel wurden von Kultisten des Moander, eines alten Gottes der Fäulnis und des Verfalls, geschaffen. Die Stiefel wurden von einer Reihe von Gläubigen des Dunkelbringers verwendet, als sie gegen Moanders zahlreiche Feinde kämpften, von denen viele Naturgottheiten anbeteten.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Verstrickung.
+
+Gewicht: 4~
+@1087 = ~(hust)~
+@1088 = ~Gedankenschild~
+@1089 = ~Gedankenschild
+
+Grad: 5
+Schule: Verzauberung
+Schule: Nekromantie
+Domäne: Nekromantie
+Reichweite: Anwender
+Dauer: 2 Runden
+Zeitaufwand: 1
+Bereich: Anwender
+Rettungswurf: Nein
+
+
+Gedankenschild macht eine Kreatur immun gegen magische Befehle. Darunter fallen beispielsweise „Personen bezaubern“, „Befehl“, „Verwirrung“, „Beherrschung“, „Schlaf“, „Irrgarten“ und „Spirituelle Fessel“. Das Wesen ist außerdem gegen Psi-Schläge geschützt. Der Zauber schützt nur den Anwender und der Schutz hält an, bis die Wirkungsdauer endet oder der Zauber gebannt wird.~
+@1090 = ~Verfaulter Apfel~
+@1091 = ~Dies ist ein furchtbar fauler Apfel.~
+@1092 = ~Verwelktes Blatt~
+@1093 = ~Ein verwelktes Blatt, dessen Ränder mit blaugrauem Schimmel befleckt sind.~
+@1094 = ~Verdorbenes Herz~
+@1095 = ~Dieses Herz ist von einer seltsamen Fäulnis befallen.~
+@1096 = ~Gift des starken Willens~
+@1097 = ~Dieser Trank wird in einem seltsamen Ritual hergestellt. Abgesehen von seinen tödlichen Eigenschaften bringt es einen starken Trank hervor, der die geistige Schärfe erhöht und Immunität gegen alle Formen geistiger Beeinflussung verleiht. Sollte der Benutzer die anfängliche Giftwirkung überstehen, kommt er in den Genuss der nützlichen Eigenschaften des Gebräus.
+
+EIGENSCHAFTEN:
+
+Der Anwender erleidet innerhalb von 20 Sekunden 18 Schadenspunkte durch Gift.
+
+Schützt vor Schwachsinn, Verwirrung, Furcht und Bezauberung
+Dauer: 10 Runden
+
+Gewicht: 1~
+@1098 = ~Verfaultes Buch~
+@1099 = ~Dieser uralte Wälzer ist nur noch ein Schatten seines früheren Glanzes. Die Seiten darin sind vergilbt und brüchig. Wenn Ihr in dem Buch blättert, stellt Ihr fest, dass die meisten der einst so treffsicheren Worte verblasst und nur noch Fragmente der ursprünglichen Prophezeiungen sichtbar sind. Der Umgang mit dem Buch erfordert äußerste Vorsicht, denn jedes Umblättern könnte diesen zerbrechlichen Fundus vergessener Weisheit weiter beschädigen.
+
+Unter all dem Schimmel und Schmutz ist der Titel kaum noch zu erkennen: „Pr ph z iun en v n A  undo – W rn nge  un  We sh i en  es g sung nen Seh rs“
+
+Ihr blättert durch die Seiten und versucht, einzelne Fragmente inmitten der umfangreichen Beschädigungen zu entziffern:
+
+„…  nd d nn, am  ag der Sc a ten, wer en si  aufste  en u d den Himme  mit  ei hen des S hrec ens und der D nkelh it ma kie en. Die R tt r der Erd  werd n  ie  erborgene  Wa rh iten s ch n, ihr Weg  ird  ur du ch das sc wa he Lich  e nes Ster s e  ellt …
+
+… du ch  ie S hlei r der Verz eiflung  ande t der Fe ertr ger über das Land, d s von den  euern  es Kri ges ze  issen wurd . Die e Überl efer ng sa t das Ko men e ner n cht en en wollen en N cht v rau , in der  ie Ho  nung  ersagt un  i  den Ab r nden  er verge  ene  Übe lief run  er rinkt …
+
+… Und  enn a les ve l re  schei t, w rd  as Lic t de  N rd ns die Wahrhei  e th llen, die  ie  in den Rui en der Zeit v rborge  i t. Nur  ieje igen, d e muti  g n g si d, die D nk lheit  erausz for ern,  e de   i  S  l ssel e hal en, um  as  leic ge icht  es Wi  en  w e e he zustel en un  e ne  eue Ä a der Erleuchtun  und Wi dere  deckung einz leit  . D ese  enige  Au erwä lten  erd n die Gef hre  v rlor ner S äd e und  ralter  eheimn  se m ister , um  ie D nkelhe   zu b s egen, die  as Li ht de  W lt zu  rsticke  ve su ht.
+
+… D r He r de  T  es wir  s er en, ab r  n se nem U ter ang w  d  e  e t d iche  ach om e scha t  ezüc te , d e au  i re  R  sen ei e Spu   es U hei s hint  lä st. So s r cht d r  eise Alaun o.“~
+@1100 = ~Bei diesem Buch scheint es sich um eine uralte Chronik zu handeln, in der die weitreichende Geschichte Faerûns beschrieben wird. Sein einstmals reicher Ledereinband ist nun rissig und abgeblättert, der Titel ist kaum noch zu erkennen. Im Inneren sind die Seiten fleckig und stockfleckig, einige sind durch Schimmelpilzbefall zusammengewachsen. Trotz seines baufälligen Zustands scheint dieser Band einen umfassenden Bericht über die Reiche und Königreiche zu enthalten, die einst über das Land herrschten.
+
+Unter all dem Schimmel und Schmutz ist der Titel kaum noch zu erkennen: „D e Ge chi hte  on F  rûn – Ei   eital er  er I peri n u d Kö ig ei he“
+
+Ihr blättert durch die Seiten und versucht, einzelne Fragmente inmitten der großen Schäden zu entziffern:
+
+„… I  d r Är   es S lb rmo des e h ben  ic  di  g oße   tad st at n de  No den   us d r As he des Kri ge . Küh e un  r ck ichts ose An ü r r sch iede en A  ia zen, di   ie p lit sc e La dscha t prä t n. D s I pe ium  on Ne her l  ac te s ch in  ein r Bl te ei  Mag e z nut e,  ie  eut  in Ve ge senh it g ra en  st,  nd se ne  acht wur e nu  d  ch seinen E rg iz ü ert o fn …
+
+… De  Ni d rg ng di ser  lte  Re i e vol  og sic  unt r myste iöse  Umst nd n, wobe   ufze c nun en au  e ne Rei e v n Ka ast o hen hin eise , d e  owoh  na ü liche  ls au h üb rnatü l che Kräf e  a st ll en.  er Fa l der Mit ra - a le w r ei  abs  reck ndes Z  g is fü  die  er ängl ch eit s l st de  größ en Zi il  at one  …"~
+@1101 = ~Auge des Beobachters~
+@1102 = ~Im Gegensatz zu ihren bösartigen Verwandten, den Betrachtern, sind die Beobachter eine Unterart dieser Anomalien, die von der Ebene von Mechanus stammen und oft unter dem wachsamen Blick von Helm dienen. Sie sind für ihre relative Neutralität und ihre pflichtbewusste Natur bekannt, und haben die Aufgabe, heilige Stätten und mächtige Artefakte zu bewachen, was sie zu einem idealen Symbol für Schutz und Wachsamkeit macht.
+
+Dieses besondere Amulett, bekannt als „Auge des Beobachters“, enthält das konservierte Auge eines Beobachters, der einst einem Tempel von Helm diente.
+
+Wenn das Amulett getragen wird, stärkt es die Widerstandskraft des Trägers gegen finstere Anomalien wie Betrachter und bietet Schutz vor Angriffen und korrumpierenden Einflüssen, für die alle Anomalien bekannt sind.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: –1 gg. Betrachter, Aaskriecher, Drinnen, Waldschrate, Illithiden und Otyughs
+RW-Bonus: –1 gg. Betrachter, Aaskriecher, Drinnen, Waldschrate, Illithiden und Otyughs
+
+Gewicht: 1~
+@1103 = ~Wahnhafte Notiz~
+@1104 = ~Muss mich erinnern, muss mich konzentrieren … Flüsterstimmen werden zu laut! Moanders Altar, er birgt das Geheimnis, flüstert ihnen zu! Muss den Trank brauen, ihren Griff brechen …
+
+Menschlicher Schädel, Heiltrank, Perle.
+
+An Moanders Altar kombinieren, giftigen Trank erschaffen, Erlösung oder Verdammnis.
+
+Den Meistern widerstehen, mich zurückgewinnen. Der Trank, er ist der Schlüssel … Muss mich erinnern!~
+@1105 = ~Zahnarmee der Ratte +1~
+@1106 = ~Was einst eine zerbrochene Nachbildung der Armeesense war, wurde von den Händen eines Werratten-Tüftlers repariert. Auch wenn sie nicht an die Geschwindigkeit des Originals heranreicht, ist diese Armbrust immer noch tödlich effektiv, besonders gegen geschwächte Gegner.
+
+EIGENSCHAFTEN:
+
+Bei 25 % der Treffer erkrankt das Ziel und erleidet einen Malus von –1 auf Konstitution und Charisma für 8 Stunden oder die Krankheit geheilt wird (Rettungswurf –2 gegen Tod).
+
+Angriffe pro Runde: +1/2
+
+ETW0-Bonus: –1
+Schadensbonus: +1 (Geschoss)
+Initiativefaktor: 4
+Fertigkeit: Armbrust
+Typ: 2-händig
+Mindeststärke: 8
+
+Gewicht: 5~
+@1269 = ~Dieses Wasserbecken sieht tiefer aus, als es sein kann. Auf seinem Grund liegt ein alter, verrosteter Schlüssel. Wenn Ihr wollt, könnt Ihr einen Blick in das Becken werfen und versuchen, den Schlüssel zu greifen.~
+@1270 = ~Ihr bückt Euch, um tiefer ins Wasser zu schauen, und schnappt Euch den Schlüssel.~
+@1271 = ~Das Wasser ist wieder ruhig. In diesem Becken gibt es nichts mehr zu sehen.~
+@1272 = ~Ihr taucht den Kopf unter Wasser.~
+@1273 = ~Mit einer Handbewegung versucht Ihr, den Schlüssel zu ergreifen. Gerade als Ihr ihn nehmen wollen, wird Euer Gesicht unter Wasser gezogen.~
+@1274 = ~Wie im Becken zuvor liegt auch hier ein Schlüssel im Wasser. Ihr könntet wieder nach unten greifen, um ihn zu holen.~
+@1275 = ~In diesem Becken gibt es keinen Schlüssel, aber Ihr könntet trotzdem unter das Wasser tauchen und sehen, was Euch dort erwartet.~
+@1276 = ~Ihr könnt aus dieser Entfernung nicht ins Becken blicken.~
+@1277 = ~Es kann immer nur eine Person gleichzeitig ins Wasser eintauchen.~
+@1278 = ~Dies scheint der Kern des seltsamen Geräts zu sein, das die Illithiden hier installiert haben. Ihr wisst nicht, wozu es dient, aber Ihr bemerkt eine kleine Öffnung, durch die man in die organische Maschine gelangen kann. Ihr erkennt einen kleinen Sitz, auf dem ihr es Euch bequem machen könnt.~
+@1279 = ~Ohne einen bestimmten anderen Gegenstand kann die Maschine für nichts anderes verwendet werden.~
+@1280 = ~Das Illithiden-Halsband gibt Euch eine Art Kontrolle über das Gerät. Euer Verstand dringt in den Gegenstand ein und Ihr schließt die Augen.~
+@1281 = ~Ihr spürt eine Anziehungskraft auf Euren Verstand. Obwohl Euer Körper immer noch am selben Ort ist, bewegt sich Euer Geist meilenweit weg, getragen von der psychischen Energie der Illithidenmaschine …~
+@1282 = ~Das Illithiden-Übertragungsgerät ist nicht mehr funktionsfähig …~
+@1283 = ~Das Illithiden-Halsband scheint psionische Kräfte zu kanalisieren. Eine große Menge an telepathischer Energie beginnt sich im Raum zu sammeln …~
+@1284 = ~Helles Licht strömt von weit oben in den Schacht hinunter. Ihr müsst einen geheimen Zugang zur Oberfläche geöffnet haben.~
+@1285 = ~Diese Statue stellt einen monströsen Baum dar, der hilflose Menschen verschlingt. Als Elf habt Ihr in Eurer Kindheit Geschichten über eine uralte Gottheit namens „Alter Schimmliger“, auch bekannt als Moander, gehört. Die Kreatur hatte die Elfen des alten Myth Drannor lange Zeit tyrannisiert, bevor es ihnen gelang, den Gott zu vernichten.~ ~Diese Statue stellt einen monströsen Baum dar, der hilflose Menschen verschlingt. Als Elfe habt Ihr in Eurer Kindheit Geschichten über eine uralte Gottheit namens „Alter Schimmliger“, auch bekannt als Moander, gehört. Die Kreatur hatte die Elfen des alten Myth Drannor lange Zeit tyrannisiert, bevor es ihnen gelang, den Gott zu vernichten.~
+@1286 = ~Diese Statue stellt einen monströsen Baum dar, der die Wehrlosen verschlingt. Als Druide habt Ihr Geschichten über eine alte Gottheit namens Moander gehört. Die Kreatur hatte den Wald von Cormanthor lange Zeit tyrannisiert, bevor der Gott vernichtet werden konnte.~ ~Diese Statue stellt einen monströsen Baum dar, der die Wehrlosen verschlingt. Als Druidin habt Ihr Geschichten über eine alte Gottheit namens Moander gehört. Die Kreatur hatte den Wald von Cormanthor lange Zeit tyrannisiert, bevor der Gott vernichtet werden konnte.~
+@1287 = ~Diese Statue stellt einen monströsen Baum dar, der die Wehrlosen verschlingt. Es scheint sich um eine verstorbene Gottheit zu handeln, die als Moander bekannt war. Das Wesen hatte lange Zeit viele Gebiete Faerûns tyrannisiert, bevor die Gottheit vernichtet wurde.~
+@1288 = ~Eine abscheuliche Statue eines monströsen Baumes, der hilflose Menschen verschlingt.~
+@1400 = ~„Auf Geheiß der Großherzöge ist dieser Bereich der Abwasserkanäle gesperrt, da in der Vergangenheit großes Übel aus ihm hervorgegangen ist.“~
+@1401 = ~Diese Leiter scheint nach oben zu führen, da das Licht von der Oberfläche durch einige Risse in einer geschlossenen Luke nach unten scheint. Die Luke ist jedoch verschlossen und der obere Teil der Leiter ist eingezogen. Es muss einen Mechanismus geben, um die Leiter auszufahren.~
+@1402 = ~Diese Tür kann nur von der gegenüberliegenden Seite geöffnet werden.~
+@1403 = ~Eine imposante Statue erhebt sich bedrohlich über einem Altar, auf dem in der Vergangenheit zahlreiche Rituale durchgeführt worden sein müssen.~
+@1404 = ~Ihr seid zu weit weg, um das zu benutzen.~
+@1500 = ~Eine tote Gestalt treibt in diesem seltsamen Behälter.~
+@1501 = ~Auf dem Boden ist ein seltsames Zeichen gekritzelt: eine Hand mit einem offenen Maul voller Reißzähne. ~
+@1502 = ~Auf dem Boden ist ein Zeichen gekritzelt: eine Hand mit einem offenen Maul voller Reißzähne. Ihr erkennt dies als Zeichen der alten Gottheit Moander, einem Wesen der Fäulnis und des Verfalls.~
+@1503 = ~„Um die Gunst des Kiefergottes zu gewinnen, musst man seine vier Wünsche stillen: Verfall, Korruption, Verwelken und Sterblichkeit.“~
+@2225 = ~Zu den Versiegelten Kanälen~
+@4000 = ~Der geistige Nebel löst sich auf und Ihr steht wieder vor dem Becken. Ihr haltet nun den Schlüssel in der Hand, der vorher im Becken lag.~
+@4001 = ~Ihr müsst näher kommen, um mit den Statuen zu sprechen.~

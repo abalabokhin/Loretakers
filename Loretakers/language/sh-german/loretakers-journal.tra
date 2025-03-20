@@ -1,0 +1,62 @@
+// creator: Shai Hulud
+// game: Loretakers
+// date: 2024-07-14, 19:47
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@100000 = ~Verfallende Überlieferungen
+
+Im zentralen Bezirk von Baldurs Tor, am Schrein von Oghma, bin ich auf zwei verzweifelte Oghma-Priester getroffen. Sie erzählten mir von einer mysteriösen Seuche, die ihre Bücher verfaulen ließ. Ich habe mich bereiterklärt, ihnen dabei zu helfen, herauszufinden, was die Ursache für die Zerstörung ihrer Bücher ist. Ich soll mit dem Suchenden Tuck sprechen, um mehr Informationen darüber zu erhalten, was vor sich geht.~
+@100001 = ~Verfallende Überlieferungen
+
+Einer der Priester von Oghma, Suchender Tuck, erzählte mir von einer seltsamen Frau, die in der Nähe stand und mit dem Anführer ihres Tempels sprach, bevor er verschwand. Ich sollte den Eingang zu den Abwasserkanälen neben dem Schrein von Oghma nehmen und nachsehen, ob jemand dort unten den Aufenthaltsort des Hohen Wissenshüters oder etwas über die Frau weiß.~
+@100002 = ~Verfallende Überlieferungen
+
+Der Kanalarbeiter war keine Hilfe. Er kennt weder die Frau, nach der ich suche, noch hat er den Wissenshüter gesehen. Ich sollte zum Suchenden Tuck zurückkehren und ihn fragen, was ich als Nächstes tun soll.~
+@100003 = ~Verfallende Überlieferungen
+
+Mein nächster Schritt auf der Suche nach der Kirche von Oghma wird das Hohe Haus der Wunder sein, Baldurs Tors Tempel von Gond. Ich sollte mir einen Priester von Gond suchen, der mich bei meinen Nachforschungen unterstützt. Vielleicht hat der verschwundene Wissenshüter die Kirche von Gond um Hilfe gebeten.~
+@100004 = ~Verfallende Überlieferungen
+
+Auch in der Kirche von Gond gibt es Probleme mit den betroffenen Büchern. Der Priester konnte den Aufenthaltsort des vermissten Wissenshüters zwar nicht genau bestimmen, aber er erwähnte, dass er dieselbe seltsame Frau gesehen hat. Sie soll sich in der Nähe des Brunnens vor dem Hohen Haus der Wunder aufhalten. Ich muss sie finden und sehen, ob sie Licht in die Sache bringen kann.~
+@100005 = ~Verfallende Überlieferungen
+
+Ich habe die seltsame Frau getroffen. Ihr Name ist Etate. Auch sie erforscht die Ursache für die verrottenden Bücher. Sie vermutet, dass die Quelle des Schimmels in einem bestimmten Bereich der Kanalisation liegt, den sie als „Versiegelte Kanäle“ bezeichnet. Ich sollte zum Tempel von Oghma zurückkehren und durch den Eingang direkt neben dem Tempel in die Kanalisation hinuntergehen. In den Abwasserkanälen muss ich nach Süden gehen und dann den westlichen Tunnel nehmen. An einer Stelle, an der die Tunnel zusammenlaufen, muss ich dann nach Nordwesten gehen. Der richtige Tunnel ist kleiner als die anderen und führt zum versiegelten Eingang.~
+@100006 = ~Verfallende Überlieferungen
+
+Meine Begegnung mit der Frau in den „Versiegelten Kanälen“ verlief düster. Tragischerweise war es eine Falle; ich bin direkt in einen Werrattenhinterhalt gelaufen. Obwohl sie sich offensichtlich gegen eine unsichtbare Macht wehrte, die ihre Handlungen kontrollierte, konnte sie sich nicht befreien. Am Ende hatte ich keine andere Wahl, als sie zu töten, um mich zu verteidigen.~
+@100007 = ~Verfallende Überlieferungen
+
+Ich habe bei der Leiche der Frau, die von einer geheimnisvollen Macht manipuliert wurde, einen Schlüssel entdeckt. Dieser Schlüssel öffnet die versiegelte Tür, die zu den tieferen Teilen der „Versiegelten Kanäle“ führt. Ich vermute, dass hinter dieser Barriere die Quelle des Bösen liegt, das sowohl die heiligen Bücher von Oghma als auch die arme Frau selbst heimgesucht hat.~
+@100010 = ~Verfallende Überlieferungen
+
+Ich habe die Quelle der verdorbenen Bücher ausfindig gemacht – ein Priester der alten Gottheit Moander, der tief unter Baldurs Tor lauert und von einer Vision getrieben wird, alle Bücher im Namen seines Gottes zu vernichten. Seine Beseitigung sollte die Zerstörung weiterer Bände aufhalten. Der wahre Drahtzieher hinter diesem Plan bleibt jedoch ein Geheimnis. Ich muss tiefer in die alten Katakomben vordringen, um die verbleibenden Geheimnisse zu lüften und herauszufinden, wer dieses Komplott wirklich inszeniert.~
+@100011 = ~Verfallende Überlieferungen
+
+Der wahre Schuldige ist nun offensichtlich: Illithiden haben sich in einer zentralen Kammer unter Baldurs Tor eingenistet und wollen das gesamte Wissen der Stadt auslöschen! Meine nächsten Schritte sind klar: Ich muss den vermissten Wissenshüter ausfindig machen und retten und das bizarre Gerät der Illithiden deaktivieren, das die Wurzel all dieses Übels zu sein scheint.~
+@100012 = ~Verfallende Überlieferungen
+
+Ich habe das seltsame Gerät der Illithiden erfolgreich ausgeschaltet. Während der Operation habe ich einen Blick auf ein riesiges älteres Gehirn erhascht, dessen finstere Pläne unheilvoll sind. Durch die Zerschlagung der Geistmörderzelle in Baldurs Tor habe ich ihre Pläne jedoch erheblich gestört. Mein nächstes Ziel ist es, den Wissenshüter ausfindig zu machen, damit ich diesen furchtbaren Ort so schnell wie möglich verlassen kann.~
+@100020 = ~Verfallende Überlieferungen
+
+Ich habe den vermissten Wissenshüter aus den Klauen der Illithiden gerettet. Er hat sich erkenntlich gezeigt und wartet am Schrein von Oghma, um mir den Lohn für all meine Mühen zu überreichen.~
+@100021 = ~Verfallende Überlieferungen
+
+Wissenshüter Eyvind hat sich herzlich dafür bedankt, dass ich ihn gerettet und seine Bücher bewahrt habe, und hat mir großzügig eine wohlverdiente Belohnung für meine Bemühungen überreicht.~
+@110001 = ~Wahre Liebe vergeht nicht
+
+In der Abwasserkanälen habe ich einen verwirrten Mann getroffen, der einen seltsamen Reim vortrug. Das Gedicht handelte von einer vergangenen Liebe, dem Tod, Mondlicht, einer Rose und einem „Brunnen der Göttin des Glücks“. Ich frage mich, was es damit auf sich hat.~
+@110002 = ~Wahre Liebe vergeht nicht
+
+Ich habe die Rose des Einsiedlers aus den „Versiegelten Kanälen“ einer geisterhaften Erscheinung am Brunnen neben dem Tempel von Tymora gegeben. Sie war glücklich und erleichtert, diese Welt verlassen zu können. Vielleicht wird der Mann seinen Verstand wiedererlangen, wenn ich ihn durch etwas an seine Liebe erinnern kann?~
+@110003 = ~Wahre Liebe vergeht nicht
+
+Der Einsiedler in der Kanalisation war froh, als ich ihm das Taschentuch seiner Geliebten brachte. Voller neuer Hoffnung hat er die Kanalisation verlassen, um anderswo ein besseres Leben zu suchen.~
+@120000 = ~Die Arbeit einer dreckigen Ratte
+
+Ich traf Scronch, den Anführer eines Werratten-Clans. Er hat mich gebeten, einen Einsiedler im Norden der alten Kanalisation zu töten, und ich habe ein eingewilligt.~
+@120001 = ~Die Arbeit einer dreckigen Ratte
+
+Ich habe den Einsiedler getötet. Ich sollte zu Scronch, dem Anführer des Werratten-Clans, zurückkehren und eine Belohnung verlangen.~
+@120002 = ~Die Arbeit einer dreckigen Ratte
+
+Scronch, der Anführer des Werratten-Clans, war froh, dass ich den Einsiedler getötet hatte, und hat mir eine Belohnung gegeben, bevor er verschwunden ist.~

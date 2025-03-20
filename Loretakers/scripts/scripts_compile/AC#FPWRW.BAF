@@ -1,0 +1,83 @@
+IF
+	Heard([ANYONE],111)
+	Global("Move","LOCALS",0)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+		SetGlobal("Move","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See([0.0.LYCANTHROPE])
+	HaveSpell(WIZARD_HASTE)  // SPWI305.SPL (Haste)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_HASTE)  // SPWI305.SPL (Haste)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See([0.0.LYCANTHROPE])
+	HaveSpell(WIZARD_RESIST_FEAR)  // SPWI210.SPL (Resist Fear)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_RESIST_FEAR)  // SPWI210.SPL (Resist Fear)
+END
+
+IF
+	See(NearestEnemyOfType([0.0.0.FIGHTER_ALL]))
+	HaveSpell(WIZARD_BLINDNESS)  // SPWI106.SPL (Blindness)
+	!StateCheck(LastSeenBy(Myself),STATE_BLIND)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_BLINDNESS)  // SPWI106.SPL (Blindness)
+END
+
+IF
+	See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+	HaveSpell(WIZARD_BLINDNESS)  // SPWI106.SPL (Blindness)
+	!StateCheck(LastSeenBy(Myself),STATE_BLIND)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_BLINDNESS)  // SPWI106.SPL (Blindness)
+END
+
+IF
+	See(StrongestOf(NearestEnemyOfType([0.0.0.FIGHTER_ALL])))
+	HaveSpell(WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI221.SPL (Ray of Enfeeblement)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI221.SPL (Ray of Enfeeblement)
+END
+
+IF
+	DifficultyGT(NORMAL)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+		See(NearestEnemyOfType([0.0.0.BARD_ALL]))
+	HaveSpell(WIZARD_DEAFNESS)  // SPWI223.SPL (Deafness)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_DEAFNESS)  // SPWI223.SPL (Deafness)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		HPPercentLT(Myself,25)
+		Range(NearestEnemyOf(Myself),6)
+	Global("shapechange","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("shapechange","LOCALS",1)
+		ChangeAnimation("AC#WERA1")  // Wererat
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+END
+

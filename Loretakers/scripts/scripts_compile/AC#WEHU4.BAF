@@ -1,0 +1,50 @@
+IF
+	Global("AC#FPKillTheHermit","GLOBAL",2)
+	Global("AC#FPIAMLEAVINGBYEBYE","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FPIAMLEAVINGBYEBYE","LOCALS",1)
+		DestroySelf()
+END
+
+IF
+	OR(2)
+		Allegiance("AC#FPWRC",ENEMY)  // Scronch
+		AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("shapechange","LOCALS",1)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),6)
+	Global("shapechange","LOCALS",0)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		HPPercentLT(Myself,25)
+		Range(NearestEnemyOf(Myself),6)
+	Global("shapechange","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("shapechange","LOCALS",1)
+		ChangeAnimation("AC#WERA1")  // Wererat
+END
+

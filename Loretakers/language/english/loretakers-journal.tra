@@ -1,0 +1,77 @@
+//Journal translation files
+// Main quest: meeting priests of Oghma
+@100000 = ~Decaying Lore
+
+In the central area of Baldur's Gate, at the shrine of Oghma, I met two desperate Oghmanyte priests. They told me about a mysterious plague that was causing their books to decay. I agreed to assist them in finding out what was behind the destruction of their books. I am supposed to talk to Seeker Tuck to gather more information about what is going on.~
+
+@100001 = ~Decaying Lore
+
+One of the Oghmanyte priests, Seeker Tuck, told me about a strange woman that was standing nearby and talking to the leader of their temple before he disappeared. I should take the entrance to the sewers next to the shrine of Oghma and see if someone down there knows the whereabouts of the High Loremaster or anything about the woman.~
+
+@100002 = ~Decaying Lore
+
+The sewer worker was no help. He doesn't know the woman I am searching for, nor has he seen the Loremaster. I should return to Seeker Tuck and ask him what to do next.~
+
+@100003 = ~Decaying Lore
+
+My next step in my search for the church of Oghma will be the High House of Wonders, Baldur's Gate's temple of Gond. I should look for a priest of Gond to assist me in my investigations. Maybe the missing Loremaster went to the church of Gond for help.~
+
+@100004 = ~Decaying Lore
+
+The Church of Gond is also experiencing issues with affected books. While the priest couldn't pinpoint the missing Loremaster's location, he did mention encountering the same strange woman. She's reportedly around the fountain outside the High House of Wonders. I need to find her and see if she can shed light on what's really happening.~
+
+@100005 = ~Decaying Lore
+
+I met the strange woman. Her name's Etate. She, too, is investigating the cause of the decaying books. She suspects that the source of the mold lies in a specific area of the sewers, which she refers to as the "Sealed Sewers". I should go back to the temple of Oghma, go down into the sewers using the entrance right next to the temple. When in the sewers, I have to head south, and then take the western tunnel. Then, in a place where the tunnels join, I'll have to go north-west. The correct tunnel is smaller than the others and leads to the sealed entrance.~
+
+@100006 = ~Decaying Lore
+
+My encounter with the woman in the Sealed Sewers turned grim. Tragically, it was a trap; I walked right into a wererat ambush. Despite her apparent struggles against an unseen force controlling her actions, she couldn't break free. In the end, I had no choice but to kill her to defend myself.~
+
+@100007 = ~Decaying Lore
+
+I discovered a key on the body of the woman, who was manipulated by a mysterious force. This key unlocks the sealed door leading to the deeper parts of the "Sealed Sewers". Beyond this barrier, I suspect lies the source of the evil that has plagued both Oghma's sacred books and the poor woman herself.~
+
+@100010 = ~Decaying Lore
+
+I've uncovered the source of the tainted books—a priest of the ancient deity Moander, lurking deep beneath Baldur’s Gate, driven by a vision to obliterate all books in his god's name. Eliminating him should halt the destruction of further tomes. However, the true mastermind behind this scheme remains shrouded in mystery. I must venture deeper into the old catacombs to unravel the remaining secrets and discover who really orchestrates this plot.~
+
+@100011 = ~Decaying Lore
+
+The true culprit is now apparent: Illithids have established themselves in a central chamber beneath Baldur's Gate, intent on erasing all of the city's knowledge! My next steps are clear: I must locate and rescue the missing Loremaster and deactivate the bizarre Illithid device that appears to be the root of all this evil.~
+
+@100012 = ~Decaying Lore
+
+I have successfully disabled the strange illithid device. During the operation, I caught a glimpse of a giant elder brain, whose sinister plans are ominous. However, by dismantling the mindflayer cell in Baldur’s Gate, I have significantly disrupted their schemes. My next objective is to locate the Loremaster, so I can exit this dreadful place as swiftly as possible.~
+
+@100020 = ~Decaying Lore
+
+I have rescued the missing Loremaster from the clutches of the illithids. He showed his gratitude and is waiting at the shrine of Oghma to give me my reward for all my efforts.~
+
+@100021 = ~Decaying Lore
+
+Loremaster Eyvind expressed his heartfelt gratitude for rescuing him and preserving his books, and he generously presented me with a well-deserved reward for my efforts.~
+
+@110001 = ~True Love does not Fade
+
+In the old sewers, I met a bewildered man who recited a strange rhyme. The poem was about a past love, death, moonlight, a rose and a "fountain of the goddess of luck". I wonder what it's all about?~
+
+@110002 = ~True Love does not Fade
+
+I have given the rose of the hermit from the "Sealed Sewers" to a ghostly apparition at the fountain next to the Temple of Tymora. She was happy and relieved to be able to leave this world. Perhaps the man will regain his sanity if I can remind him of his love through something?~
+
+@110003 = ~True Love does not Fade
+
+The hermit in the sewers was glad when I delivered his beloved's handkerchief. Filled with renewed hope, he has now left the sewers to seek a better life elsewhere.~
+
+@120000 = ~A Dirty Rat's Job
+
+I met Scronch, a wererat clan leader. He asked me to kill an hermit in the north of the old sewers, and I agreed.~
+
+@120001 = ~A Dirty Rat's Job
+
+I killed the hermit. I should head back to Scronch, the wererat clan leader, and ask for a reward.~
+
+@120002 = ~A Dirty Rat's Job
+
+Scronch, the wererat clan leader, was glad that I killed the hermit and gave me a reward before he disappeared.~

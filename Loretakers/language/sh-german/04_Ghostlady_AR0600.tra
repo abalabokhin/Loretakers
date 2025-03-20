@@ -1,0 +1,23 @@
+// creator: Shai Hulud
+// game: Loretakers
+// date: 2024-07-14, 19:47
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@0 = ~(Dies ist die geisterhafte Erscheinung einer Frau, deren Gestalt im fahlen Licht schwach schimmert. Trotz ihrer ätherischen Präsenz ist ihr Blick intensiv und prüfend.)~
+@1 = ~Mein Liebster, mein Geliebter, bist du es wirklich? Du konntest mein vorzeitiges Ableben nicht abwenden. Dennoch verweile ich hier und warte auf die versprochene Rose.~
+@2 = ~Ihr meint doch nicht etwa diese Rose hier aus der alten Awasserkanälen, oder?~
+@3 = ~Euer Geliebter ist tot, und zwar durch meine Hand. Nun teilt Ihr aufs Neue etwas Tiefgründiges.~
+@4 = ~Oh, lasst mich in Ruhe, dummer Geist!~
+@5 = ~Ihr … Ihr tragt die Rose meines Geliebten? Lebt er noch?~
+@6 = ~Mehr oder weniger, ja, er ist am Leben.~
+@7 = ~Ja, er ist noch unter den Lebenden.~
+@8 = ~Er ist am Leben. Aber Ihr wünscht Euch vielleicht, er wäre es nicht.~
+@9 = ~Lebendig ist er! Mein Herz würde vor Freude anschwellen, hätte ich noch eins! Bitte, schenkt mir die Rose, damit ich endlich Frieden mit der Welt finde.~
+@10 = ~Ja, natürlich. Hier ist sie.~
+@11 = ~Wenn Ihr Euch dadurch besser fühlt, tot zu sein, nehmt sie.~
+@12 = ~Ich schätze, ich kann es vergessen, eine Belohnung von einem Geist zu bekommen, was?~
+@13 = ~In der Tat habe ich keine Schätze anzubieten außer meiner ewigen Dankbarkeit. Möge sie Euch Frieden bringen, so wie diese Rose meinem Geist Frieden bringt.~
+@14 = ~Nein, ich werde Euch die Rose nicht geben.~
+@15 = ~Er hat mich immer noch lieb! Mit diesem Gefühl kann ich diese Welt verlassen …~
+@16 = ~Waaaaaas?~
+@17 = ~(Der Geist wendet sich enttäuscht von Euch ab.)~

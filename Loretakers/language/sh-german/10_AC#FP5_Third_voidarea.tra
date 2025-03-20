@@ -1,0 +1,77 @@
+// creator: Shai Hulud
+// game: Loretakers
+// date: 2024-07-14, 19:47
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@0 = ~Ihr habt mein Rätsel bereits gelöst. Geht weiter zu den anderen Nichtigsprechern.~
+@1 = ~Seid gegrüßt, Suchender. In dieser Leere gehen wir der Frage nach, was fühlende Wesen in ihrem Denken aufrechterhält. Seid Ihr bereit, Euch den Fragen zu stellen?~ ~Seid gegrüßt, Suchende. In dieser Leere gehen wir der Frage nach, was fühlende Wesen in ihrem Denken aufrechterhält. Seid Ihr bereit, Euch den Fragen zu stellen?~
+@2 = ~Fahrt fort. Stellt Euer Rätsel.~
+@3 = ~Wo bin ich?~
+@4 = ~Ich will hier raus.~
+@5 = ~Was muss ich hier tun?~
+@6 = ~Ich möchte jetzt keine Rätsel lösen.~
+@7 = ~Nochmals willkommen, Suchender. In dieser Leere gehen wir der Frage nach, was fühlende Wesen in ihrem Denken aufrechterhält. Seid Ihr bereit, Euch den Fragen zu stellen?~ ~Nochmals willkommen, Suchende. In dieser Leere gehen wir der Frage nach, was fühlende Wesen in ihrem Denken aufrechterhält. Seid Ihr bereit, Euch den Fragen zu stellen?~
+@8 = ~Ihr steht am Abgrund der neuronalen Leere, wo sich die Tiefen des Geistes mit den Mysterien der Existenz verflechten. Geht mit Vorsicht vor, denn die Antworten, die Ihr sucht, können zur Erleuchtung oder zur ewigen Dunkelheit führen.~
+@9 = ~Nun gut. Stellt Euer Rätsel.~
+@10 = ~Ein Entkommen von diesem Ort ist möglich, aber nur für diejenigen, die ihre Würdigkeit durch Intellekt und Einsicht beweisen. Löst die Rätsel, die vor Euch liegen, und der Weg in die Freiheit wird sich offenbaren.~
+@11 = ~Such die Antworten, lass dich von der Weisheit leiten,
+Durch das Labyrinth, wo der Verstand sich verschanzt.
+Versage beim Test und die Gefahr naht beizeiten,
+In diesem Raum von Zweifel und Angst.~
+@12 = ~Also hört gut zu und beantwortet meine Frage richtig …~
+@13 = ~„Mit mir wird jede Suche zu Ende gehen,
+Wo alles stillsteht und seine Ruhe findet.
+Keine Geschichten zu erzählen, keine Prüfungen zu bestehen,
+In meiner Umarmung die Welt sich wohlig schmieget.
+Das letzte Kapitel, ungeschrieben, weit,
+Wo Zukunft, Gegenwart und Vergangenheit sich zusammentun.
+Was bin ich, wo alles versammelt ist, bereit,
+Der stille Hüter des Letzten, nun?"~
+@14 = ~Geburt.~
+@15 = ~Trägheit.~
+@16 = ~Einfallsreichtum.~
+@17 = ~Tod.~
+@18 = ~Unwissenheit.~
+@19 = ~Ich möchte Euer Rätsel jetzt nicht lösen.~
+@20 = ~Eure Antwort ist richtig. Nur der Tod lässt Euch all die Fehler des Lebens vergessen.~
+@21 = ~Das war falsch! Euer Verstand ist es nicht wert, getestet zu werden, Ihr Narr!~ ~Das war falsch! Euer Verstand ist es nicht wert, getestet zu werden, Ihr Närrin!~
+@22 = ~Früher oder später werdet Ihr die Rätsel lösen müssen, um diesen Ort zu verlassen.~
+@23 = ~Seid gegrüßt, Suchender. In dieser Leere gehen wir der Frage nach, was fühlende Wesen in ihrem Denken aufrechterhält. Seid Ihr bereit, Euch den Fragen zu stellen?~ ~Seid gegrüßt, Suchende. In dieser Leere gehen wir der Frage nach, was fühlende Wesen in ihrem Denken aufrechterhält. Seid Ihr bereit, Euch den Fragen zu stellen?~
+@24 = ~„Ich trotze der Leere um jeden Preis,
+Wenn alles um mich herum scheint verloren zu sein.
+Ich bin der Funke, der kaum gesehen wird, glühend heiß,
+Ein Schimmer in der Dunkelheit, ein schwacher Schein.
+Was bin ich, das in extremen Zeiten,
+das Überbleibsel eines gehegten Traums hält in allen Weiten?“~
+@25 = ~Prophezeiung.~
+@26 = ~Hoffnung.~
+@27 = ~Leidenschaft.~
+@28 = ~Stärke.~
+@29 = ~Ausdauer.~
+@30 = ~Eure Antwort ist richtig. Hoffnung ist das Elixier der Schwachen. Mögt Ihr es nie benutzen müssen.~
+@31 = ~Ihr seid es nicht wert, in der Welt des Denkens weiter voranzukommen! Erfahrt die Strafe für Eure Dummheit!~
+@32 = ~In der Abwesenheit von Gefühlen, wo der Verstand zerfällt,
+und das Flackern der Hoffnung schwindet, hat der Tod die Oberhand.
+Keine Gedanken zum Nachdenken, keine Träume zum Weitergeben in dieser Welt,
+In diesem Reich der Dunkelheit werden die Farben des Geistes grau.~
+@33 = ~Ihr habt alle unsere Rätsel richtig beantwortet. Ihr verdient es, den Schlüssel zu nehmen und Euren Weg fortzusetzen.~
+@34 = ~Hör gut zu und beherzig diesen Reim,
+Löse rechtzeitig und gelange heim.
+Wähle falsch und du erfährst Leid,
+In dieser Kammer, wo Gedanken fließen in Ewigkeit.~
+@35 = ~Passt gut auf, denn Euer Schicksal hängt von Eurer Antwort ab.~
+@36 = ~„Ich bin der Funke in der Seele Glanz,
+Die Essenz des Lebens in Raum und Zeit,
+Ich grüble, ich träume, ich suche in Gedanken ganz,
+In Tiefen der Gedanken leuchtet mein Wesen weit.
+Ich lache, ich liebe und fürchte, ich weine,
+Ich nähere mich im Reich der Gefühle – der ernstlichen,
+Was bin ich, in diesem großen Plan alleine,
+Die Verkörperung des Göttlichen?“~
+@37 = ~Vergnügen.~
+@38 = ~Abwesenheit.~
+@39 = ~Empfindungsvermögen.~
+@40 = ~Verlangen.~
+@41 = ~Traurigkeit.~
+@42 = ~Eure Antwort ist richtig. Empfindungsvermögen ist das, was ein Wesen von einer Bestie unterscheidet.~
+@43 = ~Kein Rätsel, keine Antwort. Keine Antwort, kein Schlüssel.~

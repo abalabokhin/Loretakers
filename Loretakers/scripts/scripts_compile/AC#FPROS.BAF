@@ -1,0 +1,18 @@
+IF
+	Contains("AC#FPROS",Myself)  // Rose
+	Global("RoseAnimation","AC#FP1",0)
+THEN
+	RESPONSE #100
+		SetGlobal("RoseAnimation","AC#FP1",1)
+		AmbientActivate("Rose",TRUE)
+END
+
+IF
+	!Contains("AC#FPROS",Myself)  // Rose
+	Global("RoseAnimation","AC#FP1",1)
+THEN
+	RESPONSE #100
+		SetGlobal("RoseAnimation","AC#FP1",0)
+		AmbientActivate("Rose",FALSE)
+END
+

@@ -1,0 +1,51 @@
+IF
+    Global("AC#Braintransceiver","GLOBAL",2)
+THEN
+    RESPONSE #100
+        SetGlobal("AC#Braintransceiver","GLOBAL",3)
+        AmbientActivate("Tranceiver_beam",FALSE)
+        SoundActivate("Tranceiver01",FALSE)
+        SoundActivate("Tranceiver02",FALSE)
+        Wait(1)
+        ActionOverride(Player1,PlayDead(6))
+        SmallWait(15)
+        ApplySpellRES("AC#FP2B",Player1)  // Psionic Blast
+END
+
+IF
+    Contains("AC#FPOGA","Moander_mouth")  // Decomposed apple
+    Contains("AC#FPOGB","Moander_mouth")  // Withered leaf
+    Contains("AC#FPOGH","Moander_mouth")  // Rotten heart
+    Contains("MISC80","Moander_mouth")  // Male Body
+    Global("FourSacrificesMade","AC#FP2",0)
+THEN
+    RESPONSE #100
+        ScreenShake([20.20],3)
+        CreateVisualEffectObject("AC#FP2X1","Moander_mouth")
+        CreateVisualEffectObject("AC#FP2X2","Moander_mouth")
+        ActionOverride("Moander_mouth",DestroyItem("AC#FPOGA"))  // Decomposed apple
+        ActionOverride("Moander_mouth",DestroyItem("AC#FPOGB"))  // Withered leaf
+        ActionOverride("Moander_mouth",DestroyItem("AC#FPOGH"))  // Rotten heart
+        ActionOverride("Moander_mouth",DestroyItem("MISC80"))  // Male Body
+        SetGlobal("FourSacrificesMade","AC#FP2",1)
+END
+
+IF
+    Global("FourSacrificesMade","AC#FP2",1)
+    Global("CreateStatue","AC#FP2",0)
+THEN
+    RESPONSE #100
+        SetGlobal("CreateStatue","AC#FP2",1)
+        Wait(1)
+        CreateCreatureImpassableAllowOverlap("AC#FP2ST",[3116.1702],S)  // Unholy Statue
+END
+
+IF
+    Global("MoanderAmbush","AC#FP2",2)
+THEN
+    RESPONSE #100
+        Wait(1)
+        SetGlobal("MoanderAmbush","AC#FP2",3)
+        CreateCreatureEffect("AC#FPMOU","AC#FPMOU",[3258.1767],S)  // Shambling Mound
+END
+

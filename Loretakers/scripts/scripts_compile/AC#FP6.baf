@@ -1,0 +1,15 @@
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    Weather(FOG)
+    Continue()
+END
+
+IF
+  PartyRested()
+THEN
+  RESPONSE #100
+    Weather(FOG)
+    Continue()
+END

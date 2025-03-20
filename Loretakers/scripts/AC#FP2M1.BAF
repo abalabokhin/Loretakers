@@ -1,0 +1,34 @@
+IF
+	Clicked([ANYONE])
+	OR(2)
+		Race(LastTrigger,ELF)
+		Race(LastTrigger,HALF_ELF)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1285)  
+END
+
+IF
+	Clicked([ANYONE])
+	Class(LastTrigger,DRUID_ALL)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1286)  
+END		
+
+IF
+	Clicked([ANYONE])
+	CheckStatGT(LastTrigger,20,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1287) 
+END		
+
+IF
+	Clicked([ANYONE])
+	CheckStatLT(LastTrigger,21,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1288) 
+END
+

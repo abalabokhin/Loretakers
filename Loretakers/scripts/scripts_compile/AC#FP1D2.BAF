@@ -1,0 +1,10 @@
+IF
+	IsOverMe([PC])
+	OpenState("DOOR02",FALSE)
+	Global("Door02Warning","AC#FP1",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Door02Warning","AC#FP1",1)
+		DisplayStringHead(LastTrigger,@1402) 
+END
+

@@ -1,0 +1,30 @@
+// creator: Shai Hulud
+// game: Loretakers
+// date: 2024-07-14, 19:47
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@0 = ~(Ihr habt die Kryptosphäre bereits geöffnet. Es gibt nichts mehr zu tun.)~
+@1 = ~(Die Sphäre beiseitelegen.)~
+@2 = ~(Die Kryptosphäre liegt schwer in der Hand. Das Metall fühlt sich kühl an. Die Runen schimmern in einem unnatürlichen Glanz.)~
+@3 = ~(Die Sphäre untersuchen.)~
+@4 = ~(Die Sphäre ist in drei drehbare Segmente unterteilt, die jeweils mit geheimnisvollen Runen bedeckt sind. Jedes Segment erscheint frei beweglich, unabhängig von den anderen.)~
+@5 = ~(Die Runen untersuchen.)~
+@6 = ~(Die Runen auf jedem Segment der Sphäre scheinen aus einer alten Sprache zu stammen, deren Bedeutung schwer zu entziffern ist. Doch ein Gefühl sagt Euch, dass die richtige Anordnung der Runen der Schlüssel zur Entschlüsselung der Sphäre sein könnte.)~
+@7 = ~(Die Runen versuchen zu entziffern.)~
+@8 = ~(Zurück.)~
+@9 = ~(Ihr werft einen Blick auf die Runen. Drei Symbole stechen besonders hervor. Das obere Segment zeigt ein Auge. Das mittlere Segment zeigt eine Art Netz oder Spinnennetz. Das untere Segment stellt eine geschlossene Tür mit einem Buch dar.)~
+@10 = ~(Euren Verstand nutzen, um über die Bedeutungen der Symbole zu spekulieren und die richtige Ausrichtung zu finden.)~
+@11 = ~(Versuchen, Euch an die Geschichte der alten Zivilisationen zu erinnern, die diese Symbole verwendet haben könnten.)~
+@12 = ~(Ihr schafft es nicht, einen Sinn zu erkennen und müsst zähneknirschend zugeben, dass Ihr nicht schlau genug seid, um weiterzukommen.)~
+@13 = ~(Ihr wisst zu wenig über alte Kulturen, um diesen Runen irgendeine Bedeutung beizumessen.)~
+@14 = ~(Ihr untersucht die Runen genauer. Das obere Segment, das ein von Strahlen umgebenes Auge zeigt, symbolisiert Wissen. Das mittlere Segment, das ein durch Knotenpunkte verbundenes Netz zeigt, steht für den Austausch und die Verknüpfung von Gedanken. Das untere Segment stellt eine verschlossene Tür dar, hinter der ein Buch liegt, das verborgenes Wissen symbolisiert.)~
+@15 = ~(Ihr denkt über die möglichen Zusammenhänge der Symbole nach. Vielleicht steht das Auge für die Fähigkeit, über das normale Sehvermögen hinaus zu sehen, das Netzwerk symbolisiert die Verbindung zwischen allen Wesen, und das geschlossene Buch steht für Wissen, das nur den Würdigen zugänglich ist.)~
+@16 = ~(Versuchen, die Symbole auf der Grundlage dieses Verständnisses auszurichten.)~
+@17 = ~(Euer Gedanken rasen, als Ihr Euch an die legendären Geschichten von Nesseril erinnert, einem der mächtigsten magischen Reiche des alten Faerûn. Die Nesseril, die für ihre hoch aufragenden Städte und ihre profunde Beherrschung des Arkanen bekannt waren, waren Pioniere in der Verwendung magischer Symbole, um ihr Wissen und ihre Macht zu schützen. Die Runen, die Ihr seht, könnten ein Überbleibsel ihrer fortschrittlichen arkanen Technologie sein, die dazu diente, die Geheimnisse zu schützen, die sowohl den Höhepunkt ihrer Macht als auch den Vorboten ihres Untergangs darstellten. Die Sphäre in Euren Händen könnte eine der verlorenen Kreationen ihrer Arkanisten sein – ein Rätsel, das den Intellekt derer testen soll, die es wagen, die tieferen Wahrheiten des Universums zu entdecken.)~
+@18 = ~(Die gewonnenen Erkenntnisse nutzen, um die Segmente aufeinander abzustimmen.)~
+@19 = ~(Ihr versteht die komplizierte Logik hinter den Runen und richtet jedes Segment vorsichtig aus, wobei Ihr auf die subtilen Hinweise in der Rückmeldung des Mechanismus achtet, die die richtige Platzierung anzeigen.)~ [AC#FP3MS]
+@20 = ~(Während Ihr die vorletzte Rune ausrichtet, ertönt ein leises Summen in der Sphäre, das signalisiert, dass sich das arkane Schloss bald lösen wird.)~ [AC#FP3MS]
+@21 = ~(Mit einer letzten Drehung rasten die Segmente ein, und die Sphäre beginnt sich zu öffnen. In ihrem Inneren befindet sich ein schwebender Ionenstein, der leise in der Luft schwingt.)~ [AC#FP3MS]
+@22 = ~(Ihr nehmt den Ionenstein. Er vibriert leicht in deiner Hand. Obwohl er sehr leicht ist, spürt Ihr, dass er voller magischer Energie sein muss.)~
+@23 = ~(Ihr legt die Sphäre zurück in Euer Inventar.)~
+@24 = ~(Diese Sphäre besteht aus drei Segmenten, die mit alten Runen und geheimnisvollen Mechanismen verziert sind. Ihr müsst den Gegenstand identifizieren, um ihn zu bedienen.)~

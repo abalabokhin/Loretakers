@@ -1,0 +1,486 @@
+@0= ~Loretakers~
+
+@56 = ~Fomorian giant~
+
+@63 = ~Wererat~
+@64 = ~This stone looks exactly like the stone on the other side. Again, you could try to remove the lines on the surface.~
+@65 = ~The stone pulsates in a soft light. You notice fine drawings scattered across its surface. You could try to remove these.~
+@66 = ~You touch the surface and the lines disappear. Suddenly, a violent wave of utter hopelessness sweeps over your mind.~
+@67 = ~As you enter the room, a wave of vicious, hateful emotion overwhelms you. Opposite, two pulsating stones emit an ominous glow, seemingly attempting to influence your mind.~
+@68 = ~The magic of the stone has gone out. It only feels cold and powerless.~
+
+@77 = ~Wrimbog~
+@86 = ~Belster Turnstone~
+@87 = ~Cellarer~
+@88 = ~Viceak~
+@89 = ~Rickul~
+@90 = ~Feyr~
+@91 = ~Vuardsungulu~
+@92 = ~Bagut~
+@93 = ~Petian~
+@94 = ~Urthadar~ 
+@95 = ~Water weird~
+@96 = ~Otyugh~
+@97 = ~Memory Moss~
+@98 = ~White Blob~
+@99 = ~Ralx~ // Wererat Mage
+@100 = ~Slithering Tracker~
+@101 = ~Scronch~
+@102 = ~Rennack~
+@103 = ~Captured Creature~
+@104 = ~Loremaster High Eyvind~ // Cleric of Oghma 
+@105 = ~The Encephalithid~
+@106 = ~Aimil~
+@107 = ~Voidspeaker~
+@108 = ~Oblex~
+@109 = ~Mindshadow~
+@110 = ~Loremaster Namonder~
+@111 = ~Seeker Tuck~
+@112 = ~Sewer Cleaner~
+@113 = ~Etate~
+@114 = ~Unholy Statue~
+@115 = ~Thrall~
+@116 = ~Lesser Clay Golem~
+@117 = ~Master Durnan~
+@118 = ~Diseased Wererat~
+@119 = ~Death Tyrant~
+@120 = ~Sewerm~
+@121 = ~Obliviax~
+@122 = ~Bog Mummy~
+
+@1000 = ~Jymahna's Mask~
+@1001 = ~Jymahna's Mask~
+@1002 = ~Jymahna's Mask~
+@1003 = ~Jymahna's mask~
+@1004 = ~Door key~
+@1005 = ~You found this key in the Basilisk room in the old sewers. It seems to belong to an important door.~
+@1006 = ~Illithid Key~
+@1007 = ~You found this key on the corpse of the Ulitharid Vuardsungulu~
+@1008 = ~Statue key~
+@1009 = ~You found this key in the skull of a statue in the old temple of Moander.~
+@1010 = ~Key from the basin~
+@1011 = ~You fished this key out of a basin in the old sewers.~
+@1012 = ~You fished this key out of the second basin in the old sewers. It may open the third locked door.~
+@1013 = ~This key is cold to the touch. It comes from the room where the cold pool was located. You took it from a White Blob. It may open the fourth locked door.~
+@1014 = ~You took this key from a malformed creature named Wrimbog in the old sewers. It may open the last locked door.~
+@1019 = ~Dawn Shield~
+@1020 = ~This shield is crafted from solid bronze. Although the metal has developed some patina, it still shines in a warm, golden-yellow hue. The shield boss is adorned with a rising sun, the symbol of Lathander. Undead seem to fear this symbol and the warmth that emanates from it. The shield cannot be carried by clerics of evil alignment.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– No protection against missile attacks
+– adds one level to the "Turn Undead" ability of clerics and paladins
+
+Requires:
+ 4 Strength
+
+Weight: 3~
+@1021 = ~This key smells musty and like rotten plants. You took it from a Shambling Mound.~
+@1022 = ~Memory moss~
+@1023 = ~This moss is the remnant of a plant called obliviax, which is notorious for being able to steal memories. Mages in particular should give this species a wide berth if they don't want to run the risk of losing their memorized spells. Fortunately, eating this piece of moss has the opposite effect. It allows the mage to remember some of the spells he has already cast. However, there is a risk of getting an upset stomach when eating the fleshy rhizoids.
+
+STATISTICS:
+
+– Restores a first-level spell when consumed
+– On a failed Save vs. Death, the character is afflicted with a disease that costs <PRO_HIMHER> five hit points per round for three rounds
+
+Weight: 1~
+@1024 = ~A piece of moss~
+@1025 = ~A greenish shimmering piece of moss that smells of earth and musty plants~
+@1026 = ~Spell restored~
+@1027 = ~Illithid collar~
+@1028 = ~Brain mate~
+@1029 = ~You took this collar from the illithid leader Vuardsungulu. It contains a small vial of organic matter.~
+@1030 = ~When illithids stray far from their community, they lose contact with their Elder Brain. For beings accustomed to constant separation from the thoughts, knowledge, and perception of the Elder Brain, the loss of contact with the Elder Brain can be quite unsettling. 
+
+Those groups traveling outside the reach of an Elder Brain for extended periods of time may rely on an intermediary. Illithids belonging to less ambitious forays are often forced to stiffen their tentacles and bear the brunt of loss of contact - unless they are among the lucky few who possess a brain mate. 
+The brain mate is a sphere of translucent material, four inches in diameter, in which a severed miniature brain floats in a sluggish, heavy liquid. Illithids often wear this item on a chain around their neck when they use it, or they keep it safe in a well-padded chest.
+
+The item has no magical properties and is only useful for illithids.~
+@1031 = ~Handkerchief~
+@1032 = ~This is the handkerchief that belonged to the female ghost at the fountain next to Tymora's temple.~
+@1033 = ~Cogwheel~
+@1034 = ~A small cogwheel, which was probably taken from a larger mechanism to render it inoperable~
+@1035 = ~Rose~
+@1036 = ~A fragrant red rose.~
+@1037 = ~Pipe~
+@1038 = ~Pipes of the sewers~
+@1039 = ~This instrument is a kind of panpipe made of dirty, slightly rusty pipes~
+@1040 = ~The Pipes of the Sewers are enchanted panpipes, crafted with the ability to sway the behavior of certain rodents. These mystical instruments, when played, can summon rats from up to a thousand feet away to heed the piper's call. The magic imbued within the pipes renews each day at dawn, ensuring their power is always available.
+
+STATISTICS:
+
+Charge abilities:
+– The user can summon a swarm of rats once per day 
+  Duration: 10 rounds
+
+Weight: 1
+~
+@1041 = ~Moody bottle~
+@1042 = ~Bottle of the Angry Spirit~
+@1043 = ~This bottle is filled with a strange, swirling black substance that seems to move incessantly - even without you tilting the jar in any particular direction. The jar has an unnatural coldness and it is uncomfortable to hold it in your hand for any length of time.~
+@1044 = ~A restless, undead spirit is trapped in this bottle, waiting to be released and destroy anyone nearby with its life-draining touch.
+
+FEATURES:
+
+When the shutter is opened, a wraith escapes and attacks any target in its line of sight.~
+@1045 = ~Key to old sewers~
+@1046 = ~This is the key to the old sewers beneath Baldur's Gate.~
+@1047 = ~Urthadar's Journal~
+@1048 = ~This is the journal of Urthadar, the priest of Moander, who has established a temple in honor of his dead god in the old sewers below Baldur's Gate. The text is muddled, but some passages catch your eye:
+
+"Day of the Sporebirth
+Visions have plagued my dreams again, vivid and commanding. The Great Moander speaks to me from the beyond, his voice a whisper among the shadows, guiding my hands towards a grand purpose. He commands me to awaken the earth, to breathe life into the dormant spores that slumber in the dark. 'Spread the fungi,' he whispers, 'let them devour the knowledge of the world.' So I set out from Torsch in Chondalwood and made the long journey north, as my visions had sent me to the city of Baldur's Gate on the Sword Coast.
+
+Day of the Hyphal Expansion
+The cultivation progresses. My children, the fungi, thrive in the darkness of my sanctuary. Each species, a key to unlocking the chains that bind my lord. Today, a new species bloomed, its spores glittering like stars in the void. They hunger for the written word, an appetite that rivals even my own zeal. With every book they consume, I feel Moander's presence strengthening, his resurrection imminent.
+
+Day of the Waxing Convergence
+A breakthrough in my work. The spores can now dissolve ink and parchment with alarming efficiency. My dreams are more vivid now; Moander's voice grows clearer. He shows me a world free of the burden of past knowledge, a world ripe for his rule. I am to be his herald, the one who paves the path for his return. The old must be eradicated for the new to bloom.
+
+Day of the Fruiting Emergence
+Doubt creeps into my heart today. A momentary weakness, mayhap. The destruction I wreak feels overwhelming, erasing centuries of wisdom and history. But then I remember my purpose, the divine command. Moander's will is absolute; his vision for the future, infallible. I am but a servant, chosen to execute his grand design. The loss of knowledge is a necessary sacrifice for rebirth.
+
+Day of the Spore Dissemination
+Tonight, my dreams were different. Not a vision, but a visitation. The Voidspeakers, creatures of great intelligence and power, reached out to me. They spoke of a partnership, of shared goals and mutual benefits. Moander's voice was silent tonight, but the message was clear. These beings, with their unfathomable minds, are the key to my lord's resurrection. They guide me, not as false prophets, but as allies in the great awakening. They allowed me to gaze into the pool and gain a glimpse of what Moander wants to transform.
+
+Day of Mold Colonization
+I managed to get the rusty cauldron in the old temple working again. It's a 'Cauldron of Doom', a fabled item that allows me to create zombies when I throw a corpse into the vat! My fellow allies, the Voidspeakers, don't seem to like the fact that I'm summoning undead - but why?
+
+Day of the Waning Decomposition 
+I see now the grand tapestry of Moander's plan, woven with threads of deceit and truth alike. The Voidspeakers are but instruments in his resurrection, their goals aligning with his divine will. I am to continue my work, spreading the decay, until the day comes when Moander walks this realm once more. My faith is unshaken, my purpose clear. The end of knowledge is the beginning of enlightenment."
+~
+@1049 = ~Codex Sporogenesis~
+@1050 = ~Codex Sporogenesis: Unveiling the Secrets of Decay
+
+The following rare spores and molds are ideal for knowledge eradication:
+
+Voidcap Fungus
+Found thriving in the deepest shadows, the Voidcap Fungus resembles a void in the very fabric of reality. Its caps absorb light, making them appear as dark, bottomless pits. When ingested, the spores induce visions of endless nothingness, a glimpse into the abyss that awaits to consume the world’s knowledge. They are the heralds of silence, devouring the words and memories that dare to defy the coming oblivion.
+
+Shadowspore Mold
+This creeping mold grows like a sinister shadow over anything that bears the mark of civilization's pride - books, scrolls, and tomes. The Shadowspore Mold feeds on the ink, leaving behind nothing but blank pages, as if the knowledge never existed. In its presence, one can hear faint whispers, the dying breaths of lost knowledge, a testament to Moander's will to reclaim and obliterate the structures of the known.
+
+Mindrot Fungus
+The Mindrot Fungus is a rare and dangerous species, thriving on the psychic energies of sentient beings. Its spores cloud the mind, slowly dissolving memories and knowledge, leaving behind only a hollow shell. It's not just the physical manifestation of decay but the very essence of forgetting, an agent of Moander's desire to erase the sins of the past and make the world anew.
+
+Whispering Mycelium
+A network of fine, almost invisible threads, the Whispering Mycelium spreads beneath the earth of ancient libraries and sacred places of learning. It communicates in hushed tones, spreading secrets and lies that sow doubt and discord. Those who listen too closely find their thoughts not their own, as the mycelium weaves new truths from the fabric of forgotten lies. It is the voice of Moander, spreading his gospel of decay through the very roots of civilization.~
+@1051 = ~Open Skull~
+@1052 = ~For some unknown reason, the top of this skull has been opened - maybe to remove the brain.~
+@1053 = ~Metal panel~
+@1054 = ~Qualith Rune Panel~
+@1055 = ~This metal panel is crisscrossed with strange lines~
+@1056 = ~This rune panel is written in the Mindflayers' script, which is called 'Qualith'. Written on it is:
+
+Mission Directive: Operation Mindshroud
+
+To the esteemed agents of the Loretaker Creed,
+By the mandate of the Encephalithid, we are tasked with the sacred duty of eradicating the remnants of knowledge that cling to the feeble minds of the surface dwellers. Our target: The prestigious libraries of Baldur's Gate and the sacred repository of Candlekeep.
+
+Our mission is twofold:
+- Infiltration and Infestation: Utilize our agents disguised among the humanoid masses to infiltrate the libraries of Baldur's Gate. Under the cover of darkness, use minions to infest tomes, scrolls, and manuscripts with the Shadowspore Mold, ensuring that every word, every symbol is consumed by the creeping darkness of oblivion. Let no volume be spared in our quest to purge the world of the shackles of knowledge.
+
+- Propagation of Decay: Once the infection has taken root within the heart of Baldur's Gate, transport the tainted texts to the hallowed halls of Candlekeep. Under the guise of trade or diplomatic exchange, introduce the corrupted tomes into the sacred library's collection. Let the spores of decay spread unchecked, unraveling the threads of history and wisdom that bind the minds of the surface dwellers.
+
+- Keep mind contact with the others of our kind, especially the Hidden further south.
+
+Remember the creed of our kin: "In the absence of knowledge, there is only enlightenment." In the annihilation of the past lies the promise of a new dawn, where the supremacy of the Illithid shall reign unchallenged.
+
+Install the Elder Brain Transceiver in a remote location to maintain contact with the Encephalithid. Use your brainmate to activate the transceiver.
+May the Encephalithid guide your thoughts, and may the whispers of the Voidspeakers herald your victory.
+
+Signed,
+The Loretaker Creed~
+@1057 = ~Rashemi Mother's Cookbook~
+@1058 = ~The book is made of leather and decorated with a corroded spoon and fork on the cover. Unfortunately, it is covered all over with green mold, which devours the cover and disintegrates the pages. You turn to a random page, but can only decipher individual fragments:
+
+"... f r Rashemi t ew … ing d ents: ea , on ns, gar c, nd l m nt of s ce. ake e ixt re pla e on a o fire un il e eat s bsides. dd hin y liced matoes and stir ent y… he ecret s in the mple anding of pices nd her s. his sh uld be oked wly to f se the avors… ve t he sence of hish ar and re… arnish with esh erb and erve.
+
+For the r ditional Rashemi orzh, begin ith:
+3 c p o fl r,
+1/2 ar n of s lt,
+4 d ges of ggs,
+1 t k n of Tilverton thyme,
+mi with e ugh o on ater to form a t y paste.
+Hea the st iron sk llet over edium coals and eep l oil.
+Wh n hot, our t e mixture and spread venly...
+Co k until the edges are risp and golden, then flip aref ly…
+Se ve with a sp nkle of resh elven m nt and a side of pickled n cks."~
+@1059 = ~Figurine~
+@1060 = ~Miniature Clay Golem~
+@1061 = ~A small figurine most likely made of clay.~
+@1062 = ~This is a small sculpted figurine of a clay golem. It can transform into a lesser clay golem when the item is placed on the ground and the command word is spoken. When the spell's duration expires, the created clay golem crumbles and can no longer be used.
+
+STATISTICS:
+
+Charge abilities:
+– Create clay golem (1 charge)
+  Range: 40 ft.
+  Duration: 1 turn
+
+Weight: 6~
+@1063 = ~Devour brain~
+@1064 = ~Strange Sphere~
+@1065 = ~Cryptosphere~
+@1066 = ~This sphere consists of three segments, each intricately decorated with ancient runes and mysterious mechanisms.~
+@1067 = ~The Cryptosphere is an enigmatic object composed of three distinct, rotatable segments. Each segment is adorned with its own set of ancient runes and tactile dials that serve as key mechanisms for the device's operation. To unlock the object, each segment must be aligned in a specific configuration, dictated by the logical sequence of the runes. This configuration, once achieved, activates a series of internal gears and levers that meticulously work to unlatch the sphere's concealed chamber.
+
+Inside the chamber, users typically find items of significant arcane power or ancient scrolls that are preserved in a near-perfect state, safeguarded by the sphere's intricate design. The Cryptosphere not only challenges the intellect of its handler but also serves as a guardian to knowledge and power that is deemed too profound or dangerous for the uninitiated.
+
+Weight: 8~
+@1068 = ~Operate~
+@1069 = ~Lasting Omen +2~
+@1070 = ~This magic flail was enchanted by some interesting divine energies. If rumors are to be believed, when held by a person of faith, it may help them empower their spells and make them last longer, and there are times when that is exactly what's needed to survive and win battles.
+
+STATISTICS:
+
+Equipped abilities:
+– Divine spells last 10% longer than normally
+
+THAC0: +2
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 12~
+@1071 = ~Dirty Ragbarth +2~
+@1072 = ~This staff is known as Dirty Ragbarth, and many may believe that is quite a suitable name. It's a simple staff, but it's oozing some green slime. It's magic is entwined with it's dirty and quite nature... which may be quite repelling for most people.
+
+STATISTICS:
+
+Combat abilities:
+– Acid damage bonus: +10%
+– Each succesful hit has a 75% chance of dealing additional 1d2 acid damage
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@1073 = ~Vlanakka +2~
+@1074 = ~This bow is known as Vlanakka. It was created by a group of elven priests that were ordered to create a wonderful weapon for an elven bowman, a hero that saved the family of a local blacksmith. The bow was blessed which makes it a perfect weapon when facing the undead.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class and Saving Throws vs. Undead: +2
+
+THAC0: +3
+Damage: +2
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2~
+@1075 = ~Triple Thoughts +3~
+@1076 = ~This unusual crystal may be used as a weapon: both as a dagger-type weapon and as a magic device that may create magic missiles. Unlike the spell, however, they may still miss if the weapon user does not focus properly.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: +1
+– Magic Resistance: +10%
+
+Combat abilities:
+– When used as a ranged weapon, may create 3 missiles: each of them deals 1 magic damage each (they are still considered an attack and may miss)
+
+THAC0: +3
+Damage: 1d4+3 (piercing)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 13 Intelligence
+
+Weight: 1~
+@1077 = ~Aeon of Lore~
+@1078 = ~This exquisite ring, known as the Aeon of Lore, was forged by the revered Loremaster Halantra, a formidable priestess of Oghma. Adorned with intricate engravings that symbolize the pursuit of wisdom, it is said that those who wear this ring enjoy the divine protection of Oghma himself. Moreover, bearers are imbued with profound knowledge, their minds enlightened with an unending stream of insight and understanding.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Saving Throws: +1
+– Can memorize one extra 1st level spell (both arcane and divine)
+– Character's lore value is doubled
+
+Weight: 0~
+@1079 = ~Ioun stone~
+@1080 = ~Cerulean Ward~
+@1081 = ~This is a small blue stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0~
+@1082 = ~In the twilight years of Netheril, when magic flowed as freely as the waters of the Narrow Sea, the archmages crafted wonders the world had never seen. Among these creations was a unique Sapphire Ioun Stone, known as the Cerulean Ward. 
+
+The Cerulean Ward was created by Arthindol, deemed the Terraseer, a mage whose prowess in enchantments and protective spells was unparalleled. His intent was to devise a shield against the increasing threats of psychic attacks and manipulations that plagued the empire. Using a rare sapphire that was mined from the depths of the Anauroch desert, a region once lush and verdant before the desert claimed it, Arthindol infused the gem with potent wards. It was said to fortify the wearer’s resolve, shielding them from fears both mundane and magical. Moreover, it provided an impenetrable defense against all forms of charm and compulsion, rendering the bearer immune to the wiles of both fey enchanters and fiendish manipulators.
+
+After Netheril's fall, many have sought the Cerulean Ward, but like so many treasures of the ancient world, it remained lost, waiting for someone clever enough to claim its legacy.
+
+STATISTICS:
+
+Equipped abilities:
+– Wearer is immune to Charm
+– Protects against all forms of panic and boosts morale
+
+Weight: 0~
+@1083 = ~Roots of the Assassin~
+@1084 = ~Puffball~
+@1085 = ~Boots of Moander~
+@1086 = ~These boots, covered with green mold, were created by cultists of Moander, an ancient god of rot and decay. The boots were used by a number of the Darkbringer's faithful when they fought against Moander's numerous foes, many of whom worshipped nature deities.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to entanglement
+
+Weight: 4~
+@1087 = ~*cough*~
+@1088 = ~Mind Shield~
+@1089 = ~Mind Shield
+(Enchantment/Charm)
+
+Level: 5
+Sphere: Chaos
+Range: 0
+Duration: 2 rounds
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None
+
+Mind Shield renders a creature immune to magical commands. Charm, Command, Confusion, Domination, Sleep, Maze, and Spiritual Lock are all spells that fit into this category. This spell also protects the target from psionic blasts. This spell affects only the caster and lasts for only two rounds or until dispelled.~
+@1090 = ~Decomposed apple~
+@1091 = ~This is a horribly rotten apple.~
+@1092 = ~Withered leaf~
+@1093 = ~A withered leaf whose edges are stained with blue-grey mold.~
+@1094 = ~Rotten heart~
+@1095 = ~This heart is afflicted by a strange putridity.~
+@1096 = ~Poison of the Strong Will~
+@1097 = ~This potion is created in a strange ritual. Beyond its lethal properties, it harbors a potent potion that sharpens mental acuity and grants immunity to all forms of mental influence. Should the user withstand the initial poisonous effects, <PRO_HESHE> will enjoy the brew's beneficial properties.
+
+STATISTICS:
+
+– Prevents feeblemind, confusion, stun, fear, and charm
+– User is poisoned for 18 points of poison damage within the first 20 seconds
+Duration: 10 rounds
+
+Weight: 1~
+@1098 = ~Decomposed Book~
+@1099 = ~This ancient tome is now a shadow of its former glory. The pages within are yellowed and brittle. As you leaf through the book, you find most of its once-profound words faded into obscurity, leaving only fragments of the original prophecies visible. Handling it requires utmost care, as every turn of the page might cause further damage to this fragile repository of forgotten wisdom.
+
+Beneath all the mold and dirt, the title is barely discernible: "Pr ph c s f l nd - The arn ngs nd is ms f e ed e r"
+
+You flip through the pages, trying to decipher individual fragments amidst the extensive damage:
+"... nd th n n th d of sh d ws, th sh ll r s , m rk ng th h v ns w th s ns of d rk nd l ght. Th s v rs f th rth sh ll s k th h dd n tr ths, th r p th l t ly by th f nt l ght of st r...
+
+...thr gh th v ls f d sp ir, th r br r r w lks th l nd, t rn s nd r by th f r s f w r. Th s r f r t lls th c m ng f n nd ng n ght, wh r h p f ils, dr w n ng n th ds f f rg tt n l r...
+
+...And wh n ll s ms l st, th l ght f th N rth sh ll nv il th tr th, h dd n d p w th n th r ns f ld. nly th s br v n gh t ch ll ng th dr kn ss w ll t n th k ys t r st r th bl nc f kn wl dg...
+
+... Th L rd f M rd r sh ll p r sh, b t n h s d m h sh ll sp wn sc r f m rt l pr g ny. Ch s w ll b s wn fr m th r p ss g . S s y th w s Al nd ..."~
+@1100 = ~This book appears to be an ancient chronicle detailing the expansive history of Faerûn. Its once-rich leather cover is now cracked and peeling, the title barely discernible. Inside, the pages are stained and foxed, some fused together by the ravages of mold. Despite its dilapidated state, this volume seems to hold a comprehensive account of the empires and kingdoms that once ruled the land.
+
+Beneath all the mold and dirt, the title is barely discernible: "Hist y f F rûn - A a of mpir s nd K ngd ms"
+
+You flip through the pages, trying to decipher individual fragments amidst the extensive damage:
+"...In th era of h S v y M n, the gr at c y-sta s f the N  th rose fr m the a he of war. L ders, both b ld and ruth, f rg d alli nc s that sh ped the political l nds ape. The mpire f N th  il, in its he ght, harn ssed magics now st to the ges, its pow r u rpassed o ly by its mbition...
+
+...the dec l ne of th e anc ent r gimes cam bout under mys ri us cir umst es, with r cords indicating a se e of ca s r ph s that r se ed both n tural a d sup rnatural forces. T e fal of M thral H ll st d as a chilling testament to the impe anenc f even the gre t t ci  liz tions..."
+~
+@1101 = ~Spectator's Eye~
+@1102 = ~Unlike their malevolent kin, the Beholders, Spectators are a subspecies of these aberrations derived from the plane of Mechanus, often serving under the vigilant gaze of Helm. Known for their relative neutrality and duty-bound nature, Spectators are tasked with guarding sacred sites and powerful artifacts, making them an ideal symbol for protection and watchfulness.
+
+This particular amulet, known as Spectator's Eye, holds within it the preserved eye of a Spectator that once served a temple of Helm.
+
+When worn, the amulet enhances the wearer’s resistance against the more sinister aberrations like Beholders, offering protection from assaults and corrupting influences all aberrations are renowned for. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class vs. aberrations: +2
+– Saving Throws vs. aberrations: +2
+
+The amulet offers protection against the following aberrations: Beholder, carrion crawler, drider, ettercap, illithid and otyugh.
+
+Weight: 1~
+@1103 = ~Frantic Note~
+@1104 = ~Must remember, must focus — whispers grow too loud! Moander's altar, it holds the secret, whispers back at them! Must make the potion, break their hold...
+
+Human skull, healing potion, pearl.
+
+Combine at Moander's altar, Create poisonous potion, salvation or damnation. 
+
+Resist the Masters, regain myself. The potion, it’s the key... must remember!
+~
+
+@1105 = ~Rat's Army of Teeth +1~
+@1106 = ~Rat's Army of Teeth +1
+What was once a broken replica of The Army Scythe has been subsequently repaired by the hands of a wererat tinkerer. While it may not match the original's speed, this crossbow remains lethally effective, especially against those in weakened states.
+
+STATISTICS:
+
+Combat abilities:
+– 1/2 extra attack per round
+– There is a 25% chance that the target will become diseased, suffering -1 to Constitution and Charisma for the next 8 hours or until the disease is cured (Save vs. Death -2 to avoid the effect)
+
+THAC0: +1
+Damage: +1
+Speed Factor: 4
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5~
+
+// Script strings
+@1269 = ~This pool of water looks deeper than it could be. At its bottom lies an old, rusted key. If you wish, you can take a closer look into the pool and try to grab the key.~
+@1270 = ~You bend down to look deeper into the water and grab the key.~
+@1271 = ~The water is calm again. There is nothing more to see in this pool.~
+@1272 = ~You submerge your head below the water.~
+@1273 = ~With a wave of your hand you try to grab the key. Just as you are about to take it, your face is pulled beneath the water of the pool.~
+@1274 = ~As in the pool before, there is a key laying in the water. You could reach down again to grab it.~
+@1275 = ~There is no key in this pool, but you could still delve beneath the water and see what awaits you there.~
+@1276 = ~You cannot see into the pool from this distance.~
+@1277 = ~Only one person at a time can immerse into the water.~
+@1278 = ~This seems to be the core of the strange device the Illithids have installed here. Its purpose is unknown to you, but you notice a small opening that could be used to get inside the organic machine. You recognize a small seat where you could make yourself comfortable.~
+@1279 = ~Without a certain other object, the machine cannot be used for anything else.~
+@1280 = ~The Illithid Collar gives you some sort of control over the device. You burst inside the item and close your eyes.~
+@1281 = ~You feel a pull on your mind. Though your body still remains in the same place, your mind moves miles away, carried by the psychic energy of the illithid machine...~
+@1282 = ~The illithid transmission device is no longer functional...~
+@1283 = ~The illithid collar seems to be channeling psionic powers. A large amount of telepathic energy begins to accumulate in the room...~
+@1284 = ~Bright light is streaming down into the shaft from far above. You must have opened a secret access to the surface.~
+@1285 = ~This statue represents a monstrous tree that devours helpless people. As an elf, you have heard stories in your childhood about an ancient deity called "Old Moldy", also known as Moander. The creature had long tyrannized the elves of ancient Myth Drannor before they succeeded in destroying the god.~
+@1286 = ~This statue depicts a monstrous tree devouring the defenseless. As a druid, you have heard stories of an ancient deity known as Moander. The creature had tyrannized the forest of Cormanthyr for a long time before the god could be destroyed.~
+@1287 = ~This statue depicts a monstrous tree devouring the defenseless. It appears to be a deceased deity who was known as Moander. The entity had tyrannized many areas of Faerun for a long time before the deity was destroyed.~
+@1288 = ~A hideous statue of a monstrous tree that devours helpless people.~
+
+@1400 = ~"At the behest of the Grand Dukes, this area of the sewers is closed, as great evil has emerged from it in the past."~
+@1401 = ~This ladder seems to lead upwards, as the light from the surface shines down through some cracks in a closed hatch. However, the hatch is locked and the upper part of the ladder is retracted. There must be a mechanism to extend the ladder.~
+@1402 = ~This door can only be opened from the opposing side.~
+@1403 = ~An imposing statue looms ominously over an altar, where numerous rituals must have been performed in the past.~
+@1404 = ~You are too far to use that.~
+
+@1500 = ~A dead figure drifts in this strange pod.~
+@1501 = ~There's a strange sign scrawled on the floor: A hand with an open maw full of fangs.~
+@1502 = ~There's a sign scrawled on the floor: A hand with an open maw full of fangs. You recognize this as a mark of the ancient deity Moander, a being of rot and decay.~
+@1503 = ~"To win the Jawed God's favor, feed his four desires:
+Decay, corruption, withering and mortality."~
+
+@2225 = ~To the Sealed Sewers~
+@4000 = ~The mental mist dissipates as you stand in front of the pool again. You are now holding the key that was previously lying in the pool.~
+@4001 = ~You need to get closer to converse with the statues.~
+

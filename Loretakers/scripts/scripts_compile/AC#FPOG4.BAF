@@ -1,0 +1,12 @@
+IF
+	NumberOfTimesTalkedTo(0)
+	See([PC])
+	!StateCheck(Myself,STATE_STONE_DEATH)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Wait(1)
+		SmallWait(15)
+		StartDialogueNoSet([PC])
+END
+

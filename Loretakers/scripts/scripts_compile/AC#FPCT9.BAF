@@ -1,0 +1,22 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([30.0],0)
+		Wait(2)
+		LeaveAreaLUAPanic("AC#FP2","",[2093.1126],N)
+		LeaveAreaLUA("AC#FP2","",[2093.1126],N)
+		SetMasterArea("AC#FP2")
+		//ActionOverride(Player2,LeaveAreaLUA("AC#FP2","",[2159.1060],W))
+		//ActionOverride(Player3,LeaveAreaLUA("AC#FP2","",[1995.1080],NE))
+		//ActionOverride(Player4,LeaveAreaLUA("AC#FP2","",[2183.1106],NW))
+		//ActionOverride(Player5,LeaveAreaLUA("AC#FP2","",[1969.1124],NE))
+		//ActionOverride(Player6,LeaveAreaLUA("AC#FP2","",[2117.1166],E))
+		Wait(2)
+		VerbalConstant(Myself,DYING)
+		MultiPlayerSync()
+		FadeFromColor([30.0],0)
+		EndCutSceneMode()
+END
+

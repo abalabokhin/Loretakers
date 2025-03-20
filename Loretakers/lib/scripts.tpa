@@ -1,0 +1,48 @@
+//Loretakers Script files
+
+//Loretakers Script files
+
+EXTEND_TOP ~%WBaldursGate_BCS%.bcs~ ~%MOD_FOLDER%/scripts/_AR0600.baf~  // add sewers entries, create ghost lady
+ EVALUATE_BUFFER
+EXTEND_TOP ~%CentralBaldursGate_BCS%.bcs~ ~%MOD_FOLDER%/scripts/_AR0700.baf~  // create loremasters
+ EVALUATE_BUFFER
+EXTEND_TOP ~%CentralSewers_BCS%.bcs~ ~%MOD_FOLDER%/scripts/_AR0225.baf~  // Create sewer worker and map note
+ EVALUATE_BUFFER
+EXTEND_TOP ~%WBaldursGate_HighHouseofWonders_BCS%.bcs~ ~%MOD_FOLDER%/scripts/_AR0131.baf~ //create Priest of Gond
+ EVALUATE_BUFFER
+ 
+/*
+EXTEND_TOP ~AR0600.bcs~ ~%MOD_FOLDER%/scripts/_AR0600.baf~  // add sewers entries, create ghost lady
+EXTEND_TOP ~AR0700.bcs~ ~%MOD_FOLDER%/scripts/_AR0700.baf~  // create loremasters
+EXTEND_TOP ~AR0225.bcs~ ~%MOD_FOLDER%/scripts/_AR0225.baf~  // Create sewer worker and map note
+EXTEND_TOP ~AR0131.bcs~ ~%MOD_FOLDER%/scripts/_AR0131.baf~ //create Priest of Gond
+*/
+
+// Compile all scripts in folder "scripts_compile"
+COMPILE ~%MOD_FOLDER%/scripts/scripts_compile~
+
+COMPILE ~%MOD_FOLDER%/scripts/AC#FP2M1.baf~ //info trigger for Moander's statue in area ac#fp2
+
+COMPILE ~%MOD_FOLDER%/scripts/AC#06RE1.baf~ //Resonance Stone 01
+COPY_EXISTING ~AC#06RE1.bcs~   ~override/AC#06RE1.bcs~
+       REPLACE ~999997~ @64
+       REPLACE ~999999~ @65
+       REPLACE ~999998~ @66
+       REPLACE ~999996~ @68
+       
+COMPILE ~%MOD_FOLDER%/scripts/AC#06RE2.baf~ // Resonance Stone 02
+COPY_EXISTING ~AC#06RE2.bcs~   ~override/AC#06RE2.bcs~
+       REPLACE ~999997~ @64
+       REPLACE ~999999~ @65
+       REPLACE ~999998~ @66
+       REPLACE ~999996~ @68
+       
+COMPILE ~%MOD_FOLDER%/scripts/ac#06tr1.baf~ // Info Trigger: Resonance Stone Warning
+COPY_EXISTING ~ac#06tr1.bcs~   ~override/ac#06tr1.bcs~
+       REPLACE ~999999~ @67
+
+COMPILE ~%MOD_FOLDER%/scripts/AC#WEHUT.baf~ //AC#WEHU1.CRE Script: Change Animation to Wererat when Enemies are near
+
+COMPILE ~%MOD_FOLDER%/scripts/AC#FP1T1.baf~ // Script for Area AC#FP1: Opening Pile of Corpses: Illness
+
+COMPILE ~%MOD_FOLDER%/scripts/AC#FP2T1.baf~ // Script for Area AC#FP2: Entering Area Spores

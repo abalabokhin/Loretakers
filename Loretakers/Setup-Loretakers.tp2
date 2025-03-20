@@ -1,0 +1,640 @@
+/*************************************************************************
+ * Loretakers
+ *
+ *
+ *
+ *
+ *************************************************************************/
+BACKUP ~Loretakers/backup~
+AUTHOR ~Acifer~
+VERSION ~V 1.5~
+
+AUTO_TRA ~Loretakers\language\%LANGUAGE%\%s~
+
+README ~Loretakers\Documentation\Loretakers_Readme.pdf~
+
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+// Loretakers
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+
+/*
+LANGUAGE ~Deutsch~
+         ~german~
+         ~Loretakers/language/german/setup-Loretakers.tra~
+         ~Loretakers/language/german/loretakers-journal.tra~
+*/
+LANGUAGE ~English~
+         ~english~
+         ~Loretakers/language/english/setup-Loretakers.tra~
+         ~Loretakers/language/english/loretakers-journal.tra~
+         ~Loretakers/language/english/01_Quest_start_and_finish.tra~
+         ~Loretakers/language/english/02_strange_woman_sewers_worker.tra~
+         ~Loretakers/language/english/03_Priest_of_Gond.tra~
+         ~Loretakers/language/english/04_Ghostlady_AR0600.tra~
+         ~Loretakers/language/english/05_AC#FP1_Abandoned_sewers.tra~
+         ~Loretakers/language/english/06_AC#FP2_temple_of_Moander.tra~
+         ~Loretakers/language/english/07_AC#FP3_Oryndoll_Cutscene.tra~
+         ~Loretakers/language/english/08_AC#FP4_First_voidarea.tra~
+         ~Loretakers/language/english/09_AC#FP6_Second_voidarea.tra~
+         ~Loretakers/language/english/10_AC#FP5_Third_voidarea.tra~
+         ~Loretakers/language/english/11_AC#FP7_Fourth_voidarea.tra~
+         ~Loretakers/language/english/12_Sune_Priest_AC#FP1.tra~
+         ~Loretakers/language/english/13_Cryptosphere.tra~
+         
+LANGUAGE ~Deutsch - konform zu Shai Huluds Text-Patch~
+         ~sh-german~
+         ~Loretakers/language/sh-german/setup-Loretakers.tra~
+         ~Loretakers/language/sh-german/loretakers-journal.tra~
+         ~Loretakers/language/sh-german/01_Quest_start_and_finish.tra~
+         ~Loretakers/language/sh-german/02_strange_woman_sewers_worker.tra~
+         ~Loretakers/language/sh-german/03_Priest_of_Gond.tra~
+         ~Loretakers/language/sh-german/04_Ghostlady_AR0600.tra~
+         ~Loretakers/language/sh-german/05_AC#FP1_Abandoned_sewers.tra~
+         ~Loretakers/language/sh-german/06_AC#FP2_temple_of_Moander.tra~
+         ~Loretakers/language/sh-german/07_AC#FP3_Oryndoll_Cutscene.tra~
+         ~Loretakers/language/sh-german/08_AC#FP4_First_voidarea.tra~
+         ~Loretakers/language/sh-german/09_AC#FP6_Second_voidarea.tra~
+         ~Loretakers/language/sh-german/10_AC#FP5_Third_voidarea.tra~
+         ~Loretakers/language/sh-german/11_AC#FP7_Fourth_voidarea.tra~
+         ~Loretakers/language/sh-german/12_Sune_Priest_AC#FP1.tra~
+         ~Loretakers/language/sh-german/13_Cryptosphere.tra~
+         
+LANGUAGE ~Chinese - by Yoshimo0417~
+         ~schinese~
+         ~Loretakers/language/schinese/setup-Loretakers.tra~
+         ~Loretakers/language/schinese/loretakers-journal.tra~
+         ~Loretakers/language/schinese/01_Quest_start_and_finish.tra~
+         ~Loretakers/language/schinese/02_strange_woman_sewers_worker.tra~
+         ~Loretakers/language/schinese/03_Priest_of_Gond.tra~
+         ~Loretakers/language/schinese/04_Ghostlady_AR0600.tra~
+         ~Loretakers/language/schinese/05_AC#FP1_Abandoned_sewers.tra~
+         ~Loretakers/language/schinese/06_AC#FP2_temple_of_Moander.tra~
+         ~Loretakers/language/schinese/07_AC#FP3_Oryndoll_Cutscene.tra~
+         ~Loretakers/language/schinese/08_AC#FP4_First_voidarea.tra~
+         ~Loretakers/language/schinese/09_AC#FP6_Second_voidarea.tra~
+         ~Loretakers/language/schinese/10_AC#FP5_Third_voidarea.tra~
+         ~Loretakers/language/schinese/11_AC#FP7_Fourth_voidarea.tra~
+         ~Loretakers/language/schinese/12_Sune_Priest_AC#FP1.tra~
+         ~Loretakers/language/schinese/13_Cryptosphere.tra~
+
+BEGIN ~Loretakers V 1.5~
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+LOAD_TRA ~Loretakers/language/%LANGUAGE%/setup-Loretakers.tra~
+LOAD_TRA ~Loretakers/language/%LANGUAGE%/loretakers-journal.tra~
+
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  INCLUDE ~%MOD_FOLDER%/lib/g3_bgee_cpmvars.tpa~
+  OUTER_SPRINT bg1_area_prefix ~AR~
+END
+
+ACTION_IF (GAME_IS ~eet~) THEN BEGIN
+  ACTION_IF (FILE_EXISTS ~EET/other/cpmvars/eet_cpmvars.tpa~) BEGIN
+    INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+  END
+  ELSE BEGIN
+    INCLUDE ~%MOD_FOLDER%/lib/eet_cpmvars.tpa~
+  END
+  OUTER_SPRINT bg1_area_prefix ~BG~
+END
+
+ 
+ADD_JOURNAL @100000 @100001 @100002 @100003 @100004 @100005 @100006 @100007 @100010 @100011 @100012 @100020 @100021 @110001 @110002 @110003 @120000 @120001 @120002 USING ~Loretakers/language/%LANGUAGE%/loretakers-journal.tra~
+///////////////////////////////////////////////////////////////////////
+// Animation files
+///////////////////////////////////////////////////////////////////////
+
+COPY ~%MOD_FOLDER%/animations/Waterweird~         ~override~
+COPY ~%MOD_FOLDER%/animations/Wererat~            ~override~
+COPY ~%MOD_FOLDER%/animations/Feyr~               ~override~
+
+// Obliviax animation
+COPY ~%MOD_FOLDER%/animations/ac#oxbam.bmp~ ~override~
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7F45 RET slot END
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  COPY ~%MOD_FOLDER%/animations/7xxx.ini~ ~override/%hexNumber%.ini~
+  OUTER_SET slot_gelugon = slot   // save animation slot number for later
+  APPEND ~ANIMATE.IDS~ ~0x%hexNumber% ACIFER_OBLIVIAX~
+  
+  // Dustman female PST animation
+ LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% AC#DUSTMAN_FEMALE~ UNLESS ~AC#DUSTMAN_FEMALE~
+  CLEAR_IDS_MAP
+  COPY ~%MOD_FOLDER%/animations/Dustman_female/exxx.ini~ ~override/%hexNumber%.ini~
+  ACTION_BASH_FOR ~%MOD_FOLDER%/animations/Dustman_female~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+
+///////////////////////////////////////////////////////////////////////
+// ARE files
+//
+///////////////////////////////////////////////////////////////////////
+
+COPY ~%MOD_FOLDER%/areas/copy~         ~override~
+
+/*
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+  INCLUDE ~%MOD_FOLDER%/lib/g3_cpmvars_master.tpa~
+END
+*/
+//****************************************************
+// Patch ac#fp1.are Travel Trigger : AR0225 / BG0225
+//****************************************************
+COPY_EXISTING ~ac#fp1.are~ ~override~
+	LPF ALTER_AREA_REGION
+		STR_VAR
+		region_name			= ~Tr0225~
+		destination_area	= EVAL ~%CentralSewers%~
+END
+
+COPY_EXISTING ~ac#fp1.are~ ~override~
+	LPF ALTER_AREA_REGION
+		STR_VAR
+		region_name			= ~TrAR0600~
+		destination_area	= EVAL ~%WBaldursGate%~
+END
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~fogarea.2da~) THEN BEGIN
+COPY ~%MOD_FOLDER%/2da/fogarea.2da~ ~override~
+END
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~fogpt.2da~) THEN BEGIN
+COPY ~%MOD_FOLDER%/2da/fogpt.2da~ ~override~
+END
+
+APPEND ~FOGAREA.2da~ ~AC#FP4  0.80  75  185  60   110   145  30   105   25~
+UNLESS ~AC#FP4~
+APPEND ~MASTAREA.2da~ ~AC#FP4 value~
+
+APPEND ~FOGAREA.2da~ ~AC#FP5  0.80  75  120  60   260   120  60   260   25~
+UNLESS ~AC#FP5~
+APPEND ~MASTAREA.2da~ ~AC#FP5 value~
+
+APPEND ~FOGAREA.2da~ ~AC#FP6  0.80  75  155  65   220   170  80   240   25~
+UNLESS ~AC#FP6~
+APPEND ~MASTAREA.2da~ ~AC#FP6 value~
+
+APPEND ~FOGAREA.2da~ ~AC#FP7  0.80  75  90  45   45   150   95   95   25~
+UNLESS ~AC#FP7~
+APPEND ~MASTAREA.2da~ ~AC#FP7 value~
+
+APPEND ~MastArea.2da~
+~AC#FP1     value~
+UNLESS ~AC#FP1~
+APPEND ~MastArea.2da~
+~AC#FP2     value~
+UNLESS ~AC#FP2~
+APPEND ~MastArea.2da~
+~AC#FP3     value~
+UNLESS ~AC#FP3~
+//****************************************************
+// Patch the BG central sewer area AR0225: add a new travel trigger and a new entrance
+//****************************************************
+COPY_EXISTING ~%CentralSewers%.are~ ~override~
+  LPF fj_are_structure
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 520
+    fj_box_top      = 1762
+    fj_box_right    = 690
+    fj_box_bottom   = 1870
+    fj_cursor_idx   = 34   //travel wheel
+    fj_vertex_0     = 520 + (1762 << 16)
+    fj_vertex_1     = 690 + (1762 << 16)
+    fj_vertex_2     = 690 + (1870 << 16)
+    fj_vertex_3     = 520 + (1870 << 16)
+    fj_flags        = 0b0000000000000100  //full party required, autosave
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = Trac#fp1
+    fj_destination_area = AC#FP1
+    fj_destination_name = EX0225
+  END
+
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 744
+    fj_loc_y       = 1823
+    fj_orientation = 12   //East
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = Exac#fp1
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+//****************************************************
+// Patch the W BG area AR0600: add an animation (sewer entrance); a new travel trigger and a new entrance
+//****************************************************
+COPY_EXISTING ~%WBaldursGate%.are~ ~override~
+ LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 293
+    fj_loc_y       = 2001
+    fj_schedule    = 0b00000000000111111111111111000000 // 0b11111111111100000000
+    fj_flags       = 0x00001101
+    STR_VAR
+    fj_structure_type = animation
+    fj_name           = AC#EXFPD
+    fj_bam_resref     = ~AC#FP600~
+  END
+ LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 293
+    fj_loc_y       = 2001
+    fj_schedule    = 0b11111111111000000000000000111111   
+    fj_flags       = 0x00001101
+    STR_VAR
+    fj_structure_type = animation
+    fj_name           = AC#EXFPN
+    fj_bam_resref     = ~AC#FP60N~
+  END
+  LPF fj_are_structure
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 238
+    fj_box_top      = 1966
+    fj_box_right    = 314
+    fj_box_bottom   = 2040
+    fj_cursor_idx   = 28   //stairs
+    fj_vertex_0     = 238 + (1966 << 16)
+    fj_vertex_1     = 314 + (1966 << 16)
+    fj_vertex_2     = 314 + (2040 << 16)
+    fj_vertex_3     = 238 + (2040 << 16)
+    fj_flags        = 0b0000000000000100  //full party required, autosave
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = Trac#fp1
+    fj_destination_area = AC#FP1
+    fj_destination_name = Ex0600
+  END
+    LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 382
+    fj_loc_y       = 1999
+    fj_orientation = 12   //East
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = EXAC#FP1
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+
+///////////////////////////////////////////////////////////////////////
+// BAM files
+//
+///////////////////////////////////////////////////////////////////////
+COPY ~%MOD_FOLDER%/bam/copy~         ~override~
+COPY ~%MOD_FOLDER%/bam/area-bams~    ~override~ // area animations
+
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPOXD.bam~ ~override~     // Memory moss desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS3000.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPPID.bam~ ~override~     // pipes of the sewers desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4001.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPSKD.bam~ ~override~     // open skull desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4002.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPQUD.bam~ ~override~     // Qualith rune plate desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4003.pvrz~
+ END 
+ END
+ 
+  COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPRMD.bam~ ~override~     // Rashemi mother's cookbook desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4004.pvrz~
+ END 
+ END
+ 
+   COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPBRD.bam~ ~override~     // brainmate desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4005.pvrz~
+ END 
+ END
+ 
+COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPROD.bam~ ~override~     // rose desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4006.pvrz~
+ END 
+ END
+ 
+COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPCL2.bam~ ~override~     // clay golem desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4007.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPHKD.bam~ ~override~     // handkerchief desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4008.pvrz~
+ END 
+ END
+ 
+  COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPORD.bam~ ~override~     // cryptosphere desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4009.pvrz~
+ END 
+ END
+ 
+  COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPMBD.bam~ ~override~     // journal desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4010.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPSHD.bam~ ~override~     // dawn shield desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4011.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPRID.bam~ ~override~     //aeon of lore desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4012.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPK3D.bam~ ~override~     //basin key desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4013.pvrz~
+ END 
+ END
+ 
+COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPK1D.bam~ ~override~     //basilisk key desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4014.pvrz~
+ END 
+ END
+ 
+COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPOG1.bam~ ~override~     //withered leaf desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4015.pvrz~
+ END 
+ END
+ 
+COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPOG2.bam~ ~override~     //rotten apple  desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4016.pvrz~
+ END 
+ END
+ 
+COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPOG3.bam~ ~override~     //rotten heart desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4017.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FP2K2.bam~ ~override~     // shambling mound key desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4018.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPMD2.bam~ ~override~     // codex sporogenesis desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4019.pvrz~
+ END 
+ END
+ 
+  COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPBAD.bam~ ~override~     // decomposed book alaundo desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4020.pvrz~
+ END 
+ END
+ 
+   COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPAMD.bam~ ~override~     // amulet spectator desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4021.pvrz~
+ END 
+ END
+ 
+ COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FP2K4.bam~ ~override~     // statue key desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4022.pvrz~
+ END 
+ END
+ 
+  COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPPDD.bam~ ~override~     // bottle angry spirit desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4023.pvrz~
+ END 
+ END
+ 
+   COPY ~%MOD_FOLDER%/bam/desc-bams/AC#FPXBD.bam~ ~override~     // rat's xbow desc bam
+LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~%MOD_FOLDER%/bam/desc-bams/MOS4024.pvrz~
+ END 
+ END
+
+///////////////////////////////////////////////////////////////////////
+// VVC files
+//
+///////////////////////////////////////////////////////////////////////
+COPY ~%MOD_FOLDER%/vvc/copy~         ~override~
+
+///////////////////////////////////////////////////////////////////////
+//WAV files
+//
+///////////////////////////////////////////////////////////////////////
+COPY ~%MOD_FOLDER%/sounds/copy~         ~override~
+
+///////////////////////////////////////////////////////////////////////
+//Spell files
+//
+///////////////////////////////////////////////////////////////////////
+COPY ~%MOD_FOLDER%/spl/copy~         ~override~
+
+ADD_PROJECTILE      ~%MOD_FOLDER%/pro/AC#FPMOA.PRO~ // black entangle projectile
+COPY ~%MOD_FOLDER%/spl/AC#FPMO.spl~         ~override~
+       SAY NAME1 @1083
+       SAY NAME2 @1083
+       WRITE_SHORT   0x98 ~%AC#FPMOA%~
+       
+ADD_PROJECTILE      ~%MOD_FOLDER%/pro/AC#FPPUF.PRO~ // Puffball projectile
+COPY ~%MOD_FOLDER%/spl/AC#FPPB.spl~         ~override~
+       SAY NAME1 @1084
+       SAY NAME2 @1084
+       WRITE_SHORT   0x98 ~%AC#FPPUF%~
+       
+        SET %AC#FPPUF% -=1
+
+      APPEND ~ClearAir.2da~
+      ~AC#Puffball     %AC#FPPUF%~
+      UNLESS ~AC#Puffball~
+
+COPY ~%MOD_FOLDER%/spl/AC#FPMS.spl~         ~override~
+     SAY NAME1 @1083
+     SAY 0x50 @1084
+///////////////////////////////////////////////////////////////////////
+// Script files
+//
+///////////////////////////////////////////////////////////////////////
+
+INCLUDE ~%MOD_FOLDER%/lib/scripts.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// CRE files
+//
+///////////////////////////////////////////////////////////////////////
+INCLUDE ~%MOD_FOLDER%/lib/creatures.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// Portraits
+//
+///////////////////////////////////////////////////////////////////////
+//  maybe later
+// COPY ~%MOD_FOLDER%/portraits~         ~override~
+
+///////////////////////////////////////////////////////////////////////
+// ITM files
+///////////////////////////////////////////////////////////////////////
+INCLUDE ~%MOD_FOLDER%/lib/items.tpa~
+
+APPEND itemexcl.2da ~AC#FPRIN 1~
+BUT_ONLY
+
+///////////////////////////////////////////////////////////////////////
+// MOS files
+///////////////////////////////////////////////////////////////////////
+COPY ~%MOD_FOLDER%/mos/copy~         ~override~
+
+
+///////////////////////////////////////////////////////////////////////
+// EFF files
+///////////////////////////////////////////////////////////////////////
+COPY ~%MOD_FOLDER%/eff/copy~         ~override~
+COPY ~%MOD_FOLDER%/eff/AC#FPPBC.eff~         ~override~
+SAY 0x1c @1087
+
+///////////////////////////////////////////////////////////////////////
+// Dialog files
+//
+///////////////////////////////////////////////////////////////////////
+
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/01_Quest_start_and_finish.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/02_strange_woman_sewers_worker.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/03_Priest_of_Gond.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/04_Ghostlady_AR0600.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/05_AC#FP1_Abandoned_sewers.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/06_AC#FP2_temple_of_Moander.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/07_AC#FP3_Oryndoll_Cutscene.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/08_AC#FP4_First_voidarea.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/09_AC#FP6_Second_voidarea.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/10_AC#FP5_Third_voidarea.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/11_AC#FP7_Fourth_voidarea.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/12_Sune_Priest_AC#FP1.tra~
+LOAD_TRA  ~Loretakers/language/%LANGUAGE%/13_Cryptosphere.tra~
+
+COMPILE ~Loretakers/dlg/dialogues_compile/01_Quest_start_and_finish.d~  USING ~Loretakers/language/%LANGUAGE%/01_Quest_start_and_finish.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/02_strange_woman_sewers_worker.d~  USING ~Loretakers/language/%LANGUAGE%/02_strange_woman_sewers_worker.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/03_Priest_of_Gond.d~  USING ~Loretakers/language/%LANGUAGE%/03_Priest_of_Gond.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/04_Ghostlady_AR0600.d~  USING ~Loretakers/language/%LANGUAGE%/04_Ghostlady_AR0600.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/05_AC#FP1_Abandoned_sewers.d~  USING ~Loretakers/language/%LANGUAGE%/05_AC#FP1_Abandoned_sewers.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/06_AC#FP2_temple_of_Moander.d~  USING ~Loretakers/language/%LANGUAGE%/06_AC#FP2_temple_of_Moander.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/07_AC#FP3_Oryndoll_Cutscene.d~  USING ~Loretakers/language/%LANGUAGE%/07_AC#FP3_Oryndoll_Cutscene.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/08_AC#FP4_First_voidarea.d~  USING ~Loretakers/language/%LANGUAGE%/08_AC#FP4_First_voidarea.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/09_AC#FP6_Second_voidarea.d~  USING ~Loretakers/language/%LANGUAGE%/09_AC#FP6_Second_voidarea.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/10_AC#FP5_Third_voidarea.d~  USING ~Loretakers/language/%LANGUAGE%/10_AC#FP5_Third_voidarea.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/11_AC#FP7_Fourth_voidarea.d~  USING ~Loretakers/language/%LANGUAGE%/11_AC#FP7_Fourth_voidarea.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/12_Sune_Priest_AC#FP1.d~  USING ~Loretakers/language/%LANGUAGE%/12_Sune_Priest_AC#FP1.tra~
+COMPILE ~Loretakers/dlg/dialogues_compile/13_Cryptosphere.d~  USING ~Loretakers/language/%LANGUAGE%/13_Cryptosphere.tra~
+
+///////////////////////////////////////////////////////////////////////
+// patching EET specific spl, itm and cre file names files
+///////////////////////////////////////////////////////////////////////
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+
+//spells:
+ COPY_EXISTING ~AC#FP2B.spl~ ~override~
+ SAY NAME1 #5739
+ COPY_EXISTING ~AC#FP2E.spl~ ~override~
+ SAY NAME1 #12119
+ COPY_EXISTING ~AC#SPFUN.spl~ ~override~
+ SAY NAME1 #225968
+ COPY_EXISTING ~AC#FPGR.spl~ ~override~
+ SAY NAME1 #12030
+
+// creatures:
+ COPY_EXISTING ~AC#FP3MF.cre~ ~override~
+ SAY NAME1 #2796
+ SAY NAME2 #2796
+ COPY_EXISTING ~ac#fpclg.cre~ ~override~
+ SAY NAME1 #226739
+ SAY NAME2 #226739
+ COPY_EXISTING ~AC#FPMFL.cre~ ~override~
+ SAY NAME1 #2796
+ SAY NAME2 #2796
+ COPY_EXISTING ~AC#FPMIC.cre~ ~override~
+ SAY NAME1 #230287
+ SAY NAME2 #230287
+ COPY_EXISTING ~AC#FPMOU.cre~ ~override~
+ SAY NAME1 #225682
+ SAY NAME2 #225682
+ COPY_EXISTING ~AC#FPWRA.cre~ ~override~
+ SAY NAME1 #230290
+ SAY NAME2 #230290
+ COPY_EXISTING ~AC#FPSHD.cre~ ~override~
+ SAY NAME1 #225764
+ SAY NAME2 #225764
+
+// items:
+ COPY_EXISTING ~AC#FPCUD.itm~ ~override~
+ SAY NAME2 #2445
+ SAY DESC #2447
+ COPY_EXISTING ~AC#FPREP.itm~ ~override~
+ SAY NAME2 #12088
+ SAY DESC #12205
+END
+
+///////////////////////////////////////////////////////////////////////
+// tis files
+///////////////////////////////////////////////////////////////////////
+
+COPY_LARGE ~%MOD_FOLDER%/tis/copy~         ~override~
+
+///////////////////////////////////////////////////////////////////////
+// Lightmap files
+///////////////////////////////////////////////////////////////////////
+COPY ~%MOD_FOLDER%/lightmaps/copy~         ~override~

@@ -1,0 +1,22 @@
+// creator: Shai Hulud
+// game: Loretakers
+// date: 2024-07-14, 19:47
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@0 = ~Ich wurde von den Wissenshütern des Tempels von Oghma geschickt. Einige ihrer Bücher wurden durch eine ungewöhnliche Substanz zerstört. Ich bin hierhergekommen, um zu erfahren, ob Ihr ähnliche Probleme hattet oder ob Ihr einen ihrer Wissenshüter gesehen habt, der in dieser Sache ermittelt.~
+@1 = ~Ihr solltet mit unserem Meister Durnan sprechen. Er ist dort drüben in diesem Raum. Er weiß alles über diese Dinge.~
+@2 = ~Willkommen, Suchender des Wissens und der Handwerkskunst. Ich bin Durnan, Hohepriester von Gond. Wie kann ich Euch auf Eurer Reise der Entdeckung und Schöpfung unterstützen?~
+@3 = ~Sie haben also noch kein Gegenmittel gefunden? Ich kann mich nicht entscheiden, ob das eine gute oder eine schlechte Nachricht ist. Einige unserer Bücher wurden tatsächlich auch zerstört. Und wir haben ein paar seltsame modrige Pfützen in der Nähe unseres Bücherlagers gefunden. Aber in letzter Zeit wurden auch einige wertvolle Wälzer gestohlen.~
+@4 = ~Und ja, der Hohe Wissenshüter Eyvind war hier, vor nicht allzu langer Zeit! Wir haben uns ein wenig darüber unterhalten, woher diese Seuche kommen könnte. Er sagte, dass der Schimmelpilz vor allem ganz besondere Bücher befallen hat. Er wollte weitere Nachforschungen anstellen und verließ unseren Tempel.~
+@5 = ~Wo ist der Wissenshüter hin?~
+@6 = ~Er ging nach draußen. Dort sprach er mit einer fremden Frau. Sie schienen sich zu kennen. Der Hohe Wissenshüter Eyvind ging dann woanders hin, aber die Frau sollte immer noch hier in der Nähe sein.~
+@7 = ~Hatte die betreffende Frau zufällig ungepflegtes Haar und eine Binde über dem Auge?~
+@8 = ~Aber ja! Ihr kennt sie?~
+@9 = ~Ich kann mir vorstellen, dass sie irgendwie mit den zerstörten Büchern zu tun hat.~
+@10 = ~Noch nicht.~
+@11 = ~Ich habe mit der Frau gesprochen, die Ihr erwähnt habt. Sie wollte Zugang zu Büchern über Gond, Alaundo und die Zeit der Sorgen. Wir haben ihre Bitte abgelehnt, da wir nur unseren vertrauenswürdigen Mitgliedern erlauben, diese Texte einzusehen. Seitdem lauert sie uns immer wieder draußen auf.~
+@12 = ~Sie ist schon seit einiger Zeit hier. Sie schweigt, und ich bin mir nicht sicher, ob sie eine Bedrohung darstellt. Nun, es scheint, als hätte sie in ihrem Leben viel erlebt. Ich bezweifle, dass sie hier in irgendein Fehlverhalten verwickelt ist.~
+@13 = ~Wenn Ihr mit ihr sprechen wollt, findet Ihr sie normalerweise in der Nähe des Brunnens, südlich der Halle.~
+@14 = ~Dann werde ich dieser Frau einen Besuch abstatten.~
+@15 = ~Es ist wohl an der Zeit, dass ich sie zur Rede stelle.~
+@16 = ~Möge Euer Gespräch etwas Licht in diese mysteriösen Ereignisse bringen. Gesegnet sei Euer Streben mit dem Einfallsreichtum von Gond. Lebt wohl.~

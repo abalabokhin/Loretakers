@@ -1,0 +1,21 @@
+IF
+	Global("AC#FPKillTheHermit","GLOBAL",2)
+	Global("AC#FPIAMLEAVINGBYEBYE","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FPIAMLEAVINGBYEBYE","LOCALS",1)
+		DestroySelf()
+END
+
+IF
+	OR(2)
+		See([GOODCUTOFF])
+		HitBy([GOODCUTOFF],CRUSHING)
+	!GlobalTimerNotExpired("shouted","LOCALS")
+THEN
+	RESPONSE #100
+		Shout(111)
+		SetGlobalTimer("shouted","LOCALS",ONE_ROUND)
+		Continue()
+END
+

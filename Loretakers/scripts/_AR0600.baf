@@ -1,0 +1,45 @@
+IF
+	InMyArea(Player1)
+	Global("AC#FPCreateSewerLady","MYAREA",0)
+	Global("AC#LoreQuestMain","GLOBAL",5)
+THEN
+	RESPONSE #100
+		CreateCreature("AC#FPLAD",[4000.1550],0)
+		SetGlobal("AC#FPCreateSewerLady","MYAREA",1)
+END
+
+IF
+	Global("AC#FPSecretSewer","GLOBAL",0)
+	Global("AC#FPPassage","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FPPassage","MYAREA",1)
+		TriggerActivation("Trac#fp1",FALSE)
+END
+
+IF
+	Global("AC#FPSecretSewer","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FPSecretSewer","GLOBAL",2)
+		TriggerActivation("Trac#fp1",TRUE)
+END
+
+IF
+	Global("AC#FPSecretSewer","GLOBAL",2)
+	Global("AC#FPMapNoteSewer","%WBaldursGate%",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FPMapNoteSewer","%WBaldursGate%",1)
+		AddMapNote([282.1999],@2225)
+END
+
+IF
+	InMyArea(Player1)
+	Global("AC#FPSuneLoveStory","GLOBAL",1)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FPSuneLoveStory","GLOBAL",2)
+		CreateCreature("AC#FPGHO",[2149.844],0)
+END

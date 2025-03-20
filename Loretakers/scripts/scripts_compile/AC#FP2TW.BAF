@@ -1,0 +1,9 @@
+IF
+	IsOverMe([PC])
+	Global("WaterWeird01","AC#FP2",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WaterWeird01","AC#FP2",1)
+		CreateCreatureImpassableEffect("AC#FPWWR","ICRMPARI",[3134.1256],S)  // Water weird
+END
+

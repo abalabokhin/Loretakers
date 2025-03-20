@@ -1,0 +1,72 @@
+IF
+	Global("Disappear","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Disappear","LOCALS",1)
+		SetGlobalTimer("TimeOut","LOCALS",TEN_ROUNDS)
+		Continue()
+END
+
+IF
+	Global("Disappear","LOCALS",1)
+	GlobalTimerExpired("TimeOut","LOCALS")
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("SPGFLSH1",Myself)
+		DestroySelf()
+END
+
+IF
+	HasItem("AC#FPPIP",Player1)  // Pipes of the sewers
+	Global("Move","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Move","LOCALS",1)
+		MoveToObject(Player1)
+END
+
+IF
+	HasItem("AC#FPPIP",Player2)  // Pipes of the sewers
+	Global("Move","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Move","LOCALS",1)
+		MoveToObject(Player2)
+END
+
+IF
+	HasItem("AC#FPPIP",Player3)  // Pipes of the sewers
+	Global("Move","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Move","LOCALS",1)
+		MoveToObject(Player3)
+END
+
+IF
+	HasItem("AC#FPPIP",Player4)  // Pipes of the sewers
+	Global("Move","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Move","LOCALS",1)
+		MoveToObject(Player4)
+END
+
+IF
+	HasItem("AC#FPPIP",Player5)  // Pipes of the sewers
+	Global("Move","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Move","LOCALS",1)
+		MoveToObject(Player5)
+END
+
+IF
+	HasItem("AC#FPPIP",Player6)  // Pipes of the sewers
+	Global("Move","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Move","LOCALS",1)
+		MoveToObject(Player6)
+END
+

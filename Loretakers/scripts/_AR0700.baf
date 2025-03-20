@@ -1,0 +1,21 @@
+IF
+	InMyArea(Player1)
+	Global("AC#FPCreatePriests","GLOBAL",0)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		CreateCreature("AC#FPST1",[2550.200],0)
+		CreateCreature("AC#FPST2",[2600.240],4)
+		SetGlobal("AC#FPCreatePriests","GLOBAL",1)
+END
+
+IF
+	InMyArea(Player1)
+	Global("AC#FPCreateLoremaster","%CentralBaldursGate%",0)
+	Global("AC#FP_LoremasterFree","GLOBAL",1)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		CreateCreature("AC#FPCO2",[2431.137],0)
+		SetGlobal("AC#FPCreateLoremaster","%CentralBaldursGate%",1)
+END

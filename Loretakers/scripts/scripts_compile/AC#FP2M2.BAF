@@ -1,0 +1,15 @@
+IF
+	Clicked([ANYONE])
+	CheckStatGT(LastTrigger,30,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1502) 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1501) 
+END
+

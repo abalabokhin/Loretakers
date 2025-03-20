@@ -1,0 +1,198 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Delay(6)
+	HPPercentLT(LastSeenBy(Myself),25)
+THEN
+	RESPONSE #20
+		ForceSpell(LastSeenBy(Myself),WIZARD_MAZE)  // SPWI813.SPL (Maze)
+	RESPONSE #80
+		Continue()
+END
+
+IF
+	See([PC])
+	Allegiance(Myself,ENEMY)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	Delay(12)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),MIND_FLAYER_DOMINATION)  // SPIN975.SPL (Psionic Domination)
+		SetGlobal("MindFlayerBehavior","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("firstStun","LOCALS",0)
+	!General(LastSeenBy(Myself),UNDEAD)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),MIND_FLAYER_PSIONIC_BLAST)  // SPIN974.SPL (Psionic Blast)
+		SetGlobal("firstStun","LOCALS",1)
+		IncrementGlobal("MindFlayerBehavior","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Delay(9)
+	!General(LastSeenBy(Myself),UNDEAD)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),MIND_FLAYER_PSIONIC_BLAST)  // SPIN974.SPL (Psionic Blast)
+		IncrementGlobal("MindFlayerBehavior","LOCALS",1)
+END
+
+IF
+	HPPercentLT(Myself,100)
+	AttackedBy([ANYONE],DEFAULT)
+	!General(LastAttackerOf(Myself),UNDEAD)
+	Delay(9)
+THEN
+	RESPONSE #100
+		ForceSpell(LastAttackerOf(Myself),MIND_FLAYER_PSIONIC_BLAST)  // SPIN974.SPL (Psionic Blast)
+		IncrementGlobal("MindFlayerBehavior","LOCALS",1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck([PC],STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate([PC],45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(SecondNearest([PC]),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(SecondNearest([PC]),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(ThirdNearest([PC]),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(ThirdNearest([PC]),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(FourthNearest([PC]),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(FourthNearest([PC]),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(FifthNearest([PC]),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(FifthNearest([PC]),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(SixthNearest([PC]),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(SixthNearest([PC]),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(NearestEnemyOf(Myself),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(SecondNearestEnemyOf(Myself),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(SecondNearestEnemyOf(Myself),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(ThirdNearestEnemyOf(Myself),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(ThirdNearestEnemyOf(Myself),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(FourthNearestEnemyOf(Myself),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(FourthNearestEnemyOf(Myself),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(FifthNearestEnemyOf(Myself),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(FifthNearestEnemyOf(Myself),45)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	StateCheck(SixthNearestEnemyOf(Myself),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		AttackReevaluate(SixthNearestEnemyOf(Myself),45)
+END
+
+IF
+	!See([PC])
+	AttackedBy([EVILCUTOFF.UNDEAD],DEFAULT)
+THEN
+	RESPONSE #100
+		Shout(89)
+		AttackReevaluate(LastAttackerOf(Myself),15)
+END
+
+IF
+	!See([PC])
+	See("AC#FPWRA")  // Wraith
+THEN
+	RESPONSE #100
+		Shout(89)
+		AttackReevaluate("AC#FPWRA",15)  // Wraith
+END
+
+IF
+	Heard([ANYONE],111)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See([PC])
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),12)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+

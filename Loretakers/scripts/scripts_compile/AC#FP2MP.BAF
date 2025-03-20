@@ -1,0 +1,15 @@
+IF
+	Contains("MISC50",Myself)  // Skull
+	Contains("POTN08",Myself)  // Potion of Healing
+	Contains("MISC36",Myself)  // Pearl
+THEN
+	RESPONSE #100
+		DestroyItem("MISC50")  // Skull
+		DestroyItem("POTN08")  // Potion of Healing
+		DestroyItem("MISC36")  // Pearl
+		PlaySound("EFF_P92")
+		ScreenShake([20.45],15)
+		CreateItem("AC#FPPSW",0,0,0)  // Poison of the Strong Will
+		Wait(2)
+END
+

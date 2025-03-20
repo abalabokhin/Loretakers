@@ -1,0 +1,11 @@
+IF
+	Opened([ANYONE])
+	Global("Animate_Tyrant","AC#FP2",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Animate_Tyrant","AC#FP2",1)
+		ReallyForceSpellRES("AC#FPTY","AC#FPDT2")  // Animate Dead
+		ReallyForceSpell("AC#FPDT2",RED_HOLY_MIGHT)  // No such index - Why hast thou disturbed me here? Hast thou no manners? Get out!
+		ActionOverride("AC#FPDT2",DestroySelf())
+END
+

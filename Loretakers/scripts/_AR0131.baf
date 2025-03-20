@@ -1,0 +1,9 @@
+IF
+	InMyArea(Player1)
+	Global("AC#FPCreateGond","%WBaldursGate_HighHouseofWonders%",0)
+	Global("AC#LoreQuestMain","GLOBAL",4)
+THEN
+	RESPONSE #100
+		CreateCreature("AC#FPGND",[634.942],11)
+		SetGlobal("AC#FPCreateGond","%WBaldursGate_HighHouseofWonders%",1)
+END

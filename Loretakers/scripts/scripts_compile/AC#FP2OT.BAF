@@ -1,0 +1,25 @@
+IF
+	See([0.UNDEAD])
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	!See([PC])
+	AttackedBy([EVILCUTOFF.UNDEAD],DEFAULT)
+THEN
+	RESPONSE #100
+		Shout(89)
+		AttackReevaluate(LastAttackerOf(Myself),15)
+END
+
+IF
+	TookDamage()
+	!See([PC])
+THEN
+	RESPONSE #100
+		ClearActions(Myself)
+		AttackReevaluate(LastAttackerOf(Myself),15)
+END
+

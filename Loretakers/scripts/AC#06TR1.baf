@@ -1,0 +1,13 @@
+IF
+        Entered([ANYONE])
+        GLOBAL("AC#FP2_warning","AC#FP2",0)
+THEN
+    RESPONSE #100
+         ClearAllActions()
+         DisplayString (Myself,999999)
+         SetGlobal("AC#FP2_warning","AC#FP2",1)
+         TriggerActivation("AC#06TR1",FALSE)
+END
+
+/* "Als ihr den Raum betretet, brandet eine Welle bösartigster und hasserfüllter Emotionen über Euch hinweg. Ihr bemerkt an der Tür gegenüber zwei pulsierende Steine, von denen ein unheilvolles Leuchten ausgeht. Irgendetwas in Ihnen scheint auf Euren Verstand einwirken zu wollen." */
+

@@ -1,0 +1,144 @@
+IF
+	InMyArea(Player1)
+	Global("AC#FPCreateSewerLady2","MYAREA",0)
+	Global("AC#LoreQuestMain","GLOBAL",7)
+THEN
+	RESPONSE #100
+		CreateCreature("AC#FPLAD",[4200.800],0)
+		SetGlobal("AC#FPCreateSewerLady2","MYAREA",1)
+END
+
+IF
+	InMyArea("AC#FPLAD")
+	StateCheck("AC#FPLAD",STATE_CHARMED)
+	Global("AC#EtateCharmed","AC#FP1",1)
+THEN
+	RESPONSE #100
+		ApplySpell("AC#FPLAD",CLERIC_CHAOTIC_COMMANDS)
+		SetGlobal("AC#EtateCharmed","AC#FP1",0)
+END
+
+IF
+Global("AC#LoreQuestAmbush","GLOBAL",1)
+THEN
+RESPONSE #100
+CreateCreature("AC#WERA1",[4333.720],0)
+CreateCreature("AC#WERA1",[4100.910],12)
+CreateCreature("AC#WERA1",[4500.750],1)
+CreateCreature("AC#WERA1",[4422.1000],8)
+CreateCreature("AC#WERA1",[5100.830],4)
+CreateCreature("AC#WERA1",[5100.880],3)
+SetGlobal("AC#LoreQuestAmbush","GLOBAL",2)
+END
+
+IF
+Dead("AC#FPLAD")  // Etate
+OR(3)
+ Global("AC#LoreQuestMain","GLOBAL",5)
+ Global("AC#LoreQuestMain","GLOBAL",6)
+ Global("AC#LoreQuestMain","GLOBAL",7)
+PartyHasItem("AC#FP1k0")
+THEN
+RESPONSE #100
+SetGlobal("AC#LoreQuestMain","GLOBAL",9)
+END
+
+IF
+	Dead("AC#FPSUN")  // Petian
+	Global("HermitDead","AC#FP1",0)
+THEN
+	RESPONSE #100
+		SetGlobal("HermitDead","AC#FP1",1)
+		AddJournalEntry(@120001,QUEST)
+END
+
+IF
+	PartyHasItem("AC#FP1K0")
+	Global("GotKeySewers","AC#FP1",0)
+THEN
+RESPONSE #100
+	SetGlobal("GotKeySewers","AC#FP1",1)
+	AddJournalEntry(@100007,QUEST)
+END
+
+IF
+	Global("Deactivate","AC#FP1",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Deactivate","AC#FP1",1)
+		SpawnPtDeactivate("Wererats01")
+END
+
+IF
+	Global("Deactivate","AC#FP1",1)
+	OpenState("DOOR01",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("Deactivate","AC#FP1",2)
+		SpawnPtActivate("Wererats01")
+		SpawnPtDeactivate("Ghuls01")
+END
+
+IF
+	OpenState("DOOR02",TRUE)
+	Global("DeactivateDoorTrigger01","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DeactivateDoorTrigger01","MYAREA",1)
+		TriggerActivation("Trigger_door_locked_01",FALSE)
+END
+
+IF
+	OpenState("DOOR05",TRUE)
+	Global("DeactivateDoorTrigger02","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DeactivateDoorTrigger02","MYAREA",1)
+		TriggerActivation("Trigger_door_locked_02",FALSE)
+END
+
+IF
+	Global("AC#FPSecretSewer","GLOBAL",0)
+	OpenState("DOOR10",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FPSecretSewer","GLOBAL",1)
+		TriggerActivation("Info_ladder",FALSE)
+		ActionOverride("DOOR10",DisplayString(Myself,@1284))
+END
+
+IF
+	Global("FreePrisoner","AC#FP1",1)
+	OpenState("DOOR06",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("FreePrisoner","AC#FP1",2)
+END
+
+IF
+	Global("AllHostile","AC#FP1",1)
+	Global("rats_summon","AC#FP1",0)
+	!DifficultyLT(NORMAL)
+THEN
+	RESPONSE #100
+		SetGlobal("rats_summon","AC#FP1",1)
+		CreateCreatureObject("AC#FPRA2",Player1,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player1,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player1,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player2,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player2,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player2,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player3,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player3,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player3,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player4,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player4,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player4,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player5,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player5,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player5,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player6,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player6,0,0,0)  // Ratte
+		CreateCreatureObject("AC#FPRA2",Player6,0,0,0)  // Ratte
+END
+

@@ -1,0 +1,67 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1404)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,12)
+  GLOBALGT("AC#FP2_Res1","AC#FP2",0)
+  GLOBAL("AC#FP2_Res2","AC#FP2",0)
+THEN
+    RESPONSE #100
+             DisplayString(Myself,999997)
+             SetGlobal("AC#FP2_Res2","AC#FP2",1)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,12)
+  GLOBAL("AC#FP2_Res2","AC#FP2",0)
+  GLOBAL("AC#FP2_Res1","AC#FP2",0)
+THEN
+    RESPONSE #100
+             DisplayString(Myself,999999)
+             SetGlobal("AC#FP2_Res2","AC#FP2",1)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,12)
+  GLOBAL("AC#FP2_Res2","AC#FP2",1)
+THEN
+    RESPONSE #100
+             DisplayString(Myself,999998)
+             SetGlobal("AC#FP2_Res2","AC#FP2",2)
+             CreateVisualEffectObject("AC#FP2IC",Myself)
+             SmallWait(7)
+             CreateVisualEffectObject("SPFLESHS",LastTrigger)
+             PlaySound("EFF_M63")
+             AmbientActivate("Resonance02",FALSE)
+             TriggerActivation("ResTrap02",FALSE)
+             ActionOverride(LastTrigger,ApplySpell(Myself,TRAP_CONFUSION))
+             AddexperienceParty(500)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,12)
+  GLOBAL("AC#FP2_Res2","AC#FP2",2)
+THEN
+    RESPONSE #100
+             DisplayString(Myself,999996)
+             TriggerActivation("ReSwitch2",FALSE)
+END
+
+/* 
+999997: "Dieser Stein sieht genau gleich aus wie der Stein auf der anderen Seite. Auch hier k�nntet Ihr versuchen, die Linien auf der Oberfl�che zu beseitigen."
+
+999999: "Der Stein pulsiert in einem sanften Licht. Ihr bemerkt feine Zeichnungen, die �ber seiner Oberfl�che verteilt sind. Ihr k�nntet versuchen, diese zu entfernen." 
+
+999998: "Ihr ber�hrt die Oberfl�che, und die Linien verschwinden. Pl�tzlich brandet eine heftige Woge vollkommener Hoffnungslosigkeit �ber Euren Verstand hinweg."
+
+*/
+

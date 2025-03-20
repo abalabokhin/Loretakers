@@ -1,0 +1,47 @@
+EXTEND_BOTTOM ~PGOND~ 0
+IF~Global("AC#LoreQuestMain","GLOBAL",4)~THEN REPLY @0 EXTERN PGOND AC#FP.GOND.0
+END
+
+CHAIN PGOND AC#FP.GOND.0
+@1
+EXIT
+
+BEGIN AC#FPGND
+
+CHAIN IF~Global("AC#LoreQuestMain","GLOBAL",4)~THEN AC#FPGND hello_0
+@2 
+END
+IF~~THEN REPLY @0 EXTERN AC#FPGND AC#FP.GOND.0
+
+
+CHAIN AC#FPGND AC#FP.GOND.0
+@3
+==AC#FPGND @4
+END
+IF~~THEN REPLY @5 EXTERN AC#FPGND where_did_loremaster_go
+
+	CHAIN AC#FPGND where_did_loremaster_go
+	@6
+	END
+	IF~~THEN REPLY @7 EXTERN AC#FPGND strange_woman
+	
+	CHAIN AC#FPGND strange_woman
+	@8
+	END
+	IF~~THEN REPLY @9 EXTERN AC#FPGND strange_woman_02
+	IF~~THEN REPLY @10 EXTERN AC#FPGND strange_woman_02
+
+CHAIN AC#FPGND strange_woman_02
+@11
+==AC#FPGND @12
+==AC#FPGND @13
+END
+IF~~THEN REPLY @14 EXTERN AC#FPGND bye
+IF~~THEN REPLY @15 EXTERN AC#FPGND bye
+
+CHAIN AC#FPGND bye
+@16
+DO ~SetGlobal("AC#LoreQuestMain","GLOBAL",5)
+EraseJournalEntry(@100003)
+AddJournalEntry(@100004,QUEST)
+EscapeArea()~ EXIT

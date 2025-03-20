@@ -1,0 +1,11 @@
+IF
+	See([GOODCUTOFF])
+THEN
+	RESPONSE #70
+		AttackOneRound(LastSeenBy(Myself))
+		AttackOneRound(LastSeenBy(Myself))
+	RESPONSE #30
+		ForceSpell(LastSeenBy(Myself),WIZARD_HORROR)  // SPWI205.SPL (Horror)
+		AttackOneRound(LastSeenBy(Myself))
+END
+

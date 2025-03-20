@@ -1,0 +1,7 @@
+IF
+	Opened([ANYONE])
+THEN
+	RESPONSE #100
+		CreateCreatureEffect("AC#FPMMY","SPRAISED",[1700.1700],S)  // placeholder
+END
+

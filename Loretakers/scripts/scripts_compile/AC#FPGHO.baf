@@ -1,0 +1,24 @@
+IF
+	OR(2)
+		TimeGT(20)
+		TimeLT(4) 
+	!IsActive(Myself)  // AC#FPGHO
+THEN
+	RESPONSE #100
+		Activate(Myself)  // AC#FPGHO
+END
+
+IF
+	TimeGT(4)
+	TimeLT(20)
+	IsActive(Myself)  // AC#FPGHO
+THEN
+	RESPONSE #100
+		Deactivate(Myself)  // AC#FPGHO
+END
+
+
+
+
+
+

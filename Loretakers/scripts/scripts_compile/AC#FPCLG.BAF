@@ -1,0 +1,34 @@
+IF
+OR(2)
+ Allegiance("AC#FPSUN",ENEMY)
+ Dead("ACFPSUN")
+!Global("AC#FPSuneLoveStory","GLOBAL",11)
+Global("AC#FPMakeMeHostile","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("AC#FPMakeMeHostile","LOCALS",1)
+Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Allegiance("AC#FPSUN",ENEMY)  // Petian
+THEN
+	RESPONSE #0
+		Attack(LastAttackerOf("AC#FPSUN"))  // Petian
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastAttackerOf(Myself),45)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+

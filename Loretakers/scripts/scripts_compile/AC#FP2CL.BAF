@@ -1,0 +1,20 @@
+IF
+	Contains("MISC80",Myself)  // Male Body
+	Global("CauldronCreateZombie","AC#FP2",0)
+THEN
+	RESPONSE #100
+		DestroyItem("MISC80")  // Male Body
+		CreateVisualEffectObject("AC#FPCAU",Myself)
+		CreateCreature("AC#FP2ZO",[3068.525],S)  // Zombie
+END
+
+IF
+	Contains("MISC79",Myself)  // Female Body
+	Global("CauldronCreateZombie","AC#FP2",0)
+THEN
+	RESPONSE #100
+		DestroyItem("MISC79")  // Female Body
+		CreateVisualEffectObject("AC#FPCAU",Myself)
+		CreateCreature("AC#FP2ZO",[3068.525],S)  // Zombie
+END
+

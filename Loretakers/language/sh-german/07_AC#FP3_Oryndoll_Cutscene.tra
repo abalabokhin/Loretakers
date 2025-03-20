@@ -1,0 +1,24 @@
+// creator: Shai Hulud
+// game: Loretakers
+// date: 2024-07-14, 19:47
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@0 = ~Die telepathische Verbindung ist schwach, treuer Vuardsungulu. Wir können Eure Anwesenheit nur aus der Ferne spüren. Wir hoffen, Ihr habt die Infiltration von Baldurs Tor vorangetrieben und Euren Befehl zur Auslöschung des Wissens ausgeführt.~
+@1 = ~(Nichts sagen.)~
+@2 = ~Ja, das habe ich, mein … ähm … Meister.~
+@3 = ~Es tut mir leid, dass ich Euch enttäuschen muss, aber ich gehöre nicht zu Euren geistig verwirrten Lakaien.~
+@4 = ~Eure Tage des Lauerns in den Schatten sind vorbei! Ich bin hier, um Euresgleichen auszulöschen und Eure Tyrannei zu beenden.~
+@5 = ~Um ehrlich zu sein, habe ich die hässlichen Tentakel dieses Tintenfischkopfes, von dem Ihr sprecht, zerstückelt. Und es wird mir ein Vergnügen sein, Euch in tausend Stücke zu schneiden, wenn ich Euch in die Finger kriege, Ihr elende Hirnsuppe!~
+@6 = ~UNSER STÜTZPUNKT IN BALDURS TOR WURDE INFILTRIERT! KAPPT DIE VERBINDUNG UND TRENNT ALLE VERBINDUNGEN ZU UNSERER STADT!~
+@7 = ~Ihr seid kein Anhänger der Wissenshüter. Ihr seid nicht einmal ein Illithid! Ihr seid … ein <PRO_RACE>!~ ~Ihr seid keine Anhängerin der Wissenshüter. Ihr seid nicht einmal ein Illithid! Ihr seid … ein <PRO_RACE>!~
+@8 = ~Ich verstehe Euer Schweigen als Zustimmung. Habt Ihr einen Weg gefunden, an den Schädel heranzukommen?~
+@9 = ~Welcher Schädel?~
+@10 = ~Ah, ja, der Schädel …~
+@11 = ~Ja, natürlich!~
+@12 = ~An den Schädel heranzukommen? Noch kein Glück. Vielleicht sollte ich auf Hirne umsteigen und mit dem anfangen, das Ihr so schlecht benutzt.~
+@13 = ~Oh, richtig, der Schädel! Hätte ich fast vergessen, während ich damit beschäftigt war, kein Illithide zu sein. Ihr Jungs braucht wirklich bessere Sklaven.~
+@14 = ~Meister? Die Zeit auf der Oberfläche scheint nicht gut für Euch zu verlaufen, Vuardsungulu. Habt Ihr wenigstens einen Weg gefunden, an den Schädel heranzukommen?~
+@15 = ~Ihr habt den Schädel gefunden? Das hallt tief in meinem Innersten nach! Der Schädel hat mein Heiligtum noch nicht erreicht.~
+@16 = ~Wo war Euer Heiligtum noch einmal?~
+@17 = ~Es ist an der Zeit, Euer Geflüster ein für alle Mal zum Schweigen zu bringen. Ich werde Euer Heiligtum in Trümmern sehen.~
+@18 = ~Ihr habt Euren letzten Verstand manipuliert, Ältestenhirn. Ich schalte Euren Verstand für immer ab.~

@@ -1,0 +1,58 @@
+IF
+	OnCreation()
+	AreaType(DUNGEON)
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-100.-100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-90.-120])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[100.100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[110.100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[90.120])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[150.-100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[150.-110])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-110.100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-190.120])  // Rat
+		Wait(1)
+		DestroySelf()
+END
+
+IF
+	OnCreation()
+	AreaType(FOREST)
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-100.-100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-110.-100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-90.-120])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[100.100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[110.100])  // Rat
+		Wait(1)
+		DestroySelf()
+END
+
+IF
+	OnCreation()
+	AreaType(CITY)
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-100.-100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-110.-100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-90.-120])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[100.100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[110.100])  // Rat
+		Wait(1)
+		DestroySelf()
+END
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-100.-100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-110.-100])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[-90.-120])  // Rat
+		CreateCreatureObjectOffset("AC#FPRTP",Myself,[110.100])  // Rat
+		Wait(1)
+		DestroySelf()
+END
+

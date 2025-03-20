@@ -1,0 +1,59 @@
+IF
+	Global("AC#FPKillTheHermit","GLOBAL",2)
+	Global("AC#FPIAMLEAVINGBYEBYE","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#FPIAMLEAVINGBYEBYE","LOCALS",1)
+		DestroySelf()
+END
+
+IF
+	Heard([ANYONE],111)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	Global("MoveTowardsPC","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToPoint([2169.2571])
+		SetGlobal("MoveTowardsPC","LOCALS",2)
+END
+
+IF
+	OR(2)
+		Allegiance("AC#FPWRC",ENEMY)  // Scronch
+		AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+		SetGlobal("MoveTowardsPC","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	InWeaponRange(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	InWeaponRange(LastAttackerOf(Myself))
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(LastSeenBy(Myself))
+END
+

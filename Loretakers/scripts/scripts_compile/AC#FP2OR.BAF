@@ -1,0 +1,95 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Transceiver","AC#FP2",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1278)  // Dies scheint der Kern des seltsamen Gerätes zu sein, welches die Illithiden hier installiert haben. Der Zweck ist Euch unbekannt, doch Ihr bemerkt eine kleine Öffnung, durch die man ins Innere der organischen Maschine gelangen könnte. Ihr erkennt einen kleinen Sitz, auf dem man es sich gemütlich machen könnte.
+		SetGlobal("Transceiver","AC#FP2",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Transceiver","AC#FP2",1)
+	!PartyHasItem("AC#FPBRM")  // Hirngefährte
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1279)  // Ohne einen bestimmten weiteren Gegenstand lässt sich die Maschine zu nichts weiter gebrauchen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Transceiver","AC#FP2",1)
+	PartyHasItem("AC#FPBRM")  // Hirngefährte
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetGlobal("Transceiver","AC#FP2",2)
+		StartCutSceneMode()
+		DisplayString(Myself,@1283)
+		Wait(2)
+	    DisplayString("Transceiver_trigger",@1281)  // Ihr spürt einen Zug, der auf Euren Geist einwirkt. Wenngleich Euer Körper noch immer am selben Ort verbleibt, bewegt sich Euer Verstand meilenweit weg, getragen durch die psychische Energie der Illithidenmaschine...
+	    Wait(3)
+	    PlaySound("EFF_M63") 
+		StartCutScene("AC#FPCT8")
+END
+
+IF
+	Clicked([ANYONE])
+	Global("Transceiver","AC#FP2",2)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1282)  //Das Illithiden-Übertragungsgerät ist nicht mehr funktionstüchtig.
+		TriggerActivation("Transceiver_trigger",FALSE)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,23565)  // Ihr seid zu weit entfernt, um das Gerät zu bedienen.
+END
+
+/*
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Transceiver","AC#FP2",1)
+	PartyHasItem("AC#FPBRM")  // Hirngefährte
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		SetGlobal("Transceiver","AC#FP2",2)
+		CreateVisualEffectObject("SPFLESHS",LastTrigger)
+		PlaySound("EFF_M63")
+		DisplayStringNoName(Myself,@1283)  // Das Illithidenhalsband gibt Euch eine Art Kontrolle über das Gerät. Ihr nehmt im Inneren des Gegenstandes platzt und schließt die Augen.
+		Wait(3)
+		DisplayStringNoName(Myself,@1281)  // Ihr spürt einen Zug, der auf Euren Geist einwirkt. Wenngleich Euer Körper noch immer am selben Ort verbleibt, bewegt sich Euer Verstand meilenweit weg, getragen durch die psychische Energie der Illithidenmaschine...
+		Wait(3)
+		PlaySound("EFF_M63")
+		FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(LastTrigger,LeaveAreaLUAPanic("AC#FP3","",[746.753],S))
+		ActionOverride(LastTrigger,LeaveAreaLUA("AC#FP3","",[746.753],S))
+		ActionOverride(LastTrigger,Wait(2))
+		ActionOverride(LastTrigger,MultiPlayerSync())
+		ActionOverride(LastTrigger,FadeFromColor([30.0],0))
+		ActionOverride(LastTrigger,LeaveAreaLUAPanic("AC#FP3","",[746.753],S))
+		ActionOverride(LastTrigger,LeaveAreaLUA("AC#FP3","",[746.753],S))
+		ActionOverride(LastTrigger,Wait(2))
+		ActionOverride(LastTrigger,MultiPlayerSync())
+		//ActionOverride(LastTrigger,FadeFromColor([30.0],0))
+		Explore()
+		//Wait(1)
+		//MoveViewPoint([591.480],FAST)
+		//ActionOverride(LastTrigger,Wait(1))
+		ActionOverride(LastTrigger,MoveToPoint([746.753]))
+		//ActionOverride(LastTrigger,Wait(2))
+		SetGlobal("AC#Braintransceiver","GLOBAL",1)
+		ActionOverride("AC#FP3EB",StartDialogNoSet(LastTrigger))
+END
+*/
