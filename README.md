@@ -1,5 +1,7 @@
 # Loretakers
 
+![Loretakers Logo](https://github.com/AciferBG/Loretakers/blob/main/pics/Loretakers%20logo%20small.png)
+
 **Loretakers** is a quest mod for *Baldur’s Gate: Enhanced Edition (BG1EE)* and *Enhanced Edition Trilogy (EET)*. It takes place in the city of **Baldur's Gate** and adds new areas, enemies, and a challenging questline.
 
 ## Features
@@ -50,3 +52,13 @@ This mod and all its contents may not be copied, modified, distributed, or used 
 ## Feedback & Support  
 If you encounter issues or have suggestions, please report them on the **Gibberlings3 Forum**.  
 [**G3 Forums - Loretakers**](https://www.gibberlings3.net/forums/topic/38310-mod-loretakers-a-quest-mod-for-bg1ee/)
+
+---
+
+## Credits
+
+**Mod Authors:** Acifer, Lava  
+**Proofreading:** megrimlock  
+**EET Compatibility:** subtledoctor, Priest of Gond  
+**Beta Testing:** Soul, OiseauRebelle
+
