@@ -16,6 +16,15 @@ Loretakers is compatible with **BG1EE** and **EET**.
 
 ---
 
+## Download
+
+You can download the latest version of **Loretakers** as a `.zip` archive including a **WeiDU installer** from the **Releases** section of this GitHub page.
+
+Click on the **“Releases”** tab on the right side (or at the top, depending on your screen size), and download the `.zip` file of the latest release.  
+After downloading, extract the archive into your game's installation folder and run the installer as described below.
+
+---
+
 ## Installation  
 1. **Remove any previous version** of the mod before installing a new one.  
 2. **Extract** the contents of the mod archive into your game's main directory (`BG1EE` / `EET`, where `CHITIN.KEY` is located).  
