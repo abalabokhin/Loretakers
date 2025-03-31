@@ -52,13 +52,13 @@
 @1001 = ~Jymahna's Mask~
 @1002 = ~Jymahna's Mask~
 @1003 = ~Jymahna's mask~
-@1004 = ~Door key~
+@1004 = ~Door Key~
 @1005 = ~You found this key in the Basilisk room in the old sewers. It seems to belong to an important door.~
 @1006 = ~Illithid Key~
-@1007 = ~You found this key on the corpse of the Ulitharid Vuardsungulu~
-@1008 = ~Statue key~
+@1007 = ~You found this key on the corpse of the Ulitharid Vuardsungulu.~
+@1008 = ~Statue Key~
 @1009 = ~You found this key in the skull of a statue in the old temple of Moander.~
-@1010 = ~Key from the basin~
+@1010 = ~Key from the Basin~
 @1011 = ~You fished this key out of a basin in the old sewers.~
 @1012 = ~You fished this key out of the second basin in the old sewers. It may open the third locked door.~
 @1013 = ~This key is cold to the touch. It comes from the room where the cold pool was located. You took it from a White Blob. It may open the fourth locked door.~
@@ -126,7 +126,7 @@ Weight: 1
 FEATURES:
 
 When the shutter is opened, a wraith escapes and attacks any target in its line of sight.~
-@1045 = ~Key to old sewers~
+@1045 = ~Key to Old Sewers~
 @1046 = ~This is the key to the old sewers beneath Baldur's Gate.~
 @1047 = ~Urthadar's Journal~
 @1048 = ~This is the journal of Urthadar, the priest of Moander, who has established a temple in honor of his dead god in the old sewers below Baldur's Gate. The text is muddled, but some passages catch your eye:
