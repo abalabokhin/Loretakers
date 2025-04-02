@@ -4,12 +4,31 @@
 
 **Loretakers** is a quest mod for *Baldur’s Gate: Enhanced Edition (BG1EE)* and *Enhanced Edition Trilogy (EET)*. It takes place in the city of **Baldur's Gate** and adds new areas, enemies, and a challenging questline.
 
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Compatibility](#compatibility)
+- [Download](#download)
+- [Installation](#installation)
+- [How to Play the Mod](#how-to-play-the-mod)
+- [Compatibility with Other Mods](#compatibility-with-other-mods)
+- [Reviews](#reviews)
+- [Feedback & Support](#feedback--support)
+- [Credits](#credits)
+- [License](#license)
+
+---
+
 ## Features
 - A **new dungeon** beneath the city of Baldur’s Gate  
 - **New monsters** with unique abilities  
 - **New magical items** to discover  
 - **Challenging battles** for experienced adventurers  
 - **1-2 hours of additional gameplay**  
+
+---
 
 ## Compatibility  
 Loretakers is compatible with **BG1EE** and **EET**.
@@ -51,10 +70,11 @@ After downloading, extract the archive into your game's installation folder and 
 
 ---
 
-## License  
-**© 2025 Acifer – All Rights Reserved**  
+## Reviews
+ 
+Read a review of **Loretakers** at **The Smoldering Mods Bar**:
 
-This mod and all its contents may not be copied, modified, distributed, or used in any form without explicit permission from the author.
+[**Review of Loretakers – Smoldering Mods Bar**](https://smolderingmodsbar.com/loretakers-bgee/)
 
 ---
 
@@ -70,4 +90,11 @@ If you encounter issues or have suggestions, please report them on the **Gibberl
 **Proofreading:** megrimlock  
 **EET Compatibility:** subtledoctor, Priest of Gond  
 **Beta Testing:** Soul, OiseauRebelle
+
+---
+
+## License  
+**© 2025 Acifer – All Rights Reserved**  
+
+This mod and all its contents may not be copied, modified, distributed, or used in any form without explicit permission from the author.
 
