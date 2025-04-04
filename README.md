@@ -32,6 +32,7 @@
 
 ## Compatibility  
 Loretakers is compatible with **BG1EE** and **EET**.
+**Loretakers is NOT compatible with the mod "Jarl's adventure pack" at the moment**
 
 ---
 
