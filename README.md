@@ -10,6 +10,7 @@
 
 - [Features](#features)
 - [Compatibility](#compatibility)
+- [Languages](#languages)
 - [Download](#download)
 - [Installation](#installation)
 - [How to Play the Mod](#how-to-play-the-mod)
@@ -35,6 +36,15 @@ Loretakers is compatible with **BG1EE** and **EET**.
 
 **PLEASE NOTE:**
 **Loretakers is NOT compatible with the mod "Jarl's adventure pack" at the moment**
+
+---
+
+## Languages  
+The mod is available in: 
+- English
+- German
+- Chinese
+- Russian
 
 ---
 
